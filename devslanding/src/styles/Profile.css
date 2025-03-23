@@ -1,0 +1,165 @@
+/* Profile.css */
+
+/* Profile Section */
+.profile-container {
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Content Layout */
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+/* Profile Image */
+.profile-image-container {
+    flex: 1;
+    max-width: 180px;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #8e44ad;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Profile Text */
+.profile-text {
+    flex: 2;
+    text-align: left;
+}
+
+.profile-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-subtitle {
+    font-size: 22px;
+    color: #cccccc;
+    margin-top: 5px;
+}
+
+/* Decorative Lines */
+.decorative-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+/* Animated Gradient */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Top and Bottom Decorative Lines */
+.decorative-lines::before,
+.decorative-lines::after {
+    content: "";
+    display: block;
+    height: 8px;
+    border-radius: 5px;
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+}
+
+/* Top Lines */
+.decorative-lines.top::before {
+    width: 100%;
+    background: linear-gradient(90deg, #ff6b6b, #48dbfb, #1dd1a1, #feca57);
+}
+
+.decorative-lines.top::after {
+    width: 80%;
+    background: linear-gradient(90deg, #a29bfe, #ff9ff3, #feca57, #ff6b6b);
+}
+
+/* Bottom Lines */
+.decorative-lines.bottom::before {
+    width: 60%;
+    background: linear-gradient(90deg, #1dd1a1, #48dbfb, #ff6b6b, #feca57);
+}
+
+.decorative-lines.bottom::after {
+    width: 100%;
+    background: linear-gradient(90deg, #feca57, #a29bfe, #ff6b6b, #48dbfb);
+}
+
+/* Bio Section */
+.profile-bio {
+    max-width: 700px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.profile-bio h3 {
+    font-size: 20px;
+}
+
+.profile-bio .highlight {
+    color: #a29bfe;
+    font-weight: bold;
+}
+
+.profile-bio p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.profile-bio a {
+    color: #a29bfe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-bio a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+
+    .profile-image-container {
+        max-width: 150px;
+    }
+}
+
+/* link style */
+.link-style {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+  }
