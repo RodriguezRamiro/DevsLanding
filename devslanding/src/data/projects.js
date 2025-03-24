@@ -1,3 +1,5 @@
+
+
 const projects = [
     {
       id: 1,
@@ -6,23 +8,38 @@ const projects = [
       image: "/images/spotify-clone.png",
       github: "https://github.com/yourusername/spotify-clone",
       demo: "https://spotify-clone-demo.vercel.app",
+      tags: ['Zustand', 'React', 'TypeScript'],
     },
     {
       id: 2,
-      title: "Jobly App",
-      description: "A full-stack job board application using React and Express.",
-      image: "/images/jobly.png",
-      github: "https://github.com/yourusername/jobly",
-      demo: "https://jobly-demo.vercel.app",
+      title: 'Bogetta',
+      tags: ['Next.js', 'TypeScript', 'Prisma', 'Stripe'],
+      link: '#',
     },
     {
       id: 3,
-      title: "Snack or Booze",
-      description: "A fun food & drinks rating app built with React.",
-      image: "/images/snack-or-booze.png",
-      github: "https://github.com/yourusername/snack-or-booze",
-      demo: "https://snack-or-booze-demo.vercel.app",
+      title: 'Bitcoin Game',
+      tags: ['E2E', 'React', 'TypeScript', 'Firebase'],
+      link: '#',
     },
+    {
+      id: 4,
+      title: 'Chat App',
+      tags: ['React', 'TypeScript', 'Firebase'],
+      link: '#',
+    },
+    {
+      id: 5,
+      title: 'Netflix Clone',
+      tags: ['React', 'TypeScript', 'Firebase'],
+      link: '#',
+    },
+    {
+      id: 6,
+      title: 'Instagram Clone',
+      tags: ['React', 'TypeScript', 'CSS', 'Firebase'],
+      link: '#',
+    }
   ];
 
   export default projects;

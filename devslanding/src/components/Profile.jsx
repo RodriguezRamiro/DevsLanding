@@ -1,7 +1,7 @@
 /* Profile.jsx */
 import React from 'react';
 import '../styles/Profile.css';
-import profilePic from '../assets/Screenshot 2024-11-17 at 6.03.50 PM.png';
+import profilePic from '../assets/Clipped_image_20250323_203615.jpg';
 import Bio from './Bio';
 
 function Profile() {
