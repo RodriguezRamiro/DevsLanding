@@ -1,85 +1,91 @@
 /* Style the navbar */
 /* Set the background color of the whole page */
+/* General Body Styling */
 body {
-    background-color: #121212; /* Dark background */
-    color: #f0f0f0; /* Light text for contrast */
-    font-family: 'Arial', sans-serif; /* Modern font */
-    margin: 0;
-    padding: 0;
-  }
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text for contrast */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+}
 
-  /* Style the navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between; /* Space between the logo and navbar items */
-    align-items: center;
-    padding: 10px 20px;
-    background: #1f1f1f; /* Dark navbar background */
-    color: white;
-    position: sticky; /* Makes the navbar sticky */
-    top: 0; /* Stick to the top of the page */
-    z-index: 1000; /* Ensure the navbar is above other content */
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for modern effect */
-  }
+/* Style the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between the logo and navbar items */
+  align-items: center;
+  padding: 10px 20px;
+  background: #1f1f1f; /* Dark navbar background */
+  color: white;
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Stick to the top of the page */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for modern effect */
+}
 
-  /* Style the logo (h1) */
-  .navbar h1 {
-    margin: 0;
-    padding-left: 20px;
-    font-size: 24px;
-    color: #61dafb; /* Highlight the logo with a blue color */
-  }
+/* Style the logo (h1) */
+.navbar h1 {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 24px;
+  color: #a29bfe; /* Highlight the logo with a blue color */
+}
 
-  /* Style the navbar items */
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    justify-content: center; /* Center the navbar items */
-    flex-grow: 1; /* Allow the ul to take up remaining space */
-  }
+/* Style the navbar items container */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  justify-content: center; /* Center the navbar items */
+  flex-grow: 1; /* Allow the ul to take up remaining space */
+}
 
-  /* Style the list items */
-  .navbar li {
-    position: relative;
-    border-radius: 20px; /* Rounded corners for each list item */
-    overflow: hidden; /* Prevent the rounded corners from being cut off */
-  }
+/* Style each navbar item (li) */
+.navbar li {
+  position: relative;
+  border-radius: 20px; /* Rounded corners for each list item */
+  overflow: hidden; /* Prevent the rounded corners from being cut off */
+}
 
-  /* Style the links */
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 12px 30px; /* Increased padding for a larger click area */
-    display: block;
-    transition: all 0.3s ease; /* Smooth transition for all properties */
-  }
+/* Style the links */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px 30px; /* Increased padding for a larger click area */
+  display: block;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
 
-  /* Hover effect with purple gradient */
-  .navbar a:hover {
-    background: linear-gradient(45deg, #4b4b4b, #4b4b4b); /* Purple gradient */
-    color: white; /* Keep the text color white */
-    transform: scale(1.1); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to pop effect */
-    border-radius: 8px; /* Maintain rounded corners */
-  }
+/* Hover effect with purple gradient */
+.navbar a:hover {
+  background: linear-gradient(45deg, #4b4b4b, #4b4b4b); /* Subtle dark gradient */
+  color: #a29bfe; /* Change text color on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to pop effect */
+  border-radius: 8px; /* Maintain rounded corners */
+}
 
-  /* Add an underline on hover */
-  .navbar li:hover::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #4b4b4b; /* Underline with purple */
-    transition: width 0.3s ease; /* Smooth transition for the underline */
-  }
+/* Underline effect on hover */
+.navbar li:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #4b4b4b; /* Underline with purple */
+  transition: width 0.3s ease; /* Smooth transition for the underline */
+}
 
-  /* Animation effect for the underline on hover */
-  .navbar li:hover::after {
-    width: 100%;
-  }
+/* Navbar Active Link (Optional) */
+.navbar a.active {
+  color: #ff6b6b; /* Change color when active */
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}

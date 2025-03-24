@@ -1,9 +1,7 @@
-/* Profile.css */
-
 /* Profile Section */
 .profile-container {
-    background-color: #0d0d0d;
-    color: white;
+    background-color: #0d0d0d; /* Dark background for profile */
+    color: white; /* Light text for contrast */
     text-align: center;
     padding: 60px 20px;
     display: flex;
@@ -14,6 +12,7 @@
 /* Profile Content Layout */
 .profile-content {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     max-width: 900px;
@@ -25,6 +24,7 @@
 .profile-image-container {
     flex: 1;
     max-width: 180px;
+    margin-top: 20rem;
 }
 
 .profile-image {
@@ -38,6 +38,7 @@
 .profile-text {
     flex: 2;
     text-align: left;
+    gap: 10px;
 }
 
 .profile-title {
@@ -52,12 +53,34 @@
     margin-top: 5px;
 }
 
+/* Decorative Lines Container */
+.decorative-lines-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Vertical Line to the Left of the Decorative Lines Container */
+.decorative-lines-container::before {
+    content: ''; /* Empty content to create the line */
+    position: absolute; /* Position it absolutely */
+    left: -20px; /* Move the line to the left of the container */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Width of the vertical line */
+    background-color: #a29bfe; /* Color of the vertical line */
+}
+
 /* Decorative Lines */
 .decorative-lines {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 20px 0;
+    width: 100%;
+    margin: 20px 0 10px;
 }
 
 /* Animated Gradient */
@@ -109,7 +132,7 @@
 /* Bio Section */
 .profile-bio {
     max-width: 700px;
-    margin-top: 40px;
+    margin-top: 80px;
     text-align: left;
 }
 
@@ -136,6 +159,7 @@
 
 .profile-bio a:hover {
     text-decoration: underline;
+    color: #ff6b6b; /* Color change on hover */
 }
 
 /* Responsive Design */
@@ -154,12 +178,7 @@
     }
 }
 
-/* link style */
-.link-style {
-    background: none;
-    border: none;
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-    padding: 0;
-  }
+/* Link Style */
+.bio-text {
+    margin-right: 20px; /* Adjusted spacing */
+}
