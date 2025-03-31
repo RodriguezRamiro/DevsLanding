@@ -12,29 +12,43 @@ const projects = [
     tags: ['Zustand', 'React', 'TypeScript'],
   },
   {
+    id: 2,
     title: 'Bogetta',
     tags: ['Next.js', 'TypeScript', 'Prisma', 'Stripe'],
     link: '#'
   },
   {
+    id: 3,
     title: 'Bitcoin Game',
     tags: ['E2E', 'React', 'TypeScript', 'Firebase'],
     link: '#'
   },
   {
+    id: 4,
     title: 'Chat App',
     tags: ['React', 'TypeScript', 'Firebase'],
     link: '#'
   },
   {
+    id: 5,
     title: 'Netflix Clone',
     tags: ['React', 'TypeScript', 'Firebase'],
     link: '#'
   },
   {
+    id: 6,
     title: 'Instagram Clone',
     tags: ['React', 'TypeScript', 'CSS', 'Firebase'],
     link: '#'
+  },
+  {
+    id: 7,
+    title: 'Chatbot App',
+    description: 'A simple chat box application with auto-replies and timestamps.',
+    image: '/images/chatbot.png', // Add an image if available
+    github: 'https://github.com/RodriguezRamiro/chatbot',
+    demo: '#', // Replace with live demo link if available
+    tags: ['HTML', 'CSS', 'JavaScript'],
   }
 ];
 
@@ -45,9 +59,18 @@ function Projects() {
       <h3 className="projects-subtitle">Worked On</h3>
 
       <div className="projects-grid">
-        {projects.map((project, index) => (
-          <a key={index} href={project.link} className="project-tile">
+        {projects.map((project) => (
+          <a
+            key={project.id}
+            href={project.demo || project.github || '#'}
+            className="project-tile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h4>{project.title}</h4>
+
+            {project.description && <p className="project-description">{project.description}</p>}
+
             <div className="project-tags">
               {project.tags.map((tag, idx) => (
                 <span key={idx} className="tag">{tag}</span>
