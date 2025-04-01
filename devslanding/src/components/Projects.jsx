@@ -25,9 +25,12 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Chat App',
-    tags: ['React', 'TypeScript', 'Firebase'],
-    link: '#'
+    title: 'Chatbot App',
+    description: 'A simple chat box application with auto-replies and timestamps.',
+    image: '/images/chatbot.png', // Add an image if available
+    github: 'https://github.com/RodriguezRamiro/chatbot',
+    demo: 'https://github.com/RodriguezRamiro/chatbot', // Replace with live demo link if available
+    tags: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 5,
@@ -36,20 +39,14 @@ const projects = [
     link: '#'
   },
   {
-    id: 6,
-    title: 'Instagram Clone',
-    tags: ['React', 'TypeScript', 'CSS', 'Firebase'],
-    link: '#'
-  },
-  {
     id: 7,
-    title: 'Chatbot App',
-    description: 'A simple chat box application with auto-replies and timestamps.',
+    title: 'Weather App',
+    description: 'Themed weathe application with api integration',
     image: '/images/chatbot.png', // Add an image if available
     github: 'https://github.com/RodriguezRamiro/chatbot',
-    demo: '#', // Replace with live demo link if available
-    tags: ['HTML', 'CSS', 'JavaScript'],
-  }
+    demo: 'https://github.com/RodriguezRamiro/chatbot', // Replace with live demo link if available
+    tags: ['HTML', 'CSS', 'JavaScript', 'API',],
+  },
 ];
 
 function Projects() {
