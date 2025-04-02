@@ -9,7 +9,7 @@ const projects = [
     image: "/images/spotify-clone.png",
     github: "https://github.com/yourusername/spotify-clone",
     demo: "https://spotify-clone-demo.vercel.app",  //Live Demo Link
-    tags: ['Zustand', 'React', 'TypeScript'],
+    tags: ['React', 'TypeScript'],
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ const projects = [
   {
     id: 7,
     title: 'Weather App',
-    description: 'Themed weathe application with api integration',
+    description: 'Themed weather application with api integration',
     image: '/images/chatbot.png', // Add an image if available
     github: 'https://github.com/RodriguezRamiro/chatbot',
     demo: 'https://weatherapp-ashy-five.vercel.app/', //Live Demo Link
