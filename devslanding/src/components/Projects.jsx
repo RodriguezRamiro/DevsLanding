@@ -8,7 +8,7 @@ const projects = [
     description: "A Spotify-inspired music streaming app built with React and Spotify API.",
     image: "/images/spotify-clone.png",
     github: "https://github.com/yourusername/spotify-clone",
-    demo: "https://spotify-clone-demo.vercel.app",
+    demo: "https://spotify-clone-demo.vercel.app",  //Live Demo Link
     tags: ['Zustand', 'React', 'TypeScript'],
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     description: 'A simple chat box application with auto-replies and timestamps.',
     image: '/images/chatbot.png', // Add an image if available
     github: 'https://github.com/RodriguezRamiro/chatbot',
-    demo: 'https://github.com/RodriguezRamiro/chatbot', // Replace with live demo link if available
+    demo: 'https://chatbot-peach-nine-17.vercel.app/', //Live Demo Link
     tags: ['HTML', 'CSS', 'JavaScript'],
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     description: 'Themed weathe application with api integration',
     image: '/images/chatbot.png', // Add an image if available
     github: 'https://github.com/RodriguezRamiro/chatbot',
-    demo: 'https://github.com/RodriguezRamiro/chatbot', // Replace with live demo link if available
+    demo: 'https://weatherapp-ashy-five.vercel.app/', //Live Demo Link
     tags: ['HTML', 'CSS', 'JavaScript', 'API',],
   },
 ];
