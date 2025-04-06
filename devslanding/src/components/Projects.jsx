@@ -25,18 +25,21 @@ const projects = [
   },
   {
     id: 4,
+    title: 'React Calculator',
+    description: 'Ract calculator featuring scientific fuctions, and arithmetic buttons.',
+    image: '/images/chatbot.png', // Add an image if available
+    github: 'https://github.com/RodriguezRamiro/react-calculator',
+    demo: 'https://react-calculator-six-black.vercel.app/', //Live Demo Link
+    tags: ['HTML', 'CSS', 'React JS'],
+  },
+  {
+    id: 5,
     title: 'Chatbot App',
     description: 'A simple chat box application with auto-replies and timestamps.',
     image: '/images/chatbot.png', // Add an image if available
     github: 'https://github.com/RodriguezRamiro/chatbot',
     demo: 'https://chatbot-peach-nine-17.vercel.app/', //Live Demo Link
     tags: ['HTML', 'CSS', 'JavaScript'],
-  },
-  {
-    id: 5,
-    title: 'Netflix Clone',
-    tags: ['React', 'TypeScript', 'Firebase'],
-    link: '#'
   },
   {
     id: 7,
