@@ -19,9 +19,13 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Bitcoin Game',
-    tags: ['E2E', 'React', 'TypeScript', 'Firebase'],
-    link: '#'
+    title: 'Fullstack Blackjack',
+    description:'Fullstack Blackjack on React and Flask. Funtional multiplayer and real-time chat using Flask-SocketIO.',
+    image: "/images/spotify-clone.png",
+    github: "https://github.com/RodriguezRamiro/fullstack_blackjack",
+    demo: "https://vercel.com/rodriguezramiros-projects/fullstack-blackjack",  //Live Demo Link
+    tags: ['JavaScript', 'React', 'Python', 'Flask', 'WebSockets', 'CSS',],
+
   },
   {
     id: 4,

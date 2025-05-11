@@ -10,13 +10,13 @@ function Bio() {
       <div className="profile-bio">
         <h3>About <span className="highlight">Me</span></h3>
         <p>
-          Hi, I'm Ramiro! I'm a <strong>self-taught frontend developer</strong> with a passion for building digital experiences.
+          Hi, I'm Ramiro! I'm a <strong>self-taught fullstack developer</strong> with a passion for building digital experiences.
           My journey into coding started as a hobby, but it quickly grew into something I love.
         </p>
         <p>
           What keeps me motivated? The <strong>endless learning</strong> and the thrill of tackling <strong>new challenges</strong>.
           Beyond coding, I enjoy working on <strong>3D printing projects</strong>, sketching, and reading.
-          When I’m not coding, you'll find me spending time with family or working out.
+          When I’m not coding, you'll find me spending time with family or at a gym.
         </p>
         <p>
           <span className='bio-text'>Follow my journey on</span>
