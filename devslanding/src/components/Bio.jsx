@@ -11,7 +11,7 @@ function Bio() {
         <h3>About <span className="highlight">Me</span></h3>
         <p>
           Hi, I'm Ramiro! I'm a <strong>self-taught fullstack developer</strong> with a passion for building digital experiences.
-          My journey into coding started as a hobby, but it quickly grew into something I love.
+          My journey into coding started as a hobby, but it quickly grew into something I love and enjoy doing.
         </p>
         <p>
           What keeps me motivated? The <strong>endless learning</strong> and the thrill of tackling <strong>new challenges</strong>.

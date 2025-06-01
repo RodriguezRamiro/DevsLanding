@@ -4,7 +4,7 @@ import '../styles/Projects.css';
 const projects = [
   {
     id: 1,
-    title: "Spotify Clone",
+    title: "Spotify Mock Clone",
     description: "A Spotify-inspired music streaming app built with React and Spotify API.",
     image: "/images/spotify-clone.png",
     github: "https://github.com/yourusername/spotify-clone",
@@ -13,18 +13,19 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Bogetta',
-    tags: ['Next.js', 'TypeScript', 'Prisma', 'Stripe'],
-    link: '#'
-  },
-  {
-    id: 3,
     title: 'Fullstack Blackjack',
     description:'Fullstack Blackjack on React and Flask. Funtional multiplayer and real-time chat using Flask-SocketIO.',
     image: "/images/spotify-clone.png",
     github: "https://github.com/RodriguezRamiro/fullstack_blackjack",
-    demo: "https://vercel.com/rodriguezramiros-projects/fullstack-blackjack",  //Live Demo Link
-    tags: ['JavaScript', 'React', 'Python', 'Flask', 'WebSockets', 'CSS',],
+    demo: "https://fullstack-blackjack.vercel.app/",  //Live Demo Link
+    tags: ['JavaScript', 'React', 'Flask', 'WebSockets', 'CSS', 'Render'],
+  },
+  {
+
+    id: 3,
+    title: 'Bogetta',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'Stripe'],
+    link: '#'
 
   },
   {

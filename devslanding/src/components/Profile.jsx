@@ -20,7 +20,7 @@ function Profile() {
 
           {/* Profile Title & Subtitle */}
           <h1 className="profile-title">Ramiro's Tech</h1>
-          <h2 className="profile-subtitle">Frontend Developer</h2>
+          <h2 className="profile-subtitle">Software Developer</h2>
 
           {/* Bottom Decorative Lines */}
           <div className="decorative-lines bottom"></div>
