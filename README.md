@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# DevsLanding
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend repository for **DevsLanding**, a personal portfolio website designed to showcase my projects, skills, and professional bio. It's built with modern web technologies to provide a dynamic and responsive user experience.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+* **Responsive Design:** Adapts to various screen sizes (desktop, tablet, mobile).
+* **Dynamic Project Display:** Easily showcase your projects with detailed descriptions.
+* **Interactive Components:** Engaging user interface elements.
+* **Clean & Modern UI:** A visually appealing and intuitive layout.
+* **(Add more specific features here if you have them, e.g., smooth scrolling, contact form, animations)**
 
-### `npm start`
+## 🚀 Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **React:** A JavaScript library for building user interfaces.
+* **JavaScript (ES6+):** For application logic and interactivity.
+* **HTML5 / CSS3:** For structuring and styling the web content.
+* **Node.js:** (Used as a development environment for npm/yarn)
+* **Vite or Create React App:** (Specify which one you used, e.g., "Created with Create React App" or "Bundled with Vite")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💻 Getting Started
 
-### `npm test`
+Follow these steps to get a local copy of the project up and running on your machine for development and testing purposes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have Node.js and npm (or Yarn) installed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [Node.js](https://nodejs.org/) (includes npm)
+* [Yarn](https://yarnpkg.com/) (Optional, if you prefer Yarn over npm)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/yourusername/DevsLanding.git](https://github.com/yourusername/DevsLanding.git)
+    ```
+    (Replace `yourusername` with your actual GitHub username.)
 
-### `npm run eject`
+2.  **Navigate into the project directory:**
+    ```bash
+    cd DevsLanding
+    ```
+    *You are now at the root of the project.*
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    # or if you use Yarn:
+    # yarn install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.  **Start the development server:**
+    ```bash
+    npm start
+    # or if you use Yarn:
+    # yarn start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2.  **Open in browser:**
+    The application will typically open in your default web browser at `http://localhost:3000`. If it doesn't, manually navigate to this URL.
 
-## Learn More
+## 📁 Folder Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Here's a high-level overview of the project's directory structure:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+.
+├── public/       # Public assets like index.html, favicon, static images
+├── src/          # Source code for the React application
+│   ├── assets/     # Images, icons, or other static assets used in components
+│   ├── components/ # Reusable UI components (e.g., Bio.jsx, Projects.jsx)
+│   │   ├── Bio.jsx
+│   │   ├── Projects.jsx
+│   │   └── (other components like Header, Footer, Navbar, etc.)
+│   ├── styles/     # Global CSS, styled-components, or utility styles (optional)
+│   ├── pages/      # Top-level components representing different views/pages (optional)
+│   ├── App.js    # Main application component where routes or major sections are defined
+│   └── index.js  # Entry point of the React application, rendering App.js
+├── package.json  # Project metadata, scripts, and dependencies
+├── package-lock.json # Records exact dependency versions (for npm)
+├── README.md     # This file, providing project information
+└── .gitignore    # Specifies intentionally untracked files to ignore by Git (e.g., node_modules)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+*Feel free to adjust the `src/` subdirectories to match your actual structure.*
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome! If you have suggestions for improvements or find a bug, please open an issue or submit a pull request.
 
-### Making a Progressive Web App
+1.  Fork the repository.
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
+This project is licensed under the [MIT License](LICENSE). You can find the full text of the license in the `LICENSE` file in this repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ✍️ Author
 
-### Deployment
+**Ramiro Rodriguez Alvarez**
+* GitHub: [https://github.com/ramirorodriguezalvarez](https://github.com/ramirorodriguezalvarez)
+* LinkedIn: [https://www.linkedin.com/in/ramiro-rodriguez-3a287a328]
+* Portfolio: [rodriguezcodesolutions.tech]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
