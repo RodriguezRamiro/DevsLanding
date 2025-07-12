@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Projects.css';
 
+
+// Main Projects
 const projects = [
   {
     id: 1,
@@ -57,34 +59,105 @@ const projects = [
   },
 ];
 
+// Experiments / Small Ideas & UI Effects
+
+const experiments = [
+  {
+    title: "Particle Cursor Trail",
+    description: "Interactive mouse trail using canvas and physics.",
+    image: '/images/xxxxxxxxx.png', // Add an image if available
+    link: "https://codepen.io/yourusername/pen/abc123",
+    tags: ["JavaScript", "Canvas"],
+  },
+  {
+    title: "Book Flip Animation",
+    description: "Opening book animation using HTML, CSS, and JS.",
+    link: "https://codepen.io/yourusername/pen/xyz456",
+    tags: ["HTML", "CSS"],
+  },
+  // Room for more:
+];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: false,
+    adaptiveHeight: true,
+  };
+
 function Projects() {
+
+  const [angle, setAngle] = useState(0);
+  const cardsCount = experiments.length;
+  const rotateStep = 360 / cardsCount;
+
+  const rotate = (direction) => {
+    setAngle((prev) => prev + (direction === 'next' ? -rotateStep : rotateStep));
+  };
+
   return (
-    <section className="projects-container">
-      <h2 className="projects-title">Projects</h2>
-      <h3 className="projects-subtitle">Worked On</h3>
+    <>
+      <section className="projects-container">
+        <h2 className="projects-title">Projects</h2>
+        <h3 className="projects-subtitle">Worked On</h3>
 
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <a
-            key={project.id}
-            href={project.demo || project.github || '#'}
-            className="project-tile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h4>{project.title}</h4>
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <a
+              key={project.id}
+              href={project.demo || project.github || '#'}
+              className="project-tile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h4>{project.title}</h4>
+              {project.description && (
+                <p className="project-description">{project.description}</p>
+              )}
+              <div className="project-tags">
+                {project.tags.map((tag, idx) => (
+                  <span key={idx} className="tag">{tag}</span>
+                ))}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
 
-            {project.description && <p className="project-description">{project.description}</p>}
+      <section className="projects-container">
+  <h2 className="projects-title">Experiments</h2>
+  <h3 className="projects-subtitle">Small ideas & UI effects</h3>
 
-            <div className="project-tags">
-              {project.tags.map((tag, idx) => (
-                <span key={idx} className="tag">{tag}</span>
-              ))}
-            </div>
+  <div className="carousel-wrapper">
+    <div className="carousel-track" style={{ transform: `translateZ(-400px) rotateY(${angle}deg)` }}>
+      {experiments.map((exp, idx) => (
+        <div
+          key={idx}
+          className="carousel-card"
+          style={{ transform: `rotateY(${idx * rotateStep}deg) translateZ(400px)` }}
+        >
+          <h4>{exp.title}</h4>
+          <p>{exp.description}</p>
+          <div className="experiments-tags">
+            {exp.tags.map((tag, i) => (
+              <span key={i} className="tag">{tag}</span>
+            ))}
+          </div>
+          <a href={exp.link} target="_blank" rel="noopener noreferrer" className="visit-link">
+            View
           </a>
-        ))}
-      </div>
-    </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+    </>
   );
 }
 

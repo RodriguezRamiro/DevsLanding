@@ -1,4 +1,13 @@
+
 /* Profile Section */
+
+body, html {
+    background-color: #0d0d0d;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
 .profile-container {
     background-color: #0d0d0d; /* Dark background for profile */
     color: white; /* Light text for contrast */

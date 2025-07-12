@@ -1,4 +1,11 @@
 /* Contacts.css */
+body, html {
+  background-color: #0d0d0d;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
 
 .contacts-container {
     background-color: #0d0d0d;
