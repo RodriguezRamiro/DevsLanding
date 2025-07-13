@@ -1,3 +1,5 @@
+// projects.jsx
+
 import React, { useState } from 'react';
 import '../styles/Projects.css';
 
@@ -126,37 +128,6 @@ function Projects() {
           ))}
         </div>
       </section>
-
-      <section className="projects-container">
-  <h2 className="projects-title">Experiments</h2>
-  <h3 className="projects-subtitle">Small ideas & UI effects</h3>
-
-  <div className="carousel-wrapper">
-    <div className="carousel-track" style={{ transform: `translateZ(-400px) rotateY(${angle}deg)` }}>
-      {experiments.map((exp, idx) => (
-        <div
-          key={idx}
-          className="carousel-card"
-          style={{ transform: `rotateY(${idx * rotateStep}deg) translateZ(400px)` }}
-        >
-          <h4>{exp.title}</h4>
-          <p>{exp.description}</p>
-          <div className="experiments-tags">
-            {exp.tags.map((tag, i) => (
-              <span key={i} className="tag">{tag}</span>
-            ))}
-          </div>
-          <a href={exp.link} target="_blank" rel="noopener noreferrer" className="visit-link">
-            View
-          </a>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-
     </>
   );
 }
