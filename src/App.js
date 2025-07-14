@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='app-container'>
       <Navbar />
-      
+
       {/* ...sections */}
       <section id="about">
         <Profile />
@@ -20,8 +20,8 @@ function App() {
         <Projects />
       </section>
 
-      <section id='carousel'>
-      <Carousel />
+      <section className="carousel-section w-full py-20 bg-black flex justify-center items-center">
+        <Carousel />
       </section>
 
       <section id="contact">
