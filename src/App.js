@@ -5,12 +5,13 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Carousel from './components/Carousel';
 import Contacts from './components/Contacts';
+import ThemeProvider from './components/ThemeProvider';
 
 function App() {
   return (
+    <ThemeProvider>
     <div className='app-container'>
       <Navbar />
-
       {/* ...sections */}
       <section id="about">
         <Profile />
@@ -28,6 +29,7 @@ function App() {
         <Contacts />
       </section>
     </div>
+    </ThemeProvider>
   );
 }
 

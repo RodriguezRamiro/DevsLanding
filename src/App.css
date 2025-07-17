@@ -1,10 +1,28 @@
+/* app.css */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light Theme (default) */
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #121212;
+  --link-color: #0077ff;
+}
+
+/* Dark Theme */
+.dark {
+  --bg-color: #0d0d0d;
+  --text-color: #ffffff;
+  --link-color: #61dafb;
+}
 
 body, html {
-  background-color: #0d0d0d;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
-  color: white;
-  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .App {
@@ -30,9 +48,8 @@ body, html {
   align-items: center;
 }
 
-
 .App-link {
-  color: #61dafb;
+  color: var(--link-color);
 }
 
 @keyframes App-logo-spin {
