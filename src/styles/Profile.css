@@ -1,25 +1,21 @@
 
-/* Profile Section */
+/* /src/style/profile.css */
 
-body, html {
-    background-color: #0d0d0d;
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
+/* ======================================================
+   Profile Section
+   ====================================================== */
 
-.profile-container {
-    background-color: #0d0d0d; /* Dark background for profile */
-    color: white; /* Light text for contrast */
+   .profile-container {
+    background-color: var(--bg);
+    color: var(--text);
     text-align: center;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-/* Profile Content Layout */
-.profile-content {
+  .profile-content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -27,166 +23,134 @@ body, html {
     max-width: 900px;
     gap: 40px;
     margin: 0 auto;
-}
+  }
 
-/* Profile Image */
-.profile-image-container {
+  .profile-image-container {
     flex: 1;
     max-width: 180px;
     margin-top: 15rem;
-}
+    overflow: hidden;
+  }
 
-.profile-image {
+  .profile-image {
     width: 100%;
     border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.7);
-}
+    box-shadow: var(--profile-image-shadow);
+    object-fit: cover;
+    border: 1px solid var(--profile-image-border-color);
+  }
 
-/* Profile Text */
-.profile-text {
+  .profile-text {
     flex: 2;
     text-align: left;
     gap: 10px;
-}
+  }
 
-.profile-title {
+  .profile-title {
     font-size: 48px;
     font-weight: bold;
     margin-top: 10px;
-}
+    color: var(--heading-color);
+  }
 
-.profile-subtitle {
+  .profile-subtitle {
     font-size: 25px;
-    color: #cccccc;
+    color: var(--subtext-color);
     margin-top: 5px;
-}
+  }
 
-/* Decorative Lines Container */
-.decorative-lines-container {
-    width: 100%;
+  .profile-bio {
+    max-width: 700px;
+    margin-top: 80px;
+    text-align: left;
+  }
+
+  .profile-bio h3 {
+    font-size: 20px;
+    color: var(--heading-color);
+  }
+
+  .profile-bio .highlight {
+    color: var(--text-highlight-color);
+  font-weight: bold;
+  }
+
+  .profile-bio p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--paragraph-color);
+  }
+
+  .profile-bio a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .profile-bio a:hover {
+    text-decoration: underline;
+    color: var(--active);
+  }
+
+  /* Decorative Lines */
+  .decorative-lines-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
     position: relative;
-}
+  }
 
-/* Vertical Line to the Left of the Decorative Lines Container */
-.decorative-lines-container::before {
-    content: ''; /* Empty content to create the line */
-    position: absolute; /* Position it absolutely */
-    left: -20px; /* Move the line to the left of the container */
+  .decorative-lines-container::before {
+    content: '';
+    position: absolute;
+    left: -20px;
     top: 0;
     bottom: 0;
-    width: 2px; /* Width of the vertical line */
-    background-color: #a29bfe; /* Color of the vertical line */
-}
+    width: 2px;
+    background-color: var(--decorative-line-color);
+  }
 
-/* Decorative Lines */
-.decorative-lines {
+  .decorative-lines {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 100%;
     margin: 20px 0 10px;
-}
+  }
 
-/* Animated Gradient */
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-/* Top and Bottom Decorative Lines */
-.decorative-lines::before,
-.decorative-lines::after {
+  .decorative-lines::before,
+  .decorative-lines::after {
     content: "";
     display: block;
     height: 8px;
     border-radius: 5px;
     background-size: 200% 200%;
     animation: gradientShift 6s ease infinite;
-}
+  }
 
-/* Top Lines */
-.decorative-lines.top::before {
+  .decorative-lines.top::before {
     width: 100%;
-    background: linear-gradient(90deg, #ff6b6b, #48dbfb, #1dd1a1, #feca57);
-}
+    background: var(--decorative-line-gradient-1);
+  }
 
-.decorative-lines.top::after {
+  .decorative-lines.top::after {
     width: 80%;
-    background: linear-gradient(90deg, #a29bfe, #ff9ff3, #feca57, #ff6b6b);
-}
+    background: var(--decorative-line-gradient-2);
+  }
 
-/* Bottom Lines */
-.decorative-lines.bottom::before {
+  .decorative-lines.bottom::before {
     width: 60%;
-    background: linear-gradient(90deg, #1dd1a1, #48dbfb, #ff6b6b, #feca57);
-}
+    background: var(--decorative-line-gradient-3);
+  }
 
-.decorative-lines.bottom::after {
+  .decorative-lines.bottom::after {
     width: 100%;
-    background: linear-gradient(90deg, #feca57, #a29bfe, #ff6b6b, #48dbfb);
-}
-
-/* Bio Section */
-.profile-bio {
-    max-width: 700px;
-    margin-top: 80px;
-    text-align: left;
-}
-
-.profile-bio h3 {
-    font-size: 20px;
-}
-
-.profile-bio .highlight {
-    color: #a29bfe;
-    font-weight: bold;
-}
-
-.profile-bio p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #cccccc;
-}
-
-.profile-bio a {
-    color: #a29bfe;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.profile-bio a:hover {
-    text-decoration: underline;
-    color: #ff6b6b; /* Color change on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .profile-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-text {
-        text-align: center;
-    }
-
-    .profile-image-container {
-        max-width: 150px;
-    }
-}
-
-/* Link Style */
-.bio-text {
-    margin-right: 20px; /* Adjusted spacing */
-}
+    background: var(--decorative-line-gradient-4);
+  }

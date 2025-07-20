@@ -9,7 +9,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <h1 className="navbar-logo">
-        <span className="logo-symbol">🧠</span> DevsLanding
+      <span className="logo-symbol">🧠</span>
+        {/* Wrap DevsLanding in a span for animation */}
+        <span className="animated-title">DevsLanding</span>
       </h1>
       <ul>
         <li><a href="#about">About</a></li>

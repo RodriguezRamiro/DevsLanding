@@ -1,36 +1,191 @@
-:root {
-  --bg: #ffffff;
-  --text: #000000;
-  --navbar-bg: #f5f5f5;
-  --hover-bg: #e0e0e0;
-  --hover-text: #6c63ff;
-  --underline: #6c63ff;
-  --active: #ff6b6b;
-}
+/* index.css */
 
-.dark {
-  --bg: #111111;
-  --text: #ffffff;
-  --navbar-bg: #1f1f1f;
-  --hover-bg: #4b4b4b;
-  --hover-text: #a29bfe;
-  --underline: #a29bfe;
-  --active: #ff6b6b;
-}
+/* ======================================================
+   Root Theme Variables (Light and Dark)
+   ====================================================== */
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg);
-  color: var(--text);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+   :root {
+    /* Base Colors */
+  --bg: #F8F8F8; /* Soft white background */
+  --text: #333333; /* Dark charcoal for general text */
+      /* Navigation & Interactive Elements */
+  --navbar-bg: #FFFFFF; /* Pure white for a clean, crisp navigation */
+  --navbar-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer, lighter shadow for an elegant feel */
+  --navbar-link-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Slightly more prominent hover shadow */
+  --hover-bg: #ECEFF1; /* Very light grey for hover states, subtle contrast */
+  --hover-text: #80CBC4; /* Muted teal for hover text on links/nav items */
+  --underline: #80CBC4; /* Muted teal for underlines */
+  --link-color: #80CBC4; /* Muted teal for general links */
+  --active: #FFAB91; /* Soft peach for active states, a warmer accent */
+
+      /* Headings & Paragraphs */
+  --heading-color: #263238; /* Slightly darker charcoal for strong headings */
+  --subtext-color: #607D8B; /* Medium grey for subtext, good readability */
+  --paragraph-color: #4CAF50; /* A soft, natural green for paragraph, consider --text for a more uniform look */
+
+    /* Card Carousel Specifics */
+  --card-bg: #FFFFFF; /* Pure white for cards, making them pop against the F8F8F8 body */
+  --card-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Softer, slightly larger shadow for elegance */
+  --card-text-color: var(--text); /* Inherit general text color */
+  --card-gradient: linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 100%); /* Subtle, almost imperceptible gradient for depth */
+  --card-hover-gradient: linear-gradient(135deg, #FFEFD5 0%, #FFE0B2 100%); /* A very subtle warm highlight on hover */
+  --button-gradient: linear-gradient(135deg, #80CBC4, #66BB6A); /* Muted teal to soft green for buttons */
+  --button-hover-gradient: linear-gradient(135deg, #66BB6A, #4CAF50); /* Slightly darker green on button hover */
+  --card-border-color: #F0F0F0; /* Very light grey for a subtle border in light theme */
+  --card-hover-border-color: #80CBC4; /* Muted teal for hover border */
+  --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.12), 0 0 40px rgba(0, 0, 0, 0.05); /* Softer, larger hover shadow */
+  --heading-text-shadow: none; /* No text shadow in light theme for cleaner look */
+
+    /* Carousel Dots */
+  --dot-color: rgba(0, 0, 0, 0.15); /* Lighter, less intrusive dots */
+  --dot-active-color: #80CBC4; /* Muted teal for active dot */
+
+  /* New Button-specific Variables */
+  --button-text-color: #FFFFFF; /* White text for buttons, ensure readability */
+  --button-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for buttons */
+  --button-hover-shadow: 0 6px 15px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.08); /* Slightly more prominent hover shadow */
+
+/* Profile Specific Variables */
+--profile-image-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08); /* Softer shadow for light theme */
+--text-highlight-color: #80CBC4; /* Muted teal for text highlights in light theme */
+--decorative-line-color: #DCDCDC; /* Warm grey/greige for the vertical decorative line */
+--profile-image-border-color: rgba(0, 0, 0, 0.05); /* Very subtle light border */
+
+
+/* Decorative Line Gradients (Light Theme - using softer, more elegant tones) */
+--decorative-line-gradient-1: linear-gradient(90deg, #FFAB91, #80CBC4, #B2DFDB, #FFD54F); /* Peach, Teal, Mint, Soft Gold */
+--decorative-line-gradient-2: linear-gradient(90deg, #80CBC4, #FFAB91, #FFE0B2, #DCDCDC); /* Teal, Peach, Lighter Peach, Warm Grey */
+--decorative-line-gradient-3: linear-gradient(90deg, #B2DFDB, #FFAB91, #80CBC4, #FFD54F); /* Mint, Peach, Teal, Soft Gold */
+--decorative-line-gradient-4: linear-gradient(90deg, #FFD54F, #80CBC4, #FFAB91, #B2DFDB); /* Soft Gold, Teal, Peach, Mint */
+
+  /* Project/Tag Specific Variables */
+  --tag-bg: rgba(128, 203, 196, 0.1); /* Muted teal with low opacity for light theme tags */
+  --tag-hover-bg: rgba(128, 203, 196, 0.2); /* Slightly more opaque muted teal on hover */
+
+  /* Other accents */
+  --color-gold-accent: #FFD54F; /* Softer, less saturated gold if needed */
+
+   }
+  .dark {
+    --bg: #0d0d0d;
+    --text: #ffffff;
+    --navbar-bg: #1a1a1a;
+    --navbar-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast in dark theme */
+    --navbar-link-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker, more prominent hover shadow */
+    --hover-bg: #333333;
+    --hover-text: #ffd700;
+    --underline: #ffd700;
+    --active: #ff6b6b;
+    --link-color: #61dafb;
+    --heading-color: white;
+    --subtext-color: #cccccc;
+    --paragraph-color: #dddddd;
+    --card-gradient: linear-gradient(135deg, #6630e5, #ec0aac);
+    --card-text-color: white;
+    --card-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+    --card-hover-gradient: linear-gradient(45deg, #ff6b6b, #48dbfb, #1dd1a1, #feca57);
+    --button-gradient: linear-gradient(135deg, #6630e5, #ec0aac);
+    --button-hover-gradient: linear-gradient(135deg, #6630e5, #ec0aac);
+    --dot-color: rgba(255, 255, 255, 0.3);
+    --dot-active-color: #ffffff;
+
+
+    /* Card-specific Variables */
+  --card-border-color: rgba(255, 255, 255, 0.1); /* Subtle white border for dark theme */
+  --card-hover-border-color: #ffd700; /* Gold accent for hover border in dark theme */
+  --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.15); /* Darker hover shadow */
+  --heading-text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* Keep a subtle text shadow in dark theme if desired, or set to none */
+
+  /* Button-specific Variables */
+  --button-text-color: #FFFFFF; /* White text for buttons */
+  --button-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for buttons */
+  --button-hover-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.15); /* Darker, more prominent hover shadow */
+
+   /* Profile Specific Variables */
+   --profile-image-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Darker shadow for dark theme */
+   --text-highlight-color: #ffd700; /* Gold accent for text highlights in dark theme */
+   --decorative-line-color: #6630e5; /* Main dark theme accent for decorative line */
+   --profile-image-border-color: rgba(255, 255, 255, 0.1); /* Subtle white border for dark theme */
+  
+
+   /* Decorative Line Gradients (Dark Theme - using your existing vibrant gradients) */
+   --decorative-line-gradient-1: linear-gradient(90deg, #ff6b6b, #48dbfb, #1dd1a1, #feca57);
+   --decorative-line-gradient-2: linear-gradient(90deg, #a29bfe, #ff9ff3, #feca57, #ff6b6b);
+   --decorative-line-gradient-3: linear-gradient(90deg, #1dd1a1, #48dbfb, #ff6b6b, #feca57);
+   --decorative-line-gradient-4: linear-gradient(90deg, #feca57, #a29bfe, #ff6b6b, #48dbfb);
+
+   /* Project/Tag Specific Variables */
+  --tag-bg: rgba(255, 215, 0, 0.15); /* Gold accent with low opacity for dark theme tags */
+  --tag-hover-bg: rgba(255, 215, 0, 0.3); /* Slightly more opaque gold on hover */
+ }
+
+  /* ======================================================
+     Global Resets and Base
+     ====================================================== */
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    scroll-behavior: smooth;
+  }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* ======================================================
+   Responsive Utilities
+   ====================================================== */
+
+   @media (max-width: 768px) {
+    .carousel-card {
+      flex: 0 0 90%;
+      margin: 0 5%;
+    }
+
+    .carousel-title,
+    .contacts-title,
+    .projects-title {
+      font-size: 28px;
+    }
+
+    .carousel-subtitle,
+    .projects-subtitle {
+      font-size: 18px;
+    }
+
+    .profile-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .profile-text {
+      text-align: center;
+    }
+
+    .profile-image-container {
+      max-width: 150px;
+    }
+
+    .projects-container {
+      padding: 40px 15px;
+    }
+
+    .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .project-tile {
+      min-height: 160px;
+    }
+  }

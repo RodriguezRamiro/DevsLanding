@@ -1,15 +1,13 @@
-/* Contacts.css */
-body, html {
-  background-color: #0d0d0d;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
+/* /src/styles/contacts.css */
 
 
-.contacts-container {
-    background-color: #0d0d0d;
-    color: white;
+/* ======================================================
+   Contacts Section
+   ====================================================== */
+
+   .contacts-container {
+    background-color: var(--bg);
+    color: var(--text);
     text-align: center;
     padding: 60px 20px;
   }
@@ -18,32 +16,31 @@ body, html {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: var(--heading-color);
   }
 
   .contacts-info {
     max-width: 800px;
     margin: 0 auto;
     font-size: 18px;
-    color: #cccccc;
   }
 
   .contacts-links {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 10mm; /* Set gap to 10mm for spacing between icons */
+    gap: 30px;
   }
 
   .contact-link {
-    margin-right: 10px;
-    color: white;
+    color: var(--text);
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
   }
 
   .contact-link:hover {
     transform: scale(1.1);
-    color: #ff6b6b;
+    color: var(--active);
   }
 
   .email {
@@ -52,11 +49,11 @@ body, html {
   }
 
   .email a {
-    color: #a29bfe;
+    color: var(--link-color);
     text-decoration: none;
   }
 
   .email a:hover {
     text-decoration: underline;
-    color: #ff6b6b;
+    color: var(--active);
   }

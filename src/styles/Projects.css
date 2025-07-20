@@ -1,115 +1,78 @@
-/* Projects.css */
+/* /src/styles/projects.css */
 
-body, html {
-    background-color: #0d0d0d;
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
+/* ======================================================
+   Projects
+   ====================================================== */
 
-
-/* Projects Section Container */
 .projects-container {
-    /* NOTE: If you want grid columns here, add display: grid; */
-    background-color: #0d0d0d;
-    text-align: center;
-    color: white;
-    padding: 80px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  /* Titles */
-  .projects-title {
-    font-size: 36px;
-    font-weight: bold;
-  }
-
-  .projects-subtitle {
-    font-size: 22px;
-    color: #cccccc;
-    margin-bottom: 40px;
-  }
-
-  /* Projects Grid */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-  }
-
-  /* Project Tiles */
-  .project-tile {
-    background: linear-gradient(135deg, #6630e5, #ec0aac);
-    padding: 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 180px;
-    position: relative;
-    border: 2px solid transparent;
-  }
-
-  .project-tile:hover {
-    transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15),
-              0 0 30px rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  background: linear-gradient(45deg, #ff6b6b, #48dbfb, #1dd1a1, #feca57);
+  background-color: var(--bg);
+  text-align: center;
+  color: var(--text);
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-  .project-tile h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: white;
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
-  }
+.projects-title {
+  color: var(--text);
+  font-size: 36px;
+  font-weight: bold;
+}
 
-  .project-tags {
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+.projects-subtitle {
+  font-size: 22px;
+  color: var(--subtext-color);
+  margin-bottom: 40px;
+}
 
-  .tag {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 6px 12px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    white-space: nowrap;
-  }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
 
-  .tag:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
-    transition: all 0.2s ease;
-  }
+.project-tile {
+  background: var(--card-gradient);
+  padding: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--card-text-color);
+  font-weight: bold;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+  border: 2px solid var(--card-border-color);
+}
 
+.project-tile:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: var(--card-hover-shadow);
+  border: 2px solid var(--card-hover-border-color);
+  background: var(--card-hover-gradient);
+}
 
-  /* Responsive for Projects */
-  @media (max-width: 768px) {
-    .projects-container {
-      padding: 40px 15px;
-    }
+.project-tags {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-    .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.project-tags .tag {
+  background: var(--tag-bg);
+  color: var(--subtext-color);
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
 
-    .project-tile {
-      min-height: 160px;
-      padding: 20px;
-    }
-  }
-
-
-
+.project-tags .tag:hover {
+  background: var(--tag-hover-bg);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}

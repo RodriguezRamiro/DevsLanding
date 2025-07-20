@@ -10,15 +10,23 @@ function Bio() {
       <div className="profile-bio">
         <h3>About <span className="highlight">Me</span></h3>
         <p>
-          Hi, I'm Ramiro! I'm a <strong>self-taught fullstack developer</strong> with a passion for building digital experiences.
-          My journey into coding started as a hobby, but it quickly grew into something I love and enjoy doing.
-        </p>
-        <p>
-          What keeps me motivated? The <strong>endless learning</strong> and the thrill of tackling <strong>new challenges</strong>.
-          Beyond coding, I enjoy working on <strong>3D printing projects</strong>, sketching, and reading.
-          When I’m not coding, you'll find me spending time with family or at a gym.
-        </p>
-        <p>
+      Hi, I'm Ramiro — a <strong>self-taught fullstack developer</strong> passionate about building modern, user-first digital experiences.
+      What began as a hobby quickly became a craft I love: solving real problems through thoughtful code and creative design.
+    </p>
+    <p>
+      I’m always exploring new technologies and thrive on <strong>continuous learning</strong>, whether it’s web animations, real-time interactivity, or fullstack architecture.
+      Outside of coding, I enjoy <strong>3D printing custom tools</strong>, sketching concepts, and staying active at the gym.
+    </p>
+    <p>
+      <em><strong>My mission:</strong></em> To create polished, performant, and purposeful digital products that connect and inspire.
+    </p>
+    <p>
+      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
+        View My Resume
+      </a>
+    </p>
+    <p className="call-to-action">
+      🚀 Looking to collaborate or need a developer with vision and grit? <strong><a href="#contact">Let’s connect.</a></strong>
           <span className='bio-text'>Follow my journey on</span>
           <a href="https://github.com/RodriguezRamiro" target="_blank" rel="noopener noreferrer" className="contact-link">
             <FontAwesomeIcon icon={faGithub} size="2x" />

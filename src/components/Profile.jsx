@@ -1,7 +1,7 @@
 /* Profile.jsx */
 import React from 'react';
 import '../styles/Profile.css';
-import profilePic from '../assets/Clipped_image_20250323_203615.jpg';
+import profilePic from '../assets/ProfilePhoto.jpg';
 import Bio from './Bio';
 
 function Profile() {
@@ -20,7 +20,7 @@ function Profile() {
 
           {/* Profile Title & Subtitle */}
           <h1 className="profile-title">Ramiro's Tech</h1>
-          <h2 className="profile-subtitle">Software Developer</h2>
+          <h2 className="profile-subtitle">Software Developer - Solution Driven - Results Delivered</h2>
 
           {/* Bottom Decorative Lines */}
           <div className="decorative-lines bottom"></div>
