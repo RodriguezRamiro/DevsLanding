@@ -1,19 +1,34 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ThemeContext } from './ThemeProvider';
 import { Sun, Moon } from 'lucide-react';
+import { ReactComponent as DevIcon } from '../assets/programmer-software-engineer-coder-software-developer-svgrepo-com.svg';
 import '../styles/Navbar.css';
 
 function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const toggleMenu = () => setMenuOpen(prev => !prev);
 
   return (
     <nav className="navbar">
       <h1 className="navbar-logo">
-      <span className="logo-symbol">🧠</span>
-        {/* Wrap DevsLanding in a span for animation */}
-        <span className="animated-title">DevsLanding</span>
-      </h1>
-      <ul>
+  <span className="logo-symbol"><DevIcon className="dev-svg" /></span>
+  {/* Reserve width container */}
+  <span className="animated-title-wrapper">
+    <span className="animated-title">DevsLanding</span>
+  </span>
+</h1>
+
+{/* 🍔 Hamburger button */}
+<button
+        className="hamburger"
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+      >
+        ☰
+      </button>
+      <ul className={`nav-links ${menuOpen ? 'show' : ''}`}>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experiments">Experiments</a></li>

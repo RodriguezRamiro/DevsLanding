@@ -1,14 +1,12 @@
-/* /styles/navbar.css */
-
 /* ======================================================
-   Navbar Section
+   Navbar Base Styles
    ====================================================== */
 
    .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    justify-content: space-between;
+    padding: 0.1rem;
     background: var(--navbar-bg);
     color: var(--text);
     position: sticky;
@@ -16,34 +14,93 @@
     z-index: 1000;
     width: 100%;
     box-shadow: var(--navbar-shadow);
+    flex-wrap: wrap;
   }
 
-  .navbar h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--color-gold-accent);
+  .navbar h1,
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Logo Container */
+  .navbar-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
-    text-shadow: var(--heading-text-shadow);
+    gap: 0.5rem;
+    user-select: none;
+    width: 270px;
+    font-weight: bold;
   }
 
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 80px;
-    margin: 0;
-    justify-content: center;
-    flex-grow: 1;
+  /* SVG Icon */
+  .logo-symbol svg,
+  .dev-svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--color-gold-accent);
   }
 
-  .navbar li {
+  /* ======================================================
+     Logo Animation
+     ====================================================== */
+
+     .animated-title-wrapper {
+      display: inline-block;
+      overflow: visible;
+      white-space: nowrap;
+      min-width: fit-content;
+    }
+
+  .animated-title {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 10px;
+    width: 0;
+    font-family: var(--font-primary, monospace);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    border-right: 2px solid var(--color-gold-accent);
+    color: var(--color-gold-accent);
+    animation: typeIn 2s steps(11, end) 0.3s forwards, blink-caret 0.75s step-end infinite;
+  }
+
+  .animated-title:hover {
+    text-shadow: 0 0 8px var(--color-gold-accent);
+    transition: text-shadow 0.3s ease;
+  }
+
+  @keyframes typeIn {
+    from { width: 0; }
+    to { width: 11ch; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--color-gold-accent); }
+  }
+
+  /* ======================================================
+     Navbar Links
+     ====================================================== */
+
+     .nav-links {
+      display: flex;
+      gap: 150px;
+      list-style: none;
+      justify-content: center;
+      flex: 1;
+    }
+
+  .nav-links li {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
   }
 
-  .navbar a {
+  .nav-links a {
     text-decoration: none;
     color: var(--text);
     font-size: 18px;
@@ -52,15 +109,15 @@
     transition: all 0.3s ease;
   }
 
-  .navbar a:hover {
+  .nav-links a:hover {
     background: var(--hover-bg);
     color: var(--hover-text);
     transform: scale(1.1);
-    box-shadow: var(--navbar-link-hover-shadow); 
+    box-shadow: var(--navbar-link-hover-shadow);
     border-radius: 8px;
   }
 
-  .navbar li:hover::after {
+  .nav-links li:hover::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -71,20 +128,70 @@
     transition: width 0.3s ease;
   }
 
-  .navbar a.active {
+  .nav-links a.active {
     color: var(--active);
   }
+
+  /* ======================================================
+     Theme Toggle Button
+     ====================================================== */
 
   .theme-toggle {
     background: none;
     border: none;
     color: var(--text);
     cursor: pointer;
+    padding: 1rem;
     margin-left: auto;
-    padding: 0.5rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
 
   .theme-toggle:hover {
     transform: scale(1.1);
+    color: var(--hover-text);
+  }
+
+  /* ======================================================
+     Mobile Responsiveness
+     ====================================================== */
+
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+      display: none;
+    }
+
+    .nav-links.show {
+      display: flex;
+    }
+
+    .nav-links li {
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+
+    .nav-links a {
+      width: 100%;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .theme-toggle {
+      margin-top: 0.5rem;
+    }
   }
