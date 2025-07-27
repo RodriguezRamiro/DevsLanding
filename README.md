@@ -1,28 +1,35 @@
 # 🚀 DevsLanding
 
-**DevsLanding** is a personal portfolio website designed to showcase my projects, skills, and professional background. Built using modern web technologies, it provides a dynamic, responsive, and interactive user experience.
+**DevsLanding** s my personal developer portfolio — a sleek, dynamic site built to showcase my projects, skills, and professional story. Designed with animation and elegance in mind, it delivers a modern, responsive, and engaging user experience.
 
-Visit it live at 👉 [rodriguezcodesolutions.tech](https://rodriguezcodesolutions.tech)
+🌐 Live Site: rodriguezcodesolutions.tech
 
 ---
 
-## ✨ Features
+✨ Features
+✅ Fully Responsive: Mobile-first design, optimized for all screen sizes.
 
-- **Responsive Design:** Mobile-first, works seamlessly across all screen sizes.
-- **Dynamic Project Gallery:** Highlights projects with links, descriptions, and visuals.
-- **Interactive Components:** Smooth animations, hover effects, and real-time UI feedback.
-- **Clean & Modern UI:** Minimalist layout with strong visual hierarchy.
-- **Dark Mode Ready:** Built with CSS variables for theming *(optional: toggle coming soon)*.
-- **(Optional) Smooth Scrolling, Carousel, Contact Form, etc.**
+🖼️ Animated Project Gallery: Live demos, source code links, smooth transitions, and spotlight effects.
+
+🎬 Theatrical Visuals: Animated slideshows, spotlight reveals, elegant transitions.
+
+🎨 Modern UI: Clean layout, CSS variables for dark/light theming.
+
+🧩 Modular Components: Easily maintainable and scalable structure.
+
+🚫 No External Framework Bloat: Handcrafted interactivity with performance in mind.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, HTML5, CSS3, JavaScript (ES6+)
-- **Build Tools:** Vite *(or Create React App — pick whichever you used)*
-- **Styling:** Custom CSS + CSS Modules or Tailwind *(specify if applicable)*
-- **Deployment:** GitHub Pages with custom domain
+Frontend: React, JavaScript (ES6+), HTML5, CSS3
+
+Styling: Custom CSS, CSS Variables (Light/Dark themes)
+
+Build Tools: Vite (migrated from Create React App)
+
+Deployment: GitHub Pages + Custom Domain
 
 ---
 
@@ -84,6 +91,11 @@ Then use:
 npm run build
 npm run deploy
 (You may need gh-pages installed)
+
+🧪 Version
+Current Version: 1.0.0
+✅ Latest update: Finalized animated gallery transitions, mobile nav fixes, and visual polish.
+📂 View source: GitHub Repository
 
 🤝 Contributing
 Contributions are welcome! If you have suggestions for improvements or find a bug, please open an issue or submit a pull request.
