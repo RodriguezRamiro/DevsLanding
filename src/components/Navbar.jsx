@@ -8,7 +8,7 @@ function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const toggleMenu = () => setMenuOpen(prev => !prev);
+  const toggleNav = () => setMenuOpen(!menuOpen);
 
   return (
     <nav className="navbar">
@@ -23,7 +23,7 @@ function Navbar() {
 {/* 🍔 Hamburger button */}
 <button
         className="hamburger"
-        onClick={toggleMenu}
+        onClick={toggleNav}
         aria-label="Toggle navigation menu"
       >
         ☰
