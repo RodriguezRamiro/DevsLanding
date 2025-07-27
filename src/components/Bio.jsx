@@ -10,12 +10,12 @@ function Bio() {
       <div className="profile-bio">
         <h3>About <span className="highlight">Me</span></h3>
         <p>
-  Hi, I'm Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems and hands-on training through the USF Software Engineering Bootcamp. I'm passionate about crafting modern, user-first digital experiences.
+  Hi, I'm Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems and hands-on training through the USF Software Engineering Career Track program. I'm passionate about crafting modern, user-first digital experiences.
   What began as a hobby quickly became a craft I love: solving real problems through thoughtful code and creative design.
 </p>
     <p>
       I’m always exploring new technologies and thrive on <strong>continuous learning</strong>, whether it’s web animations, real-time interactivity, or fullstack architecture.
-      Outside of coding, I enjoy <strong>3D printing custom tools</strong>, sketching concepts, and staying active at the gym.
+      Outside of coding, I enjoy <strong>3D printing custom tools</strong>, sketching and designing concepts, and staying physcially active.
     </p>
     <p>
       <em><strong>My mission:</strong></em> To create polished, performant, and purposeful digital products that connect and inspire.

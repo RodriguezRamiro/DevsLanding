@@ -21,7 +21,7 @@
       /* Headings & Paragraphs */
   --heading-color: #263238; /* Slightly darker charcoal for strong headings */
   --subtext-color: #607D8B; /* Medium grey for subtext, good readability */
-  --paragraph-color: #4CAF50; /* A soft, natural green for paragraph, consider --text for a more uniform look */
+  --paragraph-color: #151915; /* A soft, natural green for paragraph, consider --text for a more uniform look */
 
     /* Card Carousel Specifics */
   --card-bg: #FFFFFF; /* Pure white for cards, making them pop against the F8F8F8 body */
@@ -106,7 +106,7 @@
    --text-highlight-color: #ffd700; /* Gold accent for text highlights in dark theme */
    --decorative-line-color: #6630e5; /* Main dark theme accent for decorative line */
    --profile-image-border-color: rgba(255, 255, 255, 0.1); /* Subtle white border for dark theme */
-  
+
 
    /* Decorative Line Gradients (Dark Theme - using your existing vibrant gradients) */
    --decorative-line-gradient-1: linear-gradient(90deg, #ff6b6b, #48dbfb, #1dd1a1, #feca57);
