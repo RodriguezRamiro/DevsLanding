@@ -5,6 +5,7 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Carousel from './components/Carousel';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 import ThemeProvider from './components/ThemeProvider';
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
       <section id="contact">
         <Contacts />
       </section>
+
+      <Footer />
     </div>
     </ThemeProvider>
   );
