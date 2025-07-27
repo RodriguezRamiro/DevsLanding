@@ -1,17 +1,33 @@
+/* Footer.css */
+
 .footer {
+    padding: .1rem;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.85rem;
-    background-color: var(color-bg-dark, #111);
-    color: var(--color-light-text, #ccc);
-    border-top: 1pex solid #333;
-}
+    background-color: var(--navbar-bg);
+    color: var(--subtext-color);
+    border-top: 1px solid var(--card-border-color);
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-.footer a {
-    color: var(--color-gold-accent, #ffd700);
-    text-decoration: none;
-}
-
-.footer a:hover {
+  .footer a {
+    color: var(--link-color);
     text-decoration: underline;
-}
+    transition: color 0.3s ease;
+  }
+
+  .footer a:hover {
+    color: var(--hover-text);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .footer small {
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 0.8rem;
+      padding: 1.5rem 1rem;
+    }
+  }
