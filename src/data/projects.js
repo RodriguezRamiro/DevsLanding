@@ -21,9 +21,12 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Bogetta',
-    tags: ['Next.js', 'TypeScript', 'Prisma', 'Stripe'],
-    link: '#'
+    title: 'API_Tester',
+    description: "apitester project",
+    image:"",
+    github: "https://github.com/RodriguezRamiro/apitester",
+    demo: "https://apitester-nine.vercel.app/",
+    tags: ['React.js', 'TypeScript', 'Flask', 'Railway.app'],
   },
   {
     id: 4,
