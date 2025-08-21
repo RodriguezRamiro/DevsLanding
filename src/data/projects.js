@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Fullstack Blackjack',
+    title: 'Fullstack Blackjack in progress...',
     description:'Fullstack Blackjack on React and Flask. Functional multiplayer and real-time chat using Flask-SocketIO.',
     image: "/images/spotify-clone.png",
     github: "https://github.com/RodriguezRamiro/fullstack_blackjack",
@@ -21,11 +21,11 @@ const projects = [
   },
   {
     id: 3,
-    title: 'API_Tester',
-    description: "apitester project",
+    title: 'API_Tester & Todo Dashboard in progress...',
+    description: "Interactive API testing and Todo dashboard. Full-stack capabilities with a Flask backend, React frontend and live WebSocket",
     image:"",
     github: "https://github.com/RodriguezRamiro/apitester",
-    demo: "https://apitester-nine.vercel.app/",
+    demo: "https://apitester-fawn.vercel.app/",
     tags: ['React.js', 'TypeScript', 'Flask', 'Railway.app'],
   },
   {
