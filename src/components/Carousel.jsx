@@ -1,4 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+//src/components/Carousel.jsx
+
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import '../styles/Carousel.css';
 import experiments from '../data/experiments';
 
@@ -22,18 +24,19 @@ const Carousel = () => {
   const nextSlideRef = useRef(null);
 
   // Move to next slide
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     if (currentIndex < length + visibleCount) {
       setCurrentIndex(prev => prev + 1);
     }
-  };
+  }, [currentIndex, length, visibleCount]);
+
 
   // Move to previous slide
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     if (currentIndex > 0) {
       setCurrentIndex(prev => prev - 1);
     }
-  };
+  }, [currentIndex]);
 
   // Update ref to always point to latest nextSlide function
   useEffect(() => {
@@ -75,6 +78,7 @@ const Carousel = () => {
     touchStartX.current = null;
     touchEndX.current = null;
   };
+
 
   // Handle transition end for infinite loop reset
   const handleTransitionEnd = () => {
