@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "env-update": "cross-env REACT_APP_GIT_COMMIT_HASH=$(git rev-parse --short HEAD) REACT_APP_LAST_UPDATE=$(date +%Y-%m-%d) && node -e \"require('fs').writeFileSync('.env', `REACT_APP_GIT_COMMIT_HASH=${process.env.REACT_APP_GIT_COMMIT_HASH}\\nREACT_APP_LAST_UPDATE=${process.env.REACT_APP_LAST_UPDATE}\\n`)\"",
+    "env-update": "node scripts/env-update.js",
     "build": "npm run env-update && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -49,7 +49,6 @@
     ]
   },
   "devDependencies": {
-    "cross-env": "^10.0.0",
     "gh-pages": "^6.3.0"
   }
 }
