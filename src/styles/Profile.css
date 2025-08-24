@@ -28,7 +28,7 @@
   .profile-image-container {
     flex: 1;
     max-width: 180px;
-    margin-top: 15rem;
+    margin-top: 12rem;
     overflow: hidden;
   }
 
@@ -79,6 +79,7 @@
     font-size: 16px;
     line-height: 1.6;
     color: var(--paragraph-color);
+    margin-bottom: 1.2rem;
   }
 
   .profile-bio a {
@@ -153,4 +154,39 @@
   .decorative-lines.bottom::after {
     width: 100%;
     background: var(--decorative-line-gradient-4);
+  }
+
+
+  .bio-cta {
+    margin-top: 2rem;
+  }
+
+  .social-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.5rem;
+  }
+
+  .social-icons a {
+    color: var(--text);
+    transition: color 0.3s, transform 0.2s;
+  }
+
+  .social-icons a:hover {
+    color: var(--text-highlight-color);
+    transform: translateY(-3px);
+  }
+  
+  .social-icons a:focus {
+    outline: 2px solid var(--text-highlight-color);
+    outline-offset: 4px;
+  }
+
+
+
+  @media (max-width: 600px) {
+    .profile-title { font-size: 32px; }
+    .profile-subtitle { font-size: 18px; }
+    .profile-bio { margin-top: 40px; }
   }

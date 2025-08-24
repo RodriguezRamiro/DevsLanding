@@ -21,7 +21,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'API_Tester & Todo Dashboard in progress...',
+    title: 'API_Tester & Todo Dashboard',
     description: "Interactive API testing and Todo dashboard. Full-stack capabilities with a Flask backend, React frontend and live WebSocket",
     image:"",
     github: "https://github.com/RodriguezRamiro/apitester",

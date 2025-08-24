@@ -1,33 +1,95 @@
 /* Footer.css */
 
 .footer {
-    padding: .1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+
+  background-color: var(--navbar-bg);
+  color: var(--subtext-color);
+  border-top: 1px solid var(--card-border-color);
+  font-size: 0.9rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+ }
+
+/* Flex children styling */
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Links */
+.footer a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--hover-text);
+  transform: translateY(-2px); /* subtle lift */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech stack span */
+.footer .tech {
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* Footer links (icons) */
+.footer-links {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-links a svg {
+  vertical-align: middle;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.8rem;
+    padding: 1.5rem 1rem;
     text-align: center;
-    background-color: var(--navbar-bg);
-    color: var(--subtext-color);
-    border-top: 1px solid var(--card-border-color);
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
   }
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    justify-content: center;
+  }
+}
 
-  .footer a {
-    color: var(--link-color);
-    text-decoration: underline;
-    transition: color 0.3s ease;
-  }
+.footer-center .version {
+  font-size: 0.85rem;
+  color: var(--subtext-color);
+}
 
-  .footer a:hover {
-    color: var(--hover-text);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  }
-
-  .footer small {
-    font-size: 0.85rem;
-  }
-
-  @media (max-width: 768px) {
-    .footer {
-      font-size: 0.8rem;
-      padding: 1.5rem 1rem;
-    }
-  }
+.footer-center .version .tech {
+  font-weight: 500;
+  color: var(--text);
+}
