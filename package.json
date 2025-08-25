@@ -2,6 +2,7 @@
   "homepage": "https://rodriguezcodesolutions.tech",
   "name": "devslanding",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@babel/eslint-parser": "^7.26.10",
