@@ -1,8 +1,10 @@
+//src/components/languageStats.jsx
+
 import { useEffect, useState } from "react";
 import '../styles/LanguageStats.css';
 
 const GITHUB_USERNAME = "rodriguezramiro";
-const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN || "";
+
 
 const COLORS = [
   "var(--button-gradient)",
@@ -17,11 +19,6 @@ function LanguageStats() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!GITHUB_TOKEN) {
-      console.warn("⚠️ GitHub token not found in env!");
-      setLoading(false);
-      return;
-    }
 
     async function fetchLanguages() {
       const query = `
@@ -44,16 +41,25 @@ function LanguageStats() {
       `;
 
       try {
-        const response = await fetch("https://api.github.com/graphql", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${GITHUB_TOKEN}`,
-          },
-          body: JSON.stringify({ query }),
-        });
+        // Call backend proxy endpoint
+        const response = await fetch("/api/github", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ query }),
+          });
+
 
         const result = await response.json();
+
+        // Safety check in case API fails
+        if (!result.data || !result.data.user) {
+            console.error("GitHub API returned no data:", result);
+            setLoading(false);
+            return;
+          }
+
         const repoLanguages = result.data.user.repositories.nodes;
 
         const langTotals = {};
