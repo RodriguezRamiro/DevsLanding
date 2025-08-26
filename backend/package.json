@@ -4,9 +4,7 @@
     "type": "module",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js",
-      "postinstall": "cd .. && npm run build --prefix . && cp -r build backend/"
-
+      "start": "node server.js"
     },
     "dependencies": {
       "cors": "^2.8.5",
