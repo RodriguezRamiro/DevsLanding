@@ -42,7 +42,7 @@ function LanguageStats() {
 
       try {
         // Call backend proxy endpoint
-        const response = await fetch("/api/github", {
+        const response = await fetch("https://devslanding.onrender.com/api/github", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"

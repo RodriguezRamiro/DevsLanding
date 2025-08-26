@@ -1,20 +1,17 @@
 //backend/server.js
 
-
 import express from 'express';
 import fetch from 'node-fetch';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 const app = express();
-app.use(cors({ origin: "https://yourcustomdomain.com" }));
+app.use(cors({
+    origin: "https://rodriguezcodesolutions.tech", // custom frontend domain
+    methods: ["GET","POST"]
+}));
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
@@ -40,14 +37,6 @@ app.post("/api/github", async (req, res) => {
   }
 });
 
-// Serve React build safely
-const buildPath = path.resolve(__dirname, "../build");
-app.use(express.static(buildPath));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(buildPath, "index.html"));
-});
-
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
