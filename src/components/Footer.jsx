@@ -11,7 +11,7 @@ const Footer = () => {
 
       <div className="footer-center">
         <span className="version">
-          Built with <span className="tech">React + Flask</span> — v1.0.0
+          Built with <span className="tech">React + Node</span> — v1.0.0
         </span>
       </div>
 
