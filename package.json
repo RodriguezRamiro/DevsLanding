@@ -2,7 +2,7 @@
   "name": "devslanding",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "homepage": "https://rodriguezcodesolutions.tech",
   "dependencies": {
     "@babel/eslint-parser": "^7.26.10",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
@@ -24,6 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf ../backend/build && cp -r build ../backend/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

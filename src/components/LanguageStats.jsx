@@ -20,7 +20,6 @@ const LanguageStats = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [animatedData, setAnimatedData] = useState({});
-  const [hasAnimated, setHasAnimated] = useState(false);
 
   const sectionRef = useRef(null);
 
