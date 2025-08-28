@@ -15,12 +15,11 @@ function Bio() {
         </p>
 
         <p>
-          What began as a hobby quickly became a craft I love: solving real-world problems through thoughtful code and creative design.
+          What began as a self-taught hobby has developed into a practice I truly enjoy and a skill I continue to build upon, shaping both my career and future. I thrive on exploring web animations, real-time interactivity, and scalable fullstack architecture.
         </p>
 
         <p>
-          I thrive on <strong>continuous learning</strong>, exploring new technologies in web animations, real-time interactivity, and fullstack architecture.
-          Outside of coding, I enjoy <strong>3D printing custom tools</strong>, sketching and designing concepts, and staying physically active.
+          Beyond coding, I focus on continues learing, <strong>3D printing and painting miniatures</strong>, <strong>turning pencil sketches into oil paintings</strong>, <strong>designing concepts</strong>, and <strong>staying physically active</strong>.
         </p>
 
         <p>

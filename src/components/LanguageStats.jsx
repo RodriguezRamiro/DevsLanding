@@ -90,8 +90,8 @@ const LanguageStats = () => {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true); // only trigger once
+        if (entries[0].isIntersecting) {
+          // Animate in when visible
           const totalSize = Object.values(languageData).reduce(
             (acc, lang) => acc + lang.size,
             0
@@ -120,7 +120,21 @@ const LanguageStats = () => {
             if (progress < 1) requestAnimationFrame(animate);
           };
 
+          // Reset to 0 first, then animate up
+          const reset = {};
+          Object.keys(languageData).forEach((name) => {
+            reset[name] = 0;
+          });
+          setAnimatedData(reset);
+
           requestAnimationFrame(animate);
+        } else {
+          // Reset when leaving view
+          const reset = {};
+          Object.keys(languageData).forEach((name) => {
+            reset[name] = 0;
+          });
+          setAnimatedData(reset);
         }
       },
       { threshold: 0.3 } // trigger when 30% visible
@@ -131,7 +145,7 @@ const LanguageStats = () => {
     }
 
     return () => observer.disconnect();
-  }, [languageData, hasAnimated]);
+  }, [languageData]);
 
   if (loading) return <p>Loading GitHub language stats...</p>;
   if (error) return <p>Error: {error}</p>;
