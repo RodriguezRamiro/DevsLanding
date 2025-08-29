@@ -29,6 +29,7 @@ app.use(
         "http://localhost:3000",               // Local development
       ],
       methods: ["GET", "POST"],
+      allowedHeaders: ["Content-Type", "Authorization"],
     })
   );
 
