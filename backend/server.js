@@ -44,9 +44,21 @@ app.use(express.json());
 const PORT = process.env.PORT || 5000;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
+if (!GITHUB_TOKEN) {
+  console.error("❌ ERROR: GITHUB_TOKEN not found in environment variables.");
+  process.exit(1);
+}
+
+
 // ---------------------------
 // Health Check Endpoint
 // ---------------------------
+
+// Root route - optional friendly message
+app.get("/", (req, res) => {
+  res.send("✅ DevsLanding API is running. Use /api/github for GraphQL requests.");
+});
+
 app.get("/health", (req, res) => {
     res.status(200).json({
       status: "ok",
