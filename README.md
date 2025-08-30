@@ -1,24 +1,25 @@
 🚀 DevsLanding
 
-DevsLanding is my personal developer portfolio — a sleek, dynamic site built to showcase my projects, skills, and professional story. Designed with animation and elegance in mind, it delivers a modern, responsive, and engaging user experience.
+DevsLanding is my personal developer portfolio — a sleek, dynamic showcase of my projects, skills, and professional story. Designed for elegance, interactivity, and modern responsiveness, it delivers a polished user experience that highlights both creativity and technical expertise.
 
 🌐 Live Site: rodriguezcodesolutions.tech
+
 
 ✨ Features
 
 ✅ Fully Responsive: Mobile-first design, optimized for all screen sizes.
 
-🖼️ Animated Project Gallery: Live demos, source code links, smooth transitions, and spotlight effects.
+🖼️ Interactive Project Gallery: Explore projects with smooth transitions, live demos, and instant links to source code.
 
-🎬 Theatrical Visuals: Animated slideshows, spotlight reveals, elegant transitions.
+🎬 Theatrical Visuals: Cinematic slideshows, spotlight reveals, and elegant transitions that bring the portfolio to life.
 
-🎨 Modern UI: Clean layout with CSS variables supporting light/dark themes.
+🎨 Modern, Polished UI: Clean, minimal layout with light/dark mode support using CSS variables.
 
-🧩 Modular Components: Easily maintainable and scalable structure.
+🧩 Modular & Scalable Components: Structured for maintainability and easy expansion as your portfolio grows.
 
-🚫 No External Framework Bloat: Handcrafted interactivity with performance in mind.
+🚫 No Extra Framework Bloat: Handcrafted interactivity ensures fast load times and smooth animations.
 
-🧪 Live Version Tracking: Footer dynamically shows latest commit hash and update date.
+🧪 Live Version Tracking: Footer dynamically displays the latest commit hash and update date, keeping visitors informed.
 
 🛠️ Tech Stack
 
@@ -28,7 +29,7 @@ Styling: Custom CSS, CSS Variables (Light/Dark themes)
 
 Build Tools: Vite (migrated from Create React App)
 
-Backend (for API/updates): Flask (for future API integration)
+Backend (for API/updates): Node.js (for API integration)
 
 Deployment: GitHub Pages + Custom Domain
 
@@ -56,7 +57,7 @@ npm run dev   # If using Vite
 npm start     # If using Create React App
 
 
-Then open http://localhost:5173
+TOpen http://localhost:5173
  or http://localhost:3000
  in your browser.
 
@@ -86,7 +87,7 @@ This project is deployed to GitHub Pages with a custom domain.
 
 Make sure your package.json includes:
 
-"homepage": "https://rodriguezcodesolutions.tech"
+"homepage": "https://mysutom-domain.tech"
 
 
 Then use:
@@ -95,16 +96,13 @@ npm run build
 npm run deploy
 
 
-(You may need gh-pages installed)
-
 🧪 Version & Live Updates
 
 Current Version: 1.0.0
-Last Update: Hover over the footer “Built with React + Flask” text to see the latest commit hash and update date.
 
+Last Update: Hover over the footer “Built with React + Node" to see the latest commit hash and update date
+This ensures visitors always know which version they’re viewing, enhancing transparency and professionalism.
 View Source: GitHub Repository
-
-This dynamic footer ensures visitors always know which version of your portfolio they are viewing, reinforcing professionalism and transparency.
 
 🤝 Contributing
 
