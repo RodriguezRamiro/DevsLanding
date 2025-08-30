@@ -127,7 +127,7 @@ const Carousel = () => {
             <div className="carousel-card" key={i}>
               <h3>{exp.title}</h3>
               <p>{exp.description}</p>
-              <div className="tags">
+              <div className="carousel-tags">
                 {exp.tags.map((tag, j) => <span className="tag" key={j}>{tag}</span>)}
               </div>
               {exp.link && (

@@ -40,16 +40,10 @@ const experiments = [
       link: '#',
     },
     {
-      title: 'To-Do App in progress...',
-      description: 'Drag-and-drop tasks with filters.',
-      tags: ['React'],
-      link: '#',
-    },
-    {
-      title: 'Weather Dashboard in progress...',
+      title: 'Weather Dashboard',
       description: 'Fetches realtime weather.',
-      tags: ['API'],
-      link: '#',
+      tags: ['HTML', 'CSS', 'JavaScript', 'API'],
+      link: 'https://weatherapp-ashy-five.vercel.app/',
     },
     {
       title: 'Memory Game in progress...',

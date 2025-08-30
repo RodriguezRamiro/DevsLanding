@@ -127,6 +127,33 @@
 }
 
 
+/* ======================================================
+   Carousel tag styling
+   ====================================================== */
+
+.carousel-tags {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.carousel-tags .tag {
+  background: var(--tag-bg);
+  color: var(--subtext-color);
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.carousel-tags .tag:hover {
+  background: var(--tag-hover-bg);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
  /* Responsive Mobile Adjustments */
 @media (max-width: 768px) {
   .carousel-card {

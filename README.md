@@ -87,7 +87,7 @@ This project is deployed to GitHub Pages with a custom domain.
 
 Make sure your package.json includes:
 
-"homepage": "https://mysutom-domain.tech"
+"homepage": "https://mycustom-domain.tech"
 
 
 Then use:

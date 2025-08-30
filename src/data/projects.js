@@ -30,12 +30,12 @@ const projects = [
   },
   {
     id: 4,
-    title: 'React Calculator',
-    description: 'React calculator featuring scientific functions and arithmetic buttons.',
-    image: '/images/chatbot.png',
-    github: 'https://github.com/RodriguezRamiro/react-calculator',
-    demo: 'https://react-calculator-six-black.vercel.app/',
-    tags: ['HTML', 'CSS', 'React JS'],
+    title: 'E-Commerce in Progress...',
+    description: 'Browse products, manage a shopping cart, and complete secure checkout with Stripe.',
+    image: '/images/pic.png',
+    github: 'no link yet',
+    demo: 'no link yet',
+    tags: ['Flask', 'SQLAlchemy','PostgreSQL', 'Stripe API', 'React', 'Vite', 'Tailwind CSS'],
   },
   {
     id: 5,
@@ -48,12 +48,12 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Weather App',
-    description: 'Themed weather application with API integration',
+    title: 'React Calculator',
+    description: 'React calculator featuring scientific functions and arithmetic buttons.',
     image: '/images/chatbot.png',
-    github: 'https://github.com/RodriguezRamiro/chatbot',
-    demo: 'https://weatherapp-ashy-five.vercel.app/',
-    tags: ['HTML', 'CSS', 'JavaScript', 'API'],
+    github: 'https://github.com/RodriguezRamiro/react-calculator',
+    demo: 'https://react-calculator-six-black.vercel.app/',
+    tags: ['HTML', 'CSS', 'React JS'],
   },
 ];
 
