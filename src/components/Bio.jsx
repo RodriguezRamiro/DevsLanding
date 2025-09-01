@@ -19,7 +19,7 @@ function Bio() {
         </p>
 
         <p>
-          Beyond coding, I focus on continues learing, <strong>3D printing and painting miniatures</strong>, <strong>turning pencil sketches into oil paintings</strong>, <strong>designing concepts</strong>, and <strong>staying physically active</strong>.
+          Beyond coding, I focus on continued learing, <strong>3D printing and painting miniatures</strong> <strong>turning pencil sketches into oil paintings</strong>, <strong>designing concepts</strong>, and <strong>staying physically active</strong>.
         </p>
 
         <p>

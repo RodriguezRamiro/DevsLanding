@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+//frontend/src/components/Sections.tsx
+
+import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { SectionId } from "./Navbar";  // Ensure this import is correct
+import { SectionId } from "./Navbar";
 
 type SectionProps = {
   section: { id: string; heading: string; paragraph: string };
@@ -8,7 +10,7 @@ type SectionProps = {
   timeOfLastClick: number;
 };
 
-const Section = ({ section, setActiveSection, timeOfLastClick }: SectionProps) => {
+const Section: React.FC<SectionProps> = ({ section, setActiveSection, timeOfLastClick }) => {
   const { id, heading, paragraph } = section;
   const { inView, ref, entry } = useInView({ threshold: 0.7 });
 

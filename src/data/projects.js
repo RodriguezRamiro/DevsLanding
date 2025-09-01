@@ -34,7 +34,7 @@ const projects = [
     description: 'Browse products, manage a shopping cart, and complete secure checkout with Stripe.',
     image: '/images/pic.png',
     github: 'no link yet',
-    demo: 'no link yet',
+    demo: 'https://ecommerce-app-seven-lilac.vercel.app/',
     tags: ['Flask', 'SQLAlchemy','PostgreSQL', 'Stripe API', 'React', 'Vite', 'Tailwind CSS'],
   },
   {
