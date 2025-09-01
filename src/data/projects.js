@@ -33,7 +33,7 @@ const projects = [
     title: 'E-Commerce in Progress...',
     description: 'Browse products, manage a shopping cart, and complete secure checkout with Stripe.',
     image: '/images/pic.png',
-    github: 'no link yet',
+    github: 'https://github.com/RodriguezRamiro/ecommerce_app',
     demo: 'https://ecommerce-app-seven-lilac.vercel.app/',
     tags: ['Flask', 'SQLAlchemy','PostgreSQL', 'Stripe API', 'React', 'Vite', 'Tailwind CSS'],
   },
