@@ -1,5 +1,5 @@
 import React from 'react';
-import projects from '../data/projects';
+import projects from '../data/desings';
 import '../styles/Projects.css';
 import LanguageStats from './LanguageStats';
 

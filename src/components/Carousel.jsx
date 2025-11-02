@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import '../styles/Carousel.css';
-import experiments from '../data/experiments';
+import experiments from '../data/collaborations';
 
 const Carousel = () => {
   const length = experiments.length;
