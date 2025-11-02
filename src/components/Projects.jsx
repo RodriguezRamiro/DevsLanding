@@ -6,7 +6,7 @@ import LanguageStats from './LanguageStats';
 function Projects() {
   return (
     <section className="projects-container">
-      <h2 className="projects-title">Projects</h2>
+      <h2 className="projects-title">Collaborations</h2>
       <h3 className="projects-subtitle">Worked On</h3>
 
       <div className="projects-grid">
@@ -33,7 +33,7 @@ function Projects() {
 
       {/* Language stats inserted here */}
       <LanguageStats />
-      
+
     </section>
   );
 }

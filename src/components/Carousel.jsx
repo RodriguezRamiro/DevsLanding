@@ -105,7 +105,7 @@ const Carousel = () => {
 
   return (
     <section id="experiments" className="carousel-root">
-      <h2 className="carousel-title">Experiments</h2>
+      <h2 className="carousel-title">Designs</h2>
       <p className="carousel-subtitle">Creative UI & Mini-Projects</p>
 
       <div className="carousel-viewport"
