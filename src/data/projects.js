@@ -3,12 +3,12 @@
 const projects = [
   {
     id: 1,
-    title: "Spotify Mock Clone",
-    description: "A Spotify-inspired music streaming app built with React and Spotify API.",
-    image: "/images/spotify-clone.png",
-    github: "https://github.com/yourusername/spotify-clone",
-    demo: "https://spotify-clone-demo.vercel.app",
-    tags: ['React', 'TypeScript'],
+    title: 'E-Commerce in Progress...',
+    description: 'Browse products, manage a shopping cart, and complete secure checkout with Stripe.',
+    image: '/images/pic.png',
+    github: 'https://github.com/RodriguezRamiro/ecommerce_app',
+    demo: 'https://ecommerce-app-seven-lilac.vercel.app/',
+    tags: ['Flask', 'SQLAlchemy','PostgreSQL', 'Stripe API', 'React', 'Vite', 'Tailwind CSS'],
   },
   {
     id: 2,
@@ -30,12 +30,12 @@ const projects = [
   },
   {
     id: 4,
-    title: 'E-Commerce in Progress...',
-    description: 'Browse products, manage a shopping cart, and complete secure checkout with Stripe.',
-    image: '/images/pic.png',
-    github: 'https://github.com/RodriguezRamiro/ecommerce_app',
-    demo: 'https://ecommerce-app-seven-lilac.vercel.app/',
-    tags: ['Flask', 'SQLAlchemy','PostgreSQL', 'Stripe API', 'React', 'Vite', 'Tailwind CSS'],
+    title: "Spotify Mock Clone",
+    description: "A Spotify-inspired music streaming app built with React and Spotify API.",
+    image: "/images/spotify-clone.png",
+    github: "https://github.com/yourusername/spotify-clone",
+    demo: "https://spotify-clone-demo.vercel.app",
+    tags: ['React', 'TypeScript'],
   },
   {
     id: 5,

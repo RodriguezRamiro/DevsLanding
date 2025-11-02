@@ -11,15 +11,15 @@ function Bio() {
         <h3>About <span className="highlight">Me</span></h3>
 
         <p>
-          Hi, I'm Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems and hands-on training through the USF Software Engineering Career Track program. I’m passionate about crafting modern, user-first digital experiences.
+          Hi, I am Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems. My skills set brings hands-on training through the USF Software Engineering Career Track program. I am passionate about crafting modern, user-first digital experiences and connect whit the guest through technology.
         </p>
 
         <p>
-          What began as a self-taught hobby has developed into a practice I truly enjoy and a skill I continue to build upon, shaping both my career and future. I thrive on exploring web animations, real-time interactivity, and scalable fullstack architecture.
+          What began as a self-taught hobby has developed into a practice I truly enjoy and a skill I continue to build and learn from, shaping both my career and future. I thrive on exploring web animations, real-time interactivity, and scalable fullstack architecture, bringing in that "wow effect".
         </p>
 
         <p>
-          Beyond coding, I focus on continued learing, <strong>3D printing and painting miniatures</strong> <strong>turning pencil sketches into oil paintings</strong>, <strong>designing concepts</strong>, and <strong>staying physically active</strong>.
+          Beyond coding, an antropenuer at heart, I focus on continued studies and bussiness management, <strong>3D printing miniatures and painting</strong> <strong>turning pencil sketches into oil canvase</strong>, <strong>concept desings</strong>, and <strong>staying physically active</strong>.
         </p>
 
         <p>
@@ -28,7 +28,7 @@ function Bio() {
 
         <p>
           <a href="/Resume2025.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
-            View My Resume
+            Review My Resume
           </a>
         </p>
 
