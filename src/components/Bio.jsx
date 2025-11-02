@@ -11,7 +11,7 @@ function Bio() {
         <h3>About <span className="highlight">Me</span></h3>
 
         <p>
-          Hi, I am Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems. My skills set brings hands-on training through the USF Software Engineering Career Track program. I am passionate about crafting modern, user-first digital experiences and connect whit the guest through technology.
+          Hi, I am Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems. My skills set brings hands-on training through the USF Software Engineering Career Track program. I am passionate about crafting modern, user-first digital experiences that connecting with the guest through technology.
         </p>
 
         <p>
@@ -19,7 +19,7 @@ function Bio() {
         </p>
 
         <p>
-          Beyond coding, an antropenuer at heart, I focus on continued studies and bussiness management, <strong>3D printing miniatures and painting</strong> <strong>turning pencil sketches into oil canvase</strong>, <strong>concept desings</strong>, and <strong>staying physically active</strong>.
+          Beyond coding, an entrepreneur at heart, I focus on continued studies and managing a small bussiness, <strong>3D printing miniatures</strong> <strong> as well as turning pencil sketches into oil canvas</strong>, <strong>a bit of concept desings</strong>, and <strong>staying physically active</strong>.
         </p>
 
         <p>
