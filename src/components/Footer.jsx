@@ -3,10 +3,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "../styles/Footer.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer" aria-label="Footer">
       <div className="footer-left">
-        © 2025 Ramiro Rodriguez Alvarez
+        © {currentYear} Ramiro Rodriguez Alvarez
       </div>
 
       <div className="footer-center">
