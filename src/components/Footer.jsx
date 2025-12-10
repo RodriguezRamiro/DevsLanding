@@ -1,9 +1,11 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import packageJson from "../../package.json";
 import "../styles/Footer.css";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const version = packageJson.version;
 
   return (
     <footer className="footer" aria-label="Footer">
@@ -13,7 +15,7 @@ const Footer = () => {
 
       <div className="footer-center">
         <span className="version">
-          Built with <span className="tech">React + Node</span> — v1.0.0
+          Built with <span className="tech">React + Node</span> — v{version}
         </span>
       </div>
 

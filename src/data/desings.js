@@ -3,16 +3,16 @@
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce in Progress...',
-    description: 'Browse products, manage a shopping cart, and complete secure checkout with Stripe.',
+    title: 'E-Commerce',
+    description: 'Eshop desinged to browse products, manage a shopping cart, and complete secure checkout with flask backend and scalability of database and payment API integration.',
     image: '/images/pic.png',
     github: 'https://github.com/RodriguezRamiro/ecommerce_app',
     demo: 'https://ecommerce-app-seven-lilac.vercel.app/',
-    tags: ['Flask', 'SQLAlchemy','PostgreSQL', 'Stripe API', 'React', 'Vite', 'Tailwind CSS'],
+    tags: ['React', 'Flask', 'CSS','JSON data', 'User Authentication' ],
   },
   {
     id: 2,
-    title: 'Fullstack Blackjack in progress...',
+    title: 'Fullstack Blackjack',
     description:'Fullstack Blackjack on React and Flask. Functional multiplayer and real-time chat using Flask-SocketIO.',
     image: "/images/spotify-clone.png",
     github: "https://github.com/RodriguezRamiro/fullstack_blackjack",
