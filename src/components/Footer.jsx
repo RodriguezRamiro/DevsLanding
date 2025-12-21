@@ -10,7 +10,8 @@ const Footer = () => {
   return (
     <footer className="footer" aria-label="Footer">
       <div className="footer-left">
-        © {currentYear} Ramiro Rodriguez Alvarez
+      <h3 className="footer-logo">RodriguezTech Studios&trade;</h3>
+      <p>RodriguezTech.&reg; All rights reserved {currentYear} </p>
       </div>
 
       <div className="footer-center">
