@@ -28,15 +28,17 @@ const projects = [
     demo: "https://apitester-fawn.vercel.app/",
     tags: ['React.js', 'TypeScript', 'Flask', 'Railway.app'],
   },
+
   {
     id: 4,
-    title: "Spotify Mock Clone",
-    description: "A Spotify-inspired music streaming app built with React and Spotify API.",
-    image: "/images/spotify-clone.png",
-    github: "https://github.com/yourusername/spotify-clone",
-    demo: "https://spotify-clone-demo.vercel.app",
-    tags: ['React', 'TypeScript'],
+    title: "Clips Grooming",
+    description: "A barber Shop inspired landing page for a real Small Bussiness Owner built with React and NodeJS.",
+    image: "/images/ClipsGrooming.png",
+    github: "https://github.com/RodriguezRamiro/clipsgrooming",
+    demo: "https://clipsgrooming.vercel.app/",
+    tags: ['React', 'NodeJS', 'CSS'],
   },
+
   {
     id: 5,
     title: 'Chatbot App',
@@ -55,6 +57,21 @@ const projects = [
     demo: 'https://react-calculator-six-black.vercel.app/',
     tags: ['HTML', 'CSS', 'React JS'],
   },
+
+
+
+  // Do not Yet Project not finished..
+  /*
+  {
+    id: 4,
+    title: "Spotify Mock Clone",
+    description: "A Spotify-inspired music streaming app built with React and Spotify API.",
+    image: "/images/spotify-clone.png",
+    github: "https://github.com/yourusername/spotify-clone",
+    demo: "https://spotify-clone-demo.vercel.app",
+    tags: ['React', 'TypeScript'],
+  },
+  */
 ];
 
 export default projects;

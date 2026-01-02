@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Carousel from './components/Carousel';
+import ExperimentsShowcase from './components/ExperimentsShowcase';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import ThemeProvider from './components/ThemeProvider';
@@ -23,7 +24,8 @@ function App() {
       </section>
 
       <section className="carousel-section w-full py-20 bg-black flex justify-center items-center">
-        <Carousel />
+        {/* <Carousel /> */}
+        <ExperimentsShowcase />
       </section>
 
       <section id="contact">

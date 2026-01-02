@@ -5,13 +5,14 @@ import "../styles/Footer.css";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const version = packageJson.version;
+  const { version } = packageJson;
+  console.log("app version:", version);
 
   return (
     <footer className="footer" aria-label="Footer">
       <div className="footer-left">
-      <h3 className="footer-logo">RodriguezTech Studios&trade;</h3>
-      <p>RodriguezTech.&reg; All rights reserved {currentYear} </p>
+      <h3 className="footer-logo">RodriguezTech Studios</h3>
+      <p>© 2026 RamTech LLC. All rights reserved.{currentYear} </p>
       </div>
 
       <div className="footer-center">
@@ -19,6 +20,7 @@ const Footer = () => {
           Built with <span className="tech">React + Node</span> — v{version}
         </span>
       </div>
+
 
       <div className="footer-right">
         <a
