@@ -93,6 +93,12 @@
     color: var(--active);
   }
 
+  .document-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   /* Decorative Lines */
   .decorative-lines-container {
     display: flex;
@@ -177,7 +183,7 @@
     color: var(--text-highlight-color);
     transform: translateY(-3px);
   }
-  
+
   .social-icons a:focus {
     outline: 2px solid var(--text-highlight-color);
     outline-offset: 4px;

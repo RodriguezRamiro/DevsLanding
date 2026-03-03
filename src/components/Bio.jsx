@@ -11,15 +11,16 @@ function Bio() {
         <h3>About <span className="highlight">Me</span></h3>
 
         <p>
-          Hi, I am Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems. My skills set brings hands-on training through the USF Software Engineering Career Track program. I am passionate about crafting modern, user-first digital experiences that connecting with the guest through technology.
+          Hi, I am Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems.
+          My skill set is reinforced by hands-on training through the USF Software Engineering Career Track, where I built production-style full-stack applications and strengthened modern development practices. I am passionate about crafting modern, user-first digital experiences that connect with the user through technology.
         </p>
 
         <p>
-          What began as a self-taught hobby has developed into a practice I truly enjoy and a skill I continue to build and learn from, shaping both my career and future. I thrive on exploring web animations, real-time interactivity, and scalable fullstack architecture, bringing in that "wow effect".
+        What began as a self-taught curiosity evolved into a disciplined craft — one I continue refining through real-world projects and continuous study. I thrive on exploring web animations, real-time interactivity, and scalable fullstack architecture, bringing in that "wow effect".
         </p>
 
         <p>
-          Beyond coding, an entrepreneur at heart, I focus on continued studies and managing a small bussiness, <strong>3D printing miniatures</strong> <strong> as well as turning pencil sketches into oil canvas</strong>, <strong>a bit of concept desings</strong>, and <strong>staying physically active</strong>.
+          Beyond coding, an entrepreneur at heart. I focus on continued learning while managing a small bussiness, 3D printing miniatures, turning pencil sketches into oil canvas, a bit of concept desings, and staying physically active.
         </p>
 
         <p>
@@ -27,9 +28,14 @@ function Bio() {
         </p>
 
         <p>
-          <a href="/Resume2025.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
+        <div className="document-links">
+          <a href="/Resume2026.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
             Review My Resume
           </a>
+          <a href="/USFCertificate.png" target="_blank" rel="noopener noreferrer" className="certificate-link">
+            View USF Certificate
+          </a>
+          </div>
         </p>
 
         {/* Call-to-Action & Social Links */}

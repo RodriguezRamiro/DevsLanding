@@ -3,6 +3,15 @@
 const projects = [
   {
     id: 1,
+    title: "Clips Grooming",
+    description: "A barber Shop inspired landing page for a real Small Bussiness Owner built with React and NodeJS.",
+    image: "/images/ClipsGrooming.png",
+    github: "https://github.com/RodriguezRamiro/clipsgrooming",
+    demo: "https://clipsgrooming.vercel.app/",
+    tags: ['React', 'NodeJS', 'CSS'],
+  },
+  {
+    id: 2,
     title: 'E-Commerce',
     description: 'Eshop desinged to browse products, manage a shopping cart, and complete secure checkout with flask backend and scalability of database and payment API integration.',
     image: '/images/pic.png',
@@ -11,7 +20,7 @@ const projects = [
     tags: ['React', 'Flask', 'CSS','JSON data', 'User Authentication' ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Fullstack Blackjack',
     description:'Fullstack Blackjack on React and Flask. Functional multiplayer and real-time chat using Flask-SocketIO.',
     image: "/images/spotify-clone.png",
@@ -20,7 +29,7 @@ const projects = [
     tags: ['JavaScript', 'React', 'Flask', 'WebSockets', 'CSS', 'Render'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'API_Tester & Todo Dashboard',
     description: "Interactive API testing and Todo dashboard. Full-stack capabilities with a Flask backend, React frontend and live WebSocket",
     image:"",
@@ -28,17 +37,6 @@ const projects = [
     demo: "https://apitester-fawn.vercel.app/",
     tags: ['React.js', 'TypeScript', 'Flask', 'Railway.app'],
   },
-
-  {
-    id: 4,
-    title: "Clips Grooming",
-    description: "A barber Shop inspired landing page for a real Small Bussiness Owner built with React and NodeJS.",
-    image: "/images/ClipsGrooming.png",
-    github: "https://github.com/RodriguezRamiro/clipsgrooming",
-    demo: "https://clipsgrooming.vercel.app/",
-    tags: ['React', 'NodeJS', 'CSS'],
-  },
-
   {
     id: 5,
     title: 'Chatbot App',
@@ -60,7 +58,7 @@ const projects = [
 
 
 
-  // Do not Yet Project not finished..
+  // Do not include Yet Project not finished..
   /*
   {
     id: 4,
