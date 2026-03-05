@@ -12,13 +12,7 @@ const Footer = () => {
     <footer className="footer" aria-label="Footer">
       <div className="footer-left">
       <h3 className="footer-logo">RodriguezTech Studios</h3>
-      <p>© 2026 RamTech LLC. All rights reserved.{currentYear} </p>
-      </div>
-
-      <div className="footer-center">
-        <span className="version">
-          Built with <span className="tech">React + Node</span> — v{version}
-        </span>
+      <p>© {currentYear} RamTech LLC</p>
       </div>
 
 
