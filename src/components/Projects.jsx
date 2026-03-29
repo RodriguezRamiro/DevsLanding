@@ -6,8 +6,8 @@ import LanguageStats from './LanguageStats';
 function Projects() {
   return (
     <section className="projects-container">
-      <h2 className="projects-title">Collaborations</h2>
-      <h3 className="projects-subtitle">Worked On</h3>
+      <h2 className="projects-title">Architectural Lead</h2>
+      <h3 className="projects-subtitle">Featured Products</h3>
 
       <div className="projects-grid">
         {projects.map((project) => (

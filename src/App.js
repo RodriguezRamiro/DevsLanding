@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Carousel from './components/Carousel';
-import ExperimentsShowcase from './components/ExperimentsShowcase';
+import ExperimentsShowcase from './components/InteractiveDesings.jsx';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import ThemeProvider from './components/ThemeProvider';

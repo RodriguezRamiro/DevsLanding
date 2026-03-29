@@ -11,8 +11,8 @@ const ExperimentsShowcase = () => {
   return (
     <section id="experiments" className="showcase-root">
       <header className="showcase-header">
-        <h2 className="showcase-title">Designs</h2>
-        <p className="carousel-subtitle">Creative UI & Mini-Projects</p>
+        <h2 className="showcase-title">Interactive Designs</h2>
+        <p className="carousel-subtitle">Creative Ui & Mini-Projects Samples</p>
       </header>
 
       <div className="showcase-layout">
