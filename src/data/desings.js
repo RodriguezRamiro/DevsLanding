@@ -48,13 +48,13 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Chatbot App',
-    description: 'A simple chat box application with auto-replies and timestamps.',
-    image: '/images/chatbot.png',
-    github: 'https://github.com/RodriguezRamiro/chatbot',
-    demo: 'https://chatbot-peach-nine-17.vercel.app/',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-  },
+    title: 'Theme Dev Tool',
+    description: 'A dynamic theme generator that creates and previews full UI color systems in real time. Users can generate, toggle light/dark modes, and export CSS variables for direct use in projects.',
+    image: '/images/themedevtool.png',
+    github: 'https://github.com/RodriguezRamiro/themedevstool',
+    demo: 'https://themedevstool-hpwi.vercel.app/',
+    tags: ['React', 'CSS Variables', 'Vite', 'JavaScript'],
+  }
 
 
 

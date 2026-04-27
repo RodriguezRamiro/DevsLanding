@@ -11,16 +11,18 @@ function Bio() {
         <h3>About <span className="highlight">Me</span></h3>
 
         <p>
-          Hi, I am Ramiro — a <strong>full-stack developer</strong> with a background in Business Information Systems.
-          My skill set is reinforced by hands-on training through the USF Software Engineering Career Track, where I built production-style full-stack applications and strengthened modern development practices. I am passionate about crafting modern, user-first digital experiences that connect with the user through technology.
+          I am Ramiro Rodriguez — a <strong>Full-stack Developer</strong> with a background in Business Information Systems.
+          My technical skillset is reinforced by hands-on training through the USF Software Engineering Career Track, where we completed production-grade full-stack applications and strengthened modern development practices.
+          My business background enables me to identify customer pain points, translate them into technical solutions, and help deliver products that create measurable value.
+          I bring a strategic, customer-focused mindset to software development. I specialize in crafting modern, user-first, digital experiences that not only function effectively but also align with real business objectives.
         </p>
 
         <p>
-        What began as a self-taught curiosity evolved into a disciplined craft — one I continue refining through real-world projects and continuous study. I thrive on exploring web animations, real-time interactivity, and scalable fullstack architecture, bringing in that "wow effect".
+        What began as a self-taught curiosity evolved into a disciplined craft — one I continue refining through real-world projects and continuous study. I thrive on exploring web animations, real-time interactivity, and scalable fullstack architecture desing, bringing in that "wow effect".
         </p>
 
         <p>
-          Beyond coding, an entrepreneur at heart. I focus on continued learning while managing a small bussiness, 3D printing miniatures, turning pencil sketches into oil canvas, a bit of concept desings, and staying physically active.
+          Beyond coding, an entrepreneur at heart. I focus on continued learning. Enjoy 3D printing miniatures, turning pencil sketches into oil canvases, and staying physically active.
         </p>
 
         <p>
