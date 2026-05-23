@@ -1,10 +1,46 @@
 /* Contacts.jsx */
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Contacts.css';
 
 const Contacts = () => {
+  const [status, setStatus] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+    setStatus('');;
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(
+        'https://formspree.io/f/xdabpana',
+        {
+          method: 'POST',
+          body: data,
+          headers: {
+            Accept: 'application/json',
+          },
+        }
+      );
+
+      if ( response.ok) {
+        setStatus('SUCCESS');
+        form.reset();
+      } else {
+        setStatus('ERROR');
+      }
+
+      setLoading(false);
+    };
+
+  }
+  
   return (
     <section className="contacts-container" id="contact">
       <h2 className="contacts-title">Get in Touch</h2>
