@@ -40,15 +40,18 @@ const Contacts = () => {
     };
 
   }
-  
+
   return (
     <section className="contacts-container" id="contact">
       <h2 className="contacts-title">Get in Touch</h2>
+
       <div className="contacts-info">
         <p>
-          I’m always open to new opportunities, collaborations, or just connecting with fellow developers.
-          Reach out through any of the platforms below:
+          I’m always open to new opportunities, collaborations, or connecting with
+          fellow developers and businesses.
         </p>
+
+        
 
         {/* Contact Links */}
         <div className="contacts-links">
