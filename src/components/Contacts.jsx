@@ -29,31 +29,130 @@ const Contacts = () => {
         }
       );
 
-      if ( response.ok) {
+      if (response.ok) {
         setStatus('SUCCESS');
         form.reset();
       } else {
         setStatus('ERROR');
       }
+    } catch (error) {
+      setStatus('ERROR');
+    }
 
-      setLoading(false);
-    };
+    setLoading(false);
+  };
 
-  }
+
 
   return (
     <section className="contacts-container" id="contact">
-      <h2 className="contacts-title">Get in Touch</h2>
+      <h2 className="contacts-title">
+        Get in Touch
+      </h2>
 
       <div className="contacts-info">
         <p>
-          I’m always open to new opportunities, collaborations, or connecting with
+          I’m always open to new opportunities,
+          collaborations, or connecting with
           fellow developers and businesses.
         </p>
 
-        
+        {/* Contact Form */}
+        <div className="contact-form-container">
 
-        {/* Contact Links */}
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+          >
+
+            {/* Name */}
+            <div className="form-group">
+              <label htmlFor="name">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            {/* Email */}
+            <div className="form-group">
+              <label htmlFor="email">
+                Email Address
+              </label>
+
+              <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@email.com"
+              required
+              />
+            </div>
+
+            {/* Business */}
+            <div className="form-group">
+              <label htmlFor="business">
+                Business / Organization
+              </label>
+
+              <input
+              type="text"
+              id="business"
+              name="business"
+              placeholder="Business Name"
+              />
+
+              {/* Message */}
+              <div className="form-group">
+                <label htmlFor="message">
+                  Project Goals
+                </label>
+
+                <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell me about your idea; paint the picture, what vision are we buidling..."
+                required
+                ></textarea>
+
+                <p className="form-note">
+                  No pressure - no idea is too small.<br>
+                  </br>I'll follow up with next steps.
+                </p>
+              </div>
+
+              {/* Submit */}
+              <button
+              type="submit"
+              className="btn-primary contact-submit"
+              disabled={loading}
+              >
+                {loading ? "Sending..." : "Send Inquiry"}
+              </button>
+
+              {/* Status Messages */}
+              {status === "SUCCESS" && (
+                <p className="form-success">
+                  Message sent Successfully!
+                </p>
+              )}
+
+              {status === "ERROR" && (
+                <p className="form-error">
+                  Something went wrong. Please try again.
+                  </p>
+              )}
+          </form>
+        </div>
+
+        {/* Social Links */}
         <div className="contacts-links">
           <a
             href="https://github.com/RodriguezRamiro"
