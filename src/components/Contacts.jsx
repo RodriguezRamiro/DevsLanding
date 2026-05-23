@@ -149,6 +149,7 @@ const Contacts = () => {
                   Something went wrong. Please try again.
                   </p>
               )}
+              </div>
           </form>
         </div>
 
@@ -185,7 +186,10 @@ const Contacts = () => {
 
         {/* Email */}
         <p className="email">
-          Or drop me an email at <a href="mailto:rodriguezcodesolutions@gmail.com">rodriguezcodesolutions@gmail.com</a>
+          Or email me directly at{' '}
+          <a href="mailto:rodriguezcodesolutions@gmail.com">
+            rodriguezcodesolutions@gmail.com
+          </a>
         </p>
       </div>
     </section>
