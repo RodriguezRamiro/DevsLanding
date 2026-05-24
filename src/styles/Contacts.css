@@ -11,6 +11,51 @@
   overflow: hidden;
 }
 
+.contacts-container::before {
+  content: "";
+
+  position: absolute;
+  top: -200px;
+  right: -120px;
+
+  width: 500px;
+  height: 500px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(228,179,99,0.10),
+      transparent 70%
+    );
+
+  filter: blur(40px);
+
+  pointer-events: none;
+}
+
+.contacts-container::after {
+  content: "";
+
+  position: absolute;
+  bottom: -250px;
+  left: -150px;
+
+  width: 500px;
+  height: 500px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(239,100,97,0.08),
+      transparent 70%
+    );
+
+  filter: blur(60px);
+
+  pointer-events: none;
+}
+
+
 /* Header */
 .contacts-header {
   text-align: center;
