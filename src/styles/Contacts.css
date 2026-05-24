@@ -135,6 +135,11 @@
   word-break: break-word;
 }
 
+.email:hover {
+  color: var(--active);
+  border-color: var(--active);
+}
+
 .availability {
   font-size: 16px;
   line-height: 1.7;
