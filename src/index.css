@@ -5,6 +5,17 @@
 /* Root Theme Variables */
 
 :root {
+
+
+  /*replace these with*/
+
+  --camel: #af9164ff;
+  --ivory-mist: #f7f3e3ff;
+  --silver: #b3b6b7ff;
+  --molten-lava: #6f1a07ff;
+  --dark-coffee: #2b2118ff;
+
+
 /* Color Palette Reference */
 --vibrant-coral: #ef6461ff;
 --sunlit-clay: #e4b363ff;

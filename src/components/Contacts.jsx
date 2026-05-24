@@ -50,6 +50,7 @@ const Contacts = () => {
       id="contact"
     >
 
+
       {/* Heading */}
       <div className="contacts-header">
 
@@ -63,6 +64,9 @@ const Contacts = () => {
         </p>
 
       </div>
+
+      {/* Decorative Accent Element */}
+      <div className="contacts-glow"></div>
 
       {/* Main Layout */}
       <div className="contacts-content">
@@ -125,8 +129,12 @@ const Contacts = () => {
               rodriguezcodesolutions@gmail.com
             </p>
 
+            <div className="availability-badge">
+              Available For Hire
+            </div>
+
             <p className="availability">
-              Available for hire. Freelance,
+              Freelance,
               business collaborations,
               and full-stack development work.
             </p>
@@ -136,7 +144,7 @@ const Contacts = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="contact-form-wrapper">
+        <div className="contact-form-wrapper glass-card">
 
           <form
             className="contact-form"
@@ -220,7 +228,7 @@ const Contacts = () => {
 
             <button
               type="submit"
-              className="contact-submit"
+              className="contact-submit btn-primary"
               disabled={loading}
             >
               {loading
