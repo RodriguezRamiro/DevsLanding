@@ -1,191 +1,573 @@
-/* index.css */
+/* //devslanding/src/index.css */
 
-/* ======================================================
-   Root Theme Variables (Light and Dark)
-   ====================================================== */
+/* Architectural Noir Design System 05/24/2026 */
 
-   :root {
+/* Root Theme Variables */
+
+:root {
+/* Color Palette Reference */
+--vibrant-coral: #ef6461ff;
+--sunlit-clay: #e4b363ff;
+--platinum: #e8e9ebff;
+--soft-linen: #e0dfd5ff;
+--gunmetal: #313638ff;
+
+
     /* Base Colors */
-  --bg: #F8F8F8; /* Soft white background */
-  --text: #333333; /* Dark charcoal for general text */
-      /* Navigation & Interactive Elements */
-  --navbar-bg: #FFFFFF; /* Pure white for a clean, crisp navigation */
-  --navbar-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer, lighter shadow for an elegant feel */
-  --navbar-link-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Slightly more prominent hover shadow */
-  --hover-bg: #ECEFF1; /* Very light grey for hover states, subtle contrast */
-  --hover-text: #80CBC4; /* Muted teal for hover text on links/nav items */
-  --underline: #80CBC4; /* Muted teal for underlines */
-  --link-color: #80CBC4; /* Muted teal for general links */
-  --active: #FFAB91; /* Soft peach for active states, a warmer accent */
+    --bg: var(--platinum);
 
-      /* Headings & Paragraphs */
-  --heading-color: #263238; /* Slightly darker charcoal for strong headings */
-  --subtext-color: #607D8B; /* Medium grey for subtext, good readability */
-  --paragraph-color: #151915; /* A soft, natural green for paragraph, consider --text for a more uniform look */
+    --surface: #F4F2EE;
+    --surface-elevated: #FCFBF9;
 
-    /* Card Carousel Specifics */
-  --card-bg: #FFFFFF; /* Pure white for cards, making them pop against the F8F8F8 body */
-  --card-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Softer, slightly larger shadow for elegance */
-  --card-text-color: var(--text); /* Inherit general text color */
-  --card-gradient: linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 100%); /* Subtle, almost imperceptible gradient for depth */
-  --card-hover-gradient: linear-gradient(135deg, #FFEFD5 0%, #FFE0B2 100%); /* A very subtle warm highlight on hover */
-  --button-gradient: linear-gradient(135deg, #80CBC4, #66BB6A); /* Muted teal to soft green for buttons */
-  --button-hover-gradient: linear-gradient(135deg, #66BB6A, #4CAF50); /* Slightly darker green on button hover */
-  --card-border-color: #F0F0F0; /* Very light grey for a subtle border in light theme */
-  --card-hover-border-color: #80CBC4; /* Muted teal for hover border */
-  --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.12), 0 0 40px rgba(0, 0, 0, 0.05); /* Softer, larger hover shadow */
-  --heading-text-shadow: none; /* No text shadow in light theme for cleaner look */
+    --surface-glass:
+      rgba(255,255,255,0.45);
 
-    /* Carousel Dots */
-  --dot-color: rgba(0, 0, 0, 0.15); /* Lighter, less intrusive dots */
-  --dot-active-color: #80CBC4; /* Muted teal for active dot */
+    --surface-dark:
+      rgba(49,54,56,0.04);
 
-  /* New Button-specific Variables */
-  --button-text-color: #FFFFFF; /* White text for buttons, ensure readability */
-  --button-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for buttons */
-  --button-hover-shadow: 0 6px 15px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.08); /* Slightly more prominent hover shadow */
+    /* Typography */
 
-/* Profile Specific Variables */
---profile-image-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08); /* Softer shadow for light theme */
---text-highlight-color: #80CBC4; /* Muted teal for text highlights in light theme */
---decorative-line-color: #DCDCDC; /* Warm grey/greige for the vertical decorative line */
---profile-image-border-color: rgba(0, 0, 0, 0.05); /* Very subtle light border */
+      --text: #2A2D2F;
+
+      --heading-color: #1B1D1E;
+
+      --subtext-color: #62676A;
+
+      --paragraph-color: #3E4345;
+
+      --text-highlight-color:
+        var(--sunlit-clay);
+
+    /* Accents */
+
+    --active:
+    var(--sunlit-clay);
+
+  --active-soft:
+    rgba(228,179,99,0.14);
+
+  --link-color:
+    #B38442;
+
+  --hover-text:
+    var(--sunlit-clay);
+
+  --underline:
+    var(--sunlit-clay);
+
+  --accent-soft:
+    #D98A78;
+
+  /* Navigation */
+
+  --navbar-bg:
+    rgba(248,248,246,0.82);
+
+  --hover-bg:
+    rgba(49,54,56,0.04);
+
+  /* Borders */
+  --border-color:
+    rgba(49,54,56,0.08);
+
+  --border-strong:
+    rgba(49,54,56,0.16);
+
+  --card-border-color:
+    rgba(49,54,56,0.08);
+
+  --card-hover-border-color:
+    rgba(228,179,99,0.45);
+
+  --profile-image-border-color:
+    rgba(49,54,56,0.08);
+
+  /* Shadow System */
+
+  --shadow-soft:
+  0 8px 24px rgba(0,0,0,0.04);
+
+--shadow-medium:
+  0 16px 40px rgba(0,0,0,0.06);
+
+--shadow-large:
+  0 24px 80px rgba(0,0,0,0.08);
+
+--navbar-shadow:
+  0 10px 30px rgba(0,0,0,0.04);
+
+--navbar-link-hover-shadow:
+  0 12px 32px rgba(0,0,0,0.06);
+
+--card-shadow:
+  0 12px 30px rgba(0,0,0,0.05);
+
+--card-hover-shadow:
+  0 20px 60px rgba(0,0,0,0.08);
+
+--profile-image-shadow:
+  0 12px 30px rgba(0,0,0,0.08);
+
+  /* Glow System */
+
+  --glow-soft:
+  0 0 30px rgba(228,179,99,0.10);
+
+--glow-medium:
+  0 0 50px rgba(228,179,99,0.14);
+
+  /* Card System */
+
+  --card-bg:
+    rgba(255,255,255,0.72);
+
+  --card-text-color:
+    var(--text);
+
+  --card-gradient:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.80),
+      rgba(244,242,238,0.82)
+    );
+
+  --card-hover-gradient:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.94),
+      rgba(240,236,228,0.94)
+    );
+
+    /* Button System */
+
+    --button-gradient:
+    linear-gradient(
+      135deg,
+      #D6A55B,
+      #B38442
+    );
+
+  --button-hover-gradient:
+    linear-gradient(
+      135deg,
+      #E4B363,
+      #C89242
+    );
+
+  --button-text-color:
+    #FFFFFF;
+
+  --button-shadow:
+    0 10px 24px rgba(0,0,0,0.10);
+
+  --button-hover-shadow:
+    0 16px 40px rgba(0,0,0,0.16);
 
 
-/* Decorative Line Gradients (Light Theme - using softer, more elegant tones) */
---decorative-line-gradient-1: linear-gradient(90deg, #FFAB91, #80CBC4, #B2DFDB, #FFD54F); /* Peach, Teal, Mint, Soft Gold */
---decorative-line-gradient-2: linear-gradient(90deg, #80CBC4, #FFAB91, #FFE0B2, #DCDCDC); /* Teal, Peach, Lighter Peach, Warm Grey */
---decorative-line-gradient-3: linear-gradient(90deg, #B2DFDB, #FFAB91, #80CBC4, #FFD54F); /* Mint, Peach, Teal, Soft Gold */
---decorative-line-gradient-4: linear-gradient(90deg, #FFD54F, #80CBC4, #FFAB91, #B2DFDB); /* Soft Gold, Teal, Peach, Mint */
+  /* Tag System */
+  --tag-bg:
+    rgba(228,179,99,0.12);
 
-  /* Project/Tag Specific Variables */
-  --tag-bg: rgba(128, 203, 196, 0.1); /* Muted teal with low opacity for light theme tags */
-  --tag-hover-bg: rgba(128, 203, 196, 0.2); /* Slightly more opaque muted teal on hover */
+  --tag-hover-bg:
+    rgba(228,179,99,0.20);
 
-  /* Other accents */
-  --color-gold-accent: #FFD54F; /* Softer, less saturated gold if needed */
+  /* Decorative Elements */
+  --decorative-line-color:
+    rgba(49,54,56,0.10);
 
-   }
+  --decorative-line-gradient-1:
+    linear-gradient(
+      90deg,
+      #E4B363,
+      #D4B08A,
+      #C8C2B8
+    );
+
+  --decorative-line-gradient-2:
+    linear-gradient(
+      90deg,
+      #B38442,
+      #E4B363,
+      #E0DFD5
+    );
+
+  --decorative-line-gradient-3:
+    linear-gradient(
+      90deg,
+      #E0DFD5,
+      #D6A55B,
+      #313638
+    );
+
+  --decorative-line-gradient-4:
+    linear-gradient(
+      90deg,
+      #313638,
+      #B38442,
+      #F4F2EE
+    );
+
+  /* Dots / Indicators */
+
+  --dot-color:
+    rgba(49,54,56,0.18);
+
+  --dot-active-color:
+    var(--sunlit-clay);
+
+  /* Transitions */
+  --transition-fast:
+  0.25s ease;
+
+  --transition-medium:
+  0.35s ease;
+
+  --transition-slow:
+  0.5s ease;
+
+}
+
+/* Dark Mode */
   .dark {
-    --bg: #0d0d0d;
-    --text: #ffffff;
-    --navbar-bg: #1a1a1a;
-    --navbar-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast in dark theme */
-    --navbar-link-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker, more prominent hover shadow */
-    --hover-bg: #333333;
-    --hover-text: #ffd700;
-    --underline: #ffd700;
-    --active: #ff6b6b;
-    --link-color: #61dafb;
-    --heading-color: white;
-    --subtext-color: #cccccc;
-    --paragraph-color: #dddddd;
-    --card-gradient: linear-gradient(135deg, #6630e5, #ec0aac);
-    --card-text-color: white;
-    --card-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
-    --card-hover-gradient: linear-gradient(45deg, #ff6b6b, #48dbfb, #1dd1a1, #feca57);
-    --button-gradient: linear-gradient(135deg, #6630e5, #ec0aac);
-    --button-hover-gradient: linear-gradient(135deg, #6630e5, #ec0aac);
-    --dot-color: rgba(255, 255, 255, 0.3);
-    --dot-active-color: #ffffff;
+
+  /* Base Colors */
+    --bg: #181A1B;
+
+  --surface: #202324;
+
+  --surface-elevated: #2A2E30;
+
+  --surface-glass:
+    rgba(255,255,255,0.04);
+
+  --surface-dark:
+    rgba(255,255,255,0.02);
+
+  /* Typography */
+
+  --text: #F3F1EC;
+
+  --heading-color: #FFFFFF;
+
+  --subtext-color: #B8B4AD;
+
+  --paragraph-color: #D4D0CA;
+
+  --text-highlight-color:
+    var(--sunlit-clay);
+
+  /* Accents */
+  --active:
+  var(--sunlit-clay);
+
+  --active-soft:
+    rgba(228,179,99,0.16);
+
+  --link-color:
+    #E4B363;
+
+  --hover-text:
+    #F0C57A;
+
+  --underline:
+    var(--sunlit-clay);
+
+  --accent-soft:
+    #D98A78;
+
+  /* Navigation */
+
+  --navbar-bg:
+  rgba(24,26,27,0.78);
+
+  --hover-bg:
+  rgba(255,255,255,0.04);
+
+  /* Borders */
 
 
-    /* Card-specific Variables */
-  --card-border-color: rgba(255, 255, 255, 0.1); /* Subtle white border for dark theme */
-  --card-hover-border-color: #ffd700; /* Gold accent for hover border in dark theme */
-  --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.15); /* Darker hover shadow */
-  --heading-text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* Keep a subtle text shadow in dark theme if desired, or set to none */
+  --border-color:
+    rgba(255,255,255,0.08);
 
-  /* Button-specific Variables */
-  --button-text-color: #FFFFFF; /* White text for buttons */
-  --button-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for buttons */
-  --button-hover-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.15); /* Darker, more prominent hover shadow */
+  --border-strong:
+    rgba(255,255,255,0.14);
 
-   /* Profile Specific Variables */
-   --profile-image-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Darker shadow for dark theme */
-   --text-highlight-color: #ffd700; /* Gold accent for text highlights in dark theme */
-   --decorative-line-color: #6630e5; /* Main dark theme accent for decorative line */
-   --profile-image-border-color: rgba(255, 255, 255, 0.1); /* Subtle white border for dark theme */
+  --card-border-color:
+    rgba(255,255,255,0.08);
 
+  --card-hover-border-color:
+    rgba(228,179,99,0.50);
 
-   /* Decorative Line Gradients (Dark Theme - using your existing vibrant gradients) */
-   --decorative-line-gradient-1: linear-gradient(90deg, #ff6b6b, #48dbfb, #1dd1a1, #feca57);
-   --decorative-line-gradient-2: linear-gradient(90deg, #a29bfe, #ff9ff3, #feca57, #ff6b6b);
-   --decorative-line-gradient-3: linear-gradient(90deg, #1dd1a1, #48dbfb, #ff6b6b, #feca57);
-   --decorative-line-gradient-4: linear-gradient(90deg, #feca57, #a29bfe, #ff6b6b, #48dbfb);
+  --profile-image-border-color:
+    rgba(255,255,255,0.08);
 
-   /* Project/Tag Specific Variables */
-  --tag-bg: rgba(255, 215, 0, 0.15); /* Gold accent with low opacity for dark theme tags */
-  --tag-hover-bg: rgba(255, 215, 0, 0.3); /* Slightly more opaque gold on hover */
- }
+  /* Shadow System */
 
-  /* ======================================================
-     Global Resets and Base
-     ====================================================== */
+  --shadow-soft:
+  0 8px 24px rgba(0,0,0,0.25);
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    scroll-behavior: smooth;
+  --shadow-medium:
+    0 16px 40px rgba(0,0,0,0.35);
+
+  --shadow-large:
+    0 24px 80px rgba(0,0,0,0.45);
+
+  --navbar-shadow:
+    0 10px 30px rgba(0,0,0,0.25);
+
+  --navbar-link-hover-shadow:
+    0 12px 32px rgba(0,0,0,0.30);
+
+  --card-shadow:
+    0 12px 30px rgba(0,0,0,0.28);
+
+  --card-hover-shadow:
+    0 20px 60px rgba(0,0,0,0.40);
+
+  --profile-image-shadow:
+    0 16px 40px rgba(0,0,0,0.40);
+
+  /* Glow System */
+
+  --glow-soft:
+    0 0 30px rgba(228,179,99,0.10);
+
+  --glow-medium:
+    0 0 50px rgba(228,179,99,0.18);
+
+  /* Card System */
+
+  --card-bg:
+    rgba(255,255,255,0.03);
+
+  --card-text-color:
+    var(--text);
+
+  --card-gradient:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.03),
+      rgba(255,255,255,0.01)
+    );
+
+  --card-hover-gradient:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.02)
+    );
+
+  /* Button System */
+
+  --button-gradient:
+    linear-gradient(
+      135deg,
+      #B38442,
+      #E4B363
+    );
+
+  --button-hover-gradient:
+    linear-gradient(
+      135deg,
+      #EFC57A,
+      #D6A55B
+    );
+
+  --button-text-color:
+    #181A1B;
+
+  --button-shadow:
+    0 10px 24px rgba(0,0,0,0.35);
+
+  --button-hover-shadow:
+    0 16px 40px rgba(0,0,0,0.45);
+
+  /* Tag System */
+
+  --tag-bg:
+    rgba(228,179,99,0.14);
+
+  --tag-hover-bg:
+    rgba(228,179,99,0.22);
+
+  /* Decorative System */
+
+  --decorative-line-color:
+    rgba(255,255,255,0.10);
+
+  --decorative-line-gradient-1:
+    linear-gradient(
+      90deg,
+      #E4B363,
+      #8E6B45,
+      #313638
+    );
+
+  --decorative-line-gradient-2:
+    linear-gradient(
+      90deg,
+      #F0C57A,
+      #E4B363,
+      #202324
+    );
+
+  --decorative-line-gradient-3:
+    linear-gradient(
+      90deg,
+      #313638,
+      #B38442,
+      #E0DFD5
+    );
+
+  --decorative-line-gradient-4:
+    linear-gradient(
+      90deg,
+      #181A1B,
+      #D6A55B,
+      #E8E9EB
+    );
+
+  /* Dots / Idicators */
+
+  --dot-color:
+  rgba(255,255,255,0.22);
+
+  --dot-active-color:
+    var(--sunlit-clay);
   }
 
+  /* Global Resets */
 
+  html,
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--bg);
+
+  color: var(--text);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+
+  scroll-behavior: smooth;
+
+  transition:
+    background-color var(--transition-medium),
+    color var(--transition-medium);
+
+  overflow-x: hidden;
+}
+
+
+/* Global Typography */
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  margin-top: 0;
+}
+
+p {
+  color: var(--paragraph-color);
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* Code */
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
 }
 
 
-/* ======================================================
-   Responsive Utilities
-   ====================================================== */
+/* Glass Utility */
 
-   @media (max-width: 768px) {
-    .carousel-card {
-      flex: 0 0 90%;
-      margin: 0 5%;
-    }
+.glass {
+  background: var(--surface-glass);
 
-    .carousel-title,
-    .contacts-title,
-    .projects-title {
-      font-size: 28px;
-    }
+  backdrop-filter: blur(18px);
 
-    .carousel-subtitle,
-    .projects-subtitle {
-      font-size: 18px;
-    }
+  border:
+    1px solid var(--border-color);
 
-    .profile-content {
-      flex-direction: column;
-      text-align: center;
-    }
+  box-shadow:
+    var(--shadow-soft);
+}
 
-    .profile-text {
-      text-align: center;
-    }
 
-    .profile-image-container {
-      max-width: 150px;
-    }
+/* Responsive Utilities */
 
-    .projects-container {
-      padding: 40px 15px;
-    }
 
-    .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+@media (max-width: 768px) {
 
-    .project-tile {
-      min-height: 160px;
-    }
+  .carousel-card {
+    flex: 0 0 90%;
+    margin: 0 5%;
   }
+
+  .carousel-title,
+  .contacts-title,
+  .projects-title {
+    font-size: 32px;
+  }
+
+  .carousel-subtitle,
+  .projects-subtitle {
+    font-size: 18px;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-text {
+    text-align: center;
+  }
+
+  .profile-image-container {
+    max-width: 160px;
+  }
+
+  .projects-container {
+    padding: 50px 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns:
+      repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+  }
+
+  .project-tile {
+    min-height: 180px;
+  }
+}

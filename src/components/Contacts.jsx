@@ -126,7 +126,7 @@ const Contacts = () => {
             </p>
 
             <p className="availability">
-              Available for freelance,
+              Available for hire. Freelance,
               business collaborations,
               and full-stack development work.
             </p>
