@@ -521,6 +521,157 @@ code {
     var(--shadow-soft);
 }
 
+/* Button System */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: var(--button-gradient);
+
+  color: var(--button-text-color);
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  cursor: pointer;
+
+  box-shadow:
+    var(--button-shadow);
+
+  transition:
+    transform var(--transition-medium),
+    box-shadow var(--transition-medium),
+    background var(--transition-medium),
+    opacity var(--transition-medium);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  transform:
+    translateY(-3px);
+
+  background:
+    var(--button-hover-gradient);
+
+  box-shadow:
+    var(--button-hover-shadow),
+    var(--glow-soft);
+}
+
+.btn-primary:active {
+  transform:
+    translateY(-1px)
+    scale(0.98);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Secondary Button */
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  border-radius: 16px;
+
+  border:
+    1px solid var(--border-color);
+
+  background:
+    var(--surface-glass);
+
+  backdrop-filter:
+    blur(16px);
+
+  color:
+    var(--heading-color);
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  cursor: pointer;
+
+  box-shadow:
+    var(--shadow-soft);
+
+  transition:
+    transform var(--transition-medium),
+    border-color var(--transition-medium),
+    box-shadow var(--transition-medium),
+    background var(--transition-medium);
+}
+
+.btn-secondary:hover {
+  transform:
+    translateY(-3px);
+
+  border-color:
+    var(--card-hover-border-color);
+
+  box-shadow:
+    var(--shadow-medium);
+
+  background:
+    rgba(255,255,255,0.08);
+}
+
+.glass-card {
+  background:
+    var(--card-gradient);
+
+  backdrop-filter:
+    blur(22px);
+
+  border:
+    1px solid var(--card-border-color);
+
+  border-radius:
+    28px;
+
+  box-shadow:
+    var(--card-shadow);
+
+  transition:
+    transform var(--transition-medium),
+    box-shadow var(--transition-medium),
+    border-color var(--transition-medium),
+    background var(--transition-medium);
+}
+
+/* Glass Card Utility */
+
+.glass-card:hover {
+  transform:
+    translateY(-4px);
+
+  background:
+    var(--card-hover-gradient);
+
+  border-color:
+    var(--card-hover-border-color);
+
+  box-shadow:
+    var(--card-hover-shadow);
+}
+
 
 /* Responsive Utilities */
 
