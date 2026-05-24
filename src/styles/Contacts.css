@@ -1,16 +1,17 @@
 /* /src/styles/contacts.css */
 
 
-   .contacts-container {
-    background: var(--bg);
-    color: var(--text);
-    text-align: center;
-    padding: 80px 20px;
-    position: relative;
-    overflow: hidden;
-    animation: fadeInUp 0.8s ease forwards;
+/* Contacts Section */
 
-  }
+.contacts-container {
+  background: var(--bg);
+  color: var(--text);
+  padding: 120px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+
 
   /* Keyframes for fade-in from bottom */
 @keyframes fadeInUp {

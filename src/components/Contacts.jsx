@@ -12,7 +12,7 @@ const Contacts = () => {
     e.preventDefault();
 
     setLoading(true);
-    setStatus('');;
+    setStatus('');
 
     const form = e.target;
     const data = new FormData(form);
@@ -45,152 +45,205 @@ const Contacts = () => {
 
 
   return (
-    <section className="contacts-container" id="contact">
-      <h2 className="contacts-title">
-        Get in Touch
-      </h2>
+    <section
+      className="contacts-container"
+      id="contact"
+    >
 
-      <div className="contacts-info">
-        <p>
-          I’m always open to new opportunities,
-          collaborations, or connecting with
-          fellow developers and businesses.
+      {/* Heading */}
+      <div className="contacts-header">
+
+        <h2 className="contacts-title">
+          Get In Touch
+        </h2>
+
+        <p className="contacts-subtitle">
+          Let’s build something thoughtful,
+          modern, and memorable together.
         </p>
 
-        {/* Contact Form */}
-        <div className="contact-form-container">
+      </div>
+
+      {/* Main Layout */}
+      <div className="contacts-content">
+
+        {/* LEFT SIDE */}
+        <div className="contacts-left">
+
+          <p className="contacts-description">
+            I’m always open to new opportunities,
+            collaborations, freelance work,
+            and creative technical projects.
+          </p>
+
+          <div className="contacts-links">
+
+            <a
+              href="https://github.com/RodriguezRamiro"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="contact-link"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="2x"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ramiro-rodriguez-3a287a328"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="contact-link"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2x"
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/software.map"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="contact-link"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="2x"
+              />
+            </a>
+
+          </div>
+
+          <div className="contact-meta">
+
+            <p className="email">
+              rodriguezcodesolutions@gmail.com
+            </p>
+
+            <p className="availability">
+              Available for freelance,
+              business collaborations,
+              and full-stack development work.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="contact-form-wrapper">
 
           <form
             className="contact-form"
             onSubmit={handleSubmit}
           >
 
+            {/* Honeypot */}
+            <input
+              type="text"
+              name="_gotcha"
+              className="hidden-field"
+            />
+
             {/* Name */}
-            <div className="form-group">
-              <label htmlFor="name">
-                Full Name
-              </label>
+            <div className="floating-group">
 
               <input
                 type="text"
-                id="name"
                 name="name"
-                placeholder="Your name"
                 required
+                placeholder=" "
               />
+
+              <label>
+                Full Name
+              </label>
+
             </div>
 
             {/* Email */}
-            <div className="form-group">
-              <label htmlFor="email">
+            <div className="floating-group">
+
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder=" "
+              />
+
+              <label>
                 Email Address
               </label>
 
-              <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="you@email.com"
-              required
-              />
             </div>
 
             {/* Business */}
-            <div className="form-group">
-              <label htmlFor="business">
+            <div className="floating-group">
+
+              <input
+                type="text"
+                name="business"
+                placeholder=" "
+              />
+
+              <label>
                 Business / Organization
               </label>
 
-              <input
-              type="text"
-              id="business"
-              name="business"
-              placeholder="Business Name"
-              />
+            </div>
 
-              {/* Message */}
-              <div className="form-group">
-                <label htmlFor="message">
-                  Project Goals
-                </label>
+            {/* Message */}
+            <div className="floating-group">
 
-                <textarea
-                id="message"
+              <textarea
                 name="message"
                 rows="6"
-                placeholder="Tell me about your idea; paint the picture, what vision are we buidling..."
                 required
-                ></textarea>
+                placeholder=" "
+                onInput={(e) => {
+                  e.target.style.height = 'auto';
+                  e.target.style.height =
+                    `${e.target.scrollHeight}px`;
+                }}
+              />
 
-                <p className="form-note">
-                  No pressure - no idea is too small.<br>
-                  </br>I'll follow up with next steps.
-                </p>
-              </div>
+              <label>
+                Project Goals
+              </label>
 
-              {/* Submit */}
-              <button
+            </div>
+
+            <button
               type="submit"
-              className="btn-primary contact-submit"
+              className="contact-submit"
               disabled={loading}
-              >
-                {loading ? "Sending..." : "Send Inquiry"}
-              </button>
+            >
+              {loading
+                ? 'Sending...'
+                : 'Send Inquiry'}
+            </button>
 
-              {/* Status Messages */}
-              {status === "SUCCESS" && (
-                <p className="form-success">
-                  Message sent Successfully!
-                </p>
-              )}
-
-              {status === "ERROR" && (
-                <p className="form-error">
-                  Something went wrong. Please try again.
-                  </p>
-              )}
+            {status === 'SUCCESS' && (
+              <div className="form-success">
+                ✓ Message sent successfully
               </div>
+            )}
+
+            {status === 'ERROR' && (
+              <div className="form-error">
+                Something went wrong.
+              </div>
+            )}
+
           </form>
+
         </div>
 
-        {/* Social Links */}
-        <div className="contacts-links">
-          <a
-            href="https://github.com/RodriguezRamiro"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub Profile"
-            className="contact-link"
-          >
-            <FontAwesomeIcon icon={faGithub} size="2x" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ramiro-rodriguez-3a287a328"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn Profile"
-            className="contact-link"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </a>
-          <a
-            href="https://www.instagram.com/software.map"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram Profile"
-            className="contact-link"
-          >
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-          </a>
-        </div>
-
-        {/* Email */}
-        <p className="email">
-          Or email me directly at{' '}
-          <a href="mailto:rodriguezcodesolutions@gmail.com">
-            rodriguezcodesolutions@gmail.com
-          </a>
-        </p>
       </div>
     </section>
   );
