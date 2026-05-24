@@ -221,7 +221,7 @@ const Contacts = () => {
               />
 
               <label>
-                Project Goals
+                Offers & Requests Goals
               </label>
 
             </div>
