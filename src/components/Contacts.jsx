@@ -71,7 +71,7 @@ const Contacts = () => {
         <div className="contacts-left">
 
           <p className="contacts-description">
-            I’m always open to new opportunities,
+            Actively open to new opportunities,
             collaborations, freelance work,
             and creative technical projects.
           </p>
