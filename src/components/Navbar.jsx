@@ -18,7 +18,7 @@ function Navbar() {
   <span className="logo-symbol"><DevIcon className="dev-svg" /></span>
   {/* Reserve width container */}
   <span className="animated-title-wrapper">
-    <span className="animated-title">DevsLanding</span>
+    <span className="animated-title">DevsLanding Manifesto</span>
   </span>
 </h1>
 

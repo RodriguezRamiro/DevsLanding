@@ -48,6 +48,7 @@ function Profile() {
           </p>
 
           {/* Supporting Copy */}
+
           <p className="hero-supporting-text">
             I combine software engineering,
             creative problem-solving,
