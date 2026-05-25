@@ -232,8 +232,8 @@ const Contacts = () => {
               disabled={loading}
             >
               {loading
-                ? 'Sending...'
-                : 'Send Inquiry'}
+                ? '{ Sending... }'
+                : 'Post Inquiry'}
             </button>
 
             {status === 'SUCCESS' && (

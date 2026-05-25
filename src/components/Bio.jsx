@@ -166,7 +166,8 @@ function Bio() {
         <p className="bio-footer-text">
           Open to ambitious projects,
           creative collaborations,
-          and modern software architecturing.
+          and modern software architecturing
+          through any of these platforms.
         </p>
 
         <div classNmae="bio-socials">
@@ -212,7 +213,7 @@ function Bio() {
         </div>
 
       </div>
-      
+
     </section>
   );
 }
