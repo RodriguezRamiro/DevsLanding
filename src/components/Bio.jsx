@@ -1,75 +1,218 @@
+/* //devslanding/src/components/Bio.jsx */
+
 import React from 'react';
-import '../styles/Profile.css';
+import '../styles/Bio.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+import { faGithub,
+faInstagram,
+faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
+
 
 function Bio() {
+
   return (
+
     <section className="bio-container">
-      {/* Profile Bio */}
-      <div className="profile-bio">
-        <h3>About <span className="highlight">Me</span></h3>
 
-        <p>
-          I am Ramiro Rodriguez — a <strong>Full-stack Developer</strong> with a background in Business Information Systems.
-          My technical skillset is reinforced by hands-on training through the USF Software Engineering Career Track, where we completed production-grade full-stack applications and strengthened modern development practices.
-          My business background enables me to identify customer pain points, translate them into technical solutions, and help deliver products that create measurable value.
-          I bring a strategic, customer-focused mindset to software development. I specialize in crafting modern, user-first, digital experiences that not only function effectively but also align with real business objectives.
-        </p>
+      {/* Decorative Glow */}
+      <div className="bio-glow"></div>
 
-        <p>
-        What began as a self-taught curiosity evolved into a disciplined craft — one I continue refining through real-world projects and continuous study. I thrive on exploring web animations, real-time interactivity, and scalable fullstack architecture desing, bringing in that "wow effect".
-        </p>
+      <div classNmae="bio-wraper glass-card">
 
-        <p>
-          Beyond coding, an entrepreneur at heart. I focus on continued learning. Enjoy 3D printing miniatures, turning pencil sketches into oil canvases, and staying physically active.
-        </p>
+        {/* Section Header */}
+        <div className="bio-header">
 
-        <p>
-          <em><strong>My mission:</strong></em> To create polished, performant, and purposeful digital products that connect and inspire.
-        </p>
+          <span className="bio-kicker">
+            Philosophy & Direction
+          </span>
 
-        <p>
-        <div className="document-links">
-          <a href="/Resume2026.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
-            Review My Resume
-          </a>
-          <a href="/USFCertificate.png" target="_blank" rel="noopener noreferrer" className="certificate-link">
-            View USF Certificate
-          </a>
-          </div>
-        </p>
+          <h2 className="bio-title">
+            Building thoughtful digital systems
+            with creative percision.
+          </h2>
 
-        {/* Call-to-Action & Social Links */}
-        <div className="bio-cta">
-          <p>
-            🚀 Looking to collaborate or need a developer with vision and grit? <strong><a href="#contact">Let’s connect.</a></strong>
+          <p className="bio-intro">
+            Full-stack developer witha foundation in business systems, interactive design,
+            and scalable architecture - focused on crafting immersive digital experiences
+            that balance visual identity,
+            usability, and performance.
           </p>
-          <div className="social-section">
-            <span className="bio-text">Follow my journey on</span>
-            <div className="social-icons">
-              <a
-                href="https://github.com/RodriguezRamiro"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub Profile"
-                className="contact-link"
-              >
-                <FontAwesomeIcon icon={faGithub} size="2x" />
-              </a>
-              <a
-                href="https://www.instagram.com/software.map"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram Profile"
-                className="contact-link"
-              >
-                <FontAwesomeIcon icon={faInstagram} size="2x" />
-              </a>
-            </div>
-          </div>
+
         </div>
+
+        {/* Content Grid */}
+        <div className="bio-grid">
+
+          {/* Left Narrative */}
+          <div className="bio-column">
+
+            <div className="bio-block">
+
+              <h3>
+                Technical Foundation
+              </h3>
+              <p>
+                My background in Business Inforamtion Systems
+                allows me to approach software development
+                beyond code alone - understanding both operational
+                demand and the customer experience behind digital products.
+              </p>
+
+              <p>
+                Through hands-on full-stack training and independent study,
+                I've focused on building production-ready applications,
+                scalable frontend systems,
+                real-time interactivity and immersive user interfaces.
+              </p>
+
+            </div>
+
+            <div className="bio-block quote-block">
+
+            <p>
+              "What began as a self-tought curiosity evolved
+              into disciplined craft - refined trhough experimentation,
+              iteration, and continues learning."
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* Right Narrative */}
+        <div className="bio-column">
+          <div className="bio-block">
+
+            <h3>
+              Creative Direction
+            </h3>
+
+            <p>
+              I'm deeply invested in the intersection between architecture,
+              motion, interaction, and digital storytelling.
+              My work often blends cinematic layouts,
+              refined visual systems, and modern frontend engineering.
+            </p>
+
+            <p>
+              Beyond the scope of software, I enjoy studying visual
+              composition, painting, printing miniatures and translating
+              creative concepts into polished interactive experiences.
+              A strong visual compostion makes the difference between a chaotic
+              image and an impactful one.
+            </p>
+
+          </div>
+
+          <div className="bio-block">
+
+            <h3>
+              Mission
+            </h3>
+
+            <p>
+              To build modern digital products that feel
+              intentional, performant, visually memorable,
+              and strategically exceptional.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
+
+      {/* Credentials */}
+      <div className="bio-credentials">
+
+        <a
+        href="/Resume2026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="credential-card"
+        >
+          <span className="credential-label">
+            Resume
+          </span>
+
+          <span className="credential-title">
+            Professional Experience
+          </span>
+        </a>
+
+        <a
+        href="/USFCertificate.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="credential-card"
+        >
+          <span className="credential-label">
+            Certification
+          </span>
+
+          <span className="credential-title">
+            USF Software Engineering
+          </span>
+        </a>
+
+      </div>
+
+      {/* Footer CTA */}
+      <div className="bio-footer">
+
+        <p className="bio-footer-text">
+          Open to ambitious projects,
+          creative collaborations,
+          and modern software architecturing.
+        </p>
+
+        <div classNmae="bio-socials">
+
+            <a
+              href="https://github.com/RodriguezRamiro"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="bio-social-link"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ramiro-rodriguez-3a287a328"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="bio-social-link"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/software.map"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="bio-social-link"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+              />
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+      
     </section>
   );
 }
