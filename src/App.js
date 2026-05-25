@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
+import Bio from './components/Bio.jsx';
 import Projects from './components/Projects';
 import Carousel from './components/Carousel';
 import ExperimentsShowcase from './components/InteractiveDesings.jsx';
@@ -17,6 +18,10 @@ function App() {
       {/* ...sections */}
       <section id="about">
         <Profile />
+      </section>
+
+      <section id="bio">
+        <Bio />
       </section>
 
       <section id="projects">
