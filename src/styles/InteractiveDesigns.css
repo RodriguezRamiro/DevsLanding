@@ -1,4 +1,9 @@
-.showcase-preview {
+
+
+/* devslanding/src/styles/ExperimentsShowcase.css */
+
+
+.preview-link {
     transition: opacity 0.25s ease, transform 0.25s ease;
   }
 

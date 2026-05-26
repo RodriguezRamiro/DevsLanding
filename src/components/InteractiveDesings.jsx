@@ -1,8 +1,8 @@
-/* //devslanding/src/styles/ExperimentsShowcase.jsx */
+/* //devslanding/src/components/InteractiveDesings.jsx */
 
 import { useState } from "react";
 import experiments from "../data/collaborations";
-import "../styles/ExperimentsShowcase.css";
+import "../styles/InteractiveDesigns.css";
 
 const ExperimentsShowcase = () => {
   const [activeIndex, setActiveIndex] = useState(0);
