@@ -9,125 +9,133 @@
 
 
 
-  /* Color Palette Reference */
+  /* Optional Color Palette Reference
   --vibrant-coral: #ef6461ff;
   --sunlit-clay: #e4b363ff;
   --platinum: #e8e9ebff;
   --soft-linen: #e0dfd5ff;
   --gunmetal: #313638ff;
+  */
 
-  /* replace these with
+
 
   --camel: #af9164ff;
   --ivory-mist: #f7f3e3ff;
   --silver: #b3b6b7ff;
   --molten-lava: #6f1a07ff;
   --dark-coffee: #2b2118ff;
-  */
+
 
 
     /* Base Colors */
-    --bg: var(--platinum);
 
-    --surface: #F4F2EE;
-    --surface-elevated: #FCFBF9;
+    --bg: var(--ivory-mist);
+
+    --surface: #F3EFE2;
+
+    --surface-elevated: #FCFAF4;
 
     --surface-glass:
       rgba(255,255,255,0.45);
 
     --surface-dark:
-      rgba(49,54,56,0.04);
+      rgba(43,33,24,0.04);
 
     /* Typography */
 
-      --text: #2A2D2F;
+    --text:
+    var(--dark-coffee);
 
-      --heading-color: #1B1D1E;
+  --heading-color:
+    #1F1812;
 
-      --subtext-color: #62676A;
+  --subtext-color:
+    #76695D;
 
-      --paragraph-color: #3E4345;
+  --paragraph-color:
+    #4B4037;
 
-      --text-highlight-color:
-        var(--sunlit-clay);
+  --text-highlight-color:
+    var(--camel);
 
     /* Accents */
 
     --active:
-    var(--sunlit-clay);
+    var(--camel);
 
   --active-soft:
-    rgba(228,179,99,0.14);
+    rgba(175,145,100,0.14);
 
   --link-color:
-    #B38442;
+    var(--molten-lava);
 
   --hover-text:
-    var(--sunlit-clay);
+    var(--camel);
 
   --underline:
-    var(--sunlit-clay);
+    var(--camel);
 
   --accent-soft:
-    #D98A78;
+    #C67D5E;
 
   /* Navigation */
 
   --navbar-bg:
-    rgba(248,248,246,0.82);
+  rgba(247,243,227,0.82);
 
-  --hover-bg:
-    rgba(49,54,56,0.04);
+--hover-bg:
+  rgba(43,33,24,0.05);
 
   /* Borders */
+
   --border-color:
-    rgba(49,54,56,0.08);
+    rgba(43,33,24,0.08);
 
   --border-strong:
-    rgba(49,54,56,0.16);
+    rgba(43,33,24,0.16);
 
   --card-border-color:
-    rgba(49,54,56,0.08);
+    rgba(43,33,24,0.08);
 
   --card-hover-border-color:
-    rgba(228,179,99,0.45);
+    rgba(175,145,100,0.40);
 
   --profile-image-border-color:
-    rgba(49,54,56,0.08);
+    rgba(43,33,24,0.10);
 
   /* Shadow System */
 
   --shadow-soft:
-  0 8px 24px rgba(0,0,0,0.04);
+    0 8px 24px rgba(0,0,0,0.04);
 
---shadow-medium:
-  0 16px 40px rgba(0,0,0,0.06);
+  --shadow-medium:
+    0 16px 40px rgba(0,0,0,0.07);
 
---shadow-large:
-  0 24px 80px rgba(0,0,0,0.08);
+  --shadow-large:
+    0 24px 80px rgba(0,0,0,0.10);
 
---navbar-shadow:
-  0 10px 30px rgba(0,0,0,0.04);
+  --navbar-shadow:
+    0 10px 30px rgba(0,0,0,0.05);
 
---navbar-link-hover-shadow:
-  0 12px 32px rgba(0,0,0,0.06);
+  --navbar-link-hover-shadow:
+    0 12px 32px rgba(0,0,0,0.08);
 
---card-shadow:
-  0 12px 30px rgba(0,0,0,0.05);
+  --card-shadow:
+    0 12px 30px rgba(0,0,0,0.06);
 
---card-hover-shadow:
-  0 20px 60px rgba(0,0,0,0.08);
+  --card-hover-shadow:
+    0 20px 60px rgba(0,0,0,0.10);
 
---profile-image-shadow:
-  0 12px 30px rgba(0,0,0,0.08);
+  --profile-image-shadow:
+    0 12px 30px rgba(0,0,0,0.10);
 
   /* Glow System */
 
   --glow-soft:
-  0 0 30px rgba(228,179,99,0.10);
+    0 0 30px rgba(175,145,100,0.12);
 
---glow-medium:
-  0 0 50px rgba(228,179,99,0.14);
+  --glow-medium:
+    0 0 50px rgba(175,145,100,0.18);
 
   /* Card System */
 
@@ -140,115 +148,121 @@
   --card-gradient:
     linear-gradient(
       145deg,
-      rgba(255,255,255,0.80),
-      rgba(244,242,238,0.82)
+      rgba(255,255,255,0.78),
+      rgba(243,239,226,0.88)
     );
 
   --card-hover-gradient:
     linear-gradient(
       145deg,
-      rgba(255,255,255,0.94),
-      rgba(240,236,228,0.94)
+      rgba(255,255,255,0.96),
+      rgba(236,229,214,0.95)
     );
+
 
     /* Button System */
 
     --button-gradient:
     linear-gradient(
       135deg,
-      #D6A55B,
-      #B38442
+      #6F1A07,
+      #AF9164
     );
 
   --button-hover-gradient:
     linear-gradient(
       135deg,
-      #E4B363,
-      #C89242
+      #8A2410,
+      #C4A372
     );
 
   --button-text-color:
     #FFFFFF;
 
   --button-shadow:
-    0 10px 24px rgba(0,0,0,0.10);
+    0 10px 24px rgba(0,0,0,0.12);
 
   --button-hover-shadow:
-    0 16px 40px rgba(0,0,0,0.16);
+    0 16px 40px rgba(0,0,0,0.18);
 
 
   /* Tag System */
+
   --tag-bg:
-    rgba(228,179,99,0.12);
+    rgba(175,145,100,0.12);
 
   --tag-hover-bg:
-    rgba(228,179,99,0.20);
+    rgba(175,145,100,0.20);
 
   /* Decorative Elements */
-  --decorative-line-color:
-    rgba(49,54,56,0.10);
+    --decorative-line-color:
+    rgba(43,33,24,0.10);
 
   --decorative-line-gradient-1:
     linear-gradient(
       90deg,
-      #E4B363,
-      #D4B08A,
-      #C8C2B8
+      #AF9164,
+      #D2B48C,
+      #F7F3E3
     );
 
   --decorative-line-gradient-2:
     linear-gradient(
       90deg,
-      #B38442,
-      #E4B363,
-      #E0DFD5
+      #6F1A07,
+      #AF9164,
+      #E6DDCF
     );
 
   --decorative-line-gradient-3:
     linear-gradient(
       90deg,
-      #E0DFD5,
-      #D6A55B,
-      #313638
+      #F7F3E3,
+      #AF9164,
+      #2B2118
     );
 
   --decorative-line-gradient-4:
     linear-gradient(
       90deg,
-      #313638,
-      #B38442,
-      #F4F2EE
+      #2B2118,
+      #6F1A07,
+      #F7F3E3
     );
 
   /* Dots / Indicators */
 
   --dot-color:
-    rgba(49,54,56,0.18);
+    rgba(43,33,24,0.18);
 
   --dot-active-color:
-    var(--sunlit-clay);
+    var(--camel);
 
   /* Transitions */
+
   --transition-fast:
-  0.25s ease;
+    0.25s ease;
 
   --transition-medium:
-  0.35s ease;
+    0.35s ease;
 
   --transition-slow:
-  0.5s ease;
-
+    0.5s ease;
 }
 
 /* Dark Mode */
   .dark {
 
   /* Base Colors */
-    --bg: #181A1B;
 
-  --surface: #202324;
+  --bg:
+    #16120F;
 
-  --surface-elevated: #2A2E30;
+  --surface:
+    #211913;
+
+  --surface-elevated:
+    #2A211B;
 
   --surface-glass:
     rgba(255,255,255,0.04);
@@ -258,46 +272,50 @@
 
   /* Typography */
 
-  --text: #F3F1EC;
+  --text:
+    #F5EFE4;
 
-  --heading-color: #FFFFFF;
+  --heading-color:
+    #FFF9F2;
 
-  --subtext-color: #B8B4AD;
+  --subtext-color:
+    #C2B7A8;
 
-  --paragraph-color: #D4D0CA;
+  --paragraph-color:
+    #D8CFC2;
 
   --text-highlight-color:
-    var(--sunlit-clay);
+    var(--camel);
 
   /* Accents */
+
   --active:
-  var(--sunlit-clay);
+    var(--camel);
 
   --active-soft:
-    rgba(228,179,99,0.16);
+    rgba(175,145,100,0.16);
 
   --link-color:
-    #E4B363;
+    #D6B183;
 
   --hover-text:
-    #F0C57A;
+    #E6C398;
 
   --underline:
-    var(--sunlit-clay);
+    var(--camel);
 
   --accent-soft:
-    #D98A78;
+    #B96C54;
 
   /* Navigation */
 
   --navbar-bg:
-  rgba(24,26,27,0.78);
+    rgba(22,18,15,0.82);
 
   --hover-bg:
-  rgba(255,255,255,0.04);
+    rgba(255,255,255,0.04);
 
   /* Borders */
-
 
   --border-color:
     rgba(255,255,255,0.08);
@@ -309,7 +327,7 @@
     rgba(255,255,255,0.08);
 
   --card-hover-border-color:
-    rgba(228,179,99,0.50);
+    rgba(175,145,100,0.45);
 
   --profile-image-border-color:
     rgba(255,255,255,0.08);
@@ -317,7 +335,7 @@
   /* Shadow System */
 
   --shadow-soft:
-  0 8px 24px rgba(0,0,0,0.25);
+    0 8px 24px rgba(0,0,0,0.25);
 
   --shadow-medium:
     0 16px 40px rgba(0,0,0,0.35);
@@ -326,29 +344,30 @@
     0 24px 80px rgba(0,0,0,0.45);
 
   --navbar-shadow:
-    0 10px 30px rgba(0,0,0,0.25);
+    0 10px 30px rgba(0,0,0,0.30);
 
   --navbar-link-hover-shadow:
-    0 12px 32px rgba(0,0,0,0.30);
+    0 12px 32px rgba(0,0,0,0.35);
 
   --card-shadow:
-    0 12px 30px rgba(0,0,0,0.28);
+    0 12px 30px rgba(0,0,0,0.30);
 
   --card-hover-shadow:
-    0 20px 60px rgba(0,0,0,0.40);
+    0 20px 60px rgba(0,0,0,0.45);
 
   --profile-image-shadow:
-    0 16px 40px rgba(0,0,0,0.40);
+    0 16px 40px rgba(0,0,0,0.45);
 
   /* Glow System */
 
   --glow-soft:
-    0 0 30px rgba(228,179,99,0.10);
+  0 0 30px rgba(175,145,100,0.12);
 
-  --glow-medium:
-    0 0 50px rgba(228,179,99,0.18);
+--glow-medium:
+  0 0 50px rgba(175,145,100,0.20);
 
   /* Card System */
+
 
   --card-bg:
     rgba(255,255,255,0.03);
@@ -370,24 +389,32 @@
       rgba(255,255,255,0.02)
     );
 
+
+  --card-hover-gradient:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.02)
+    );
+
   /* Button System */
 
   --button-gradient:
     linear-gradient(
       135deg,
-      #B38442,
-      #E4B363
+      #6F1A07,
+      #AF9164
     );
 
   --button-hover-gradient:
     linear-gradient(
       135deg,
-      #EFC57A,
-      #D6A55B
+      #A42A12,
+      #D0AA78
     );
 
   --button-text-color:
-    #181A1B;
+    #FFF9F2;
 
   --button-shadow:
     0 10px 24px rgba(0,0,0,0.35);
@@ -398,10 +425,10 @@
   /* Tag System */
 
   --tag-bg:
-    rgba(228,179,99,0.14);
+  rgba(175,145,100,0.14);
 
   --tag-hover-bg:
-    rgba(228,179,99,0.22);
+  rgba(175,145,100,0.24);
 
   /* Decorative System */
 
@@ -411,76 +438,78 @@
   --decorative-line-gradient-1:
     linear-gradient(
       90deg,
-      #E4B363,
-      #8E6B45,
-      #313638
+      #AF9164,
+      #6F1A07,
+      #211913
     );
 
   --decorative-line-gradient-2:
     linear-gradient(
       90deg,
-      #F0C57A,
-      #E4B363,
-      #202324
+      #D6B183,
+      #AF9164,
+      #16120F
     );
 
   --decorative-line-gradient-3:
     linear-gradient(
       90deg,
-      #313638,
-      #B38442,
-      #E0DFD5
+      #211913,
+      #AF9164,
+      #F7F3E3
     );
 
   --decorative-line-gradient-4:
     linear-gradient(
       90deg,
-      #181A1B,
-      #D6A55B,
-      #E8E9EB
+      #16120F,
+      #6F1A07,
+      #F7F3E3
     );
+
 
   /* Dots / Idicators */
 
   --dot-color:
-  rgba(255,255,255,0.22);
+    rgba(255,255,255,0.22);
 
   --dot-active-color:
-    var(--sunlit-clay);
-  }
+    var(--camel);
+}
 
   /* Global Resets */
 
   html,
-body {
-  margin: 0;
-  padding: 0;
+  body {
+    margin: 0;
+    padding: 0;
 
-  background-color: var(--bg);
+    background-color: var(--bg);
 
-  color: var(--text);
+    color: var(--text);
 
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      sans-serif;
 
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
-  transition:
-    background-color var(--transition-medium),
-    color var(--transition-medium);
+    transition:
+      background-color var(--transition-medium),
+      color var(--transition-medium);
 
-  overflow-x: hidden;
-}
+    overflow-x: hidden;
+  }
+
 
 
 /* Global Typography */

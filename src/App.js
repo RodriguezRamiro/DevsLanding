@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Bio from './components/Bio.jsx';
 import Projects from './components/Projects';
-import CreativeLab from './components/CreativeLab.jsx';
 import ExperimentsShowcase from './components/InteractiveDesings.jsx';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
@@ -29,7 +28,7 @@ function App() {
       </section>
 
       <section className="carousel-section w-full py-20 bg-black flex justify-center items-center">
-        {/* <CreativeLab /> */}
+        {/* <InteractiveDesigns /> */}
         <ExperimentsShowcase />
       </section>
 
