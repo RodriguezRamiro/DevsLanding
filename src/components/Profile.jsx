@@ -124,7 +124,7 @@ function Profile() {
           <div className="hero-floating-card glass-card">
 
             <span className="floating-label">
-              AVAILABLE FOR FREELANCE
+              OPEN TO WORK
             </span>
 
             <h3>
