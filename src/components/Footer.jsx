@@ -4,6 +4,7 @@ import React from "react";
 
 import {
   FaGithub,
+  FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
 
@@ -61,6 +62,16 @@ const Footer = () => {
           >
             <FaLinkedin size={18} />
           </a>
+          
+          <a
+            href="https://www.instagram.com/software.map"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <FaInstagram size={18} />
+          </a>
+
 
         </div>
 
