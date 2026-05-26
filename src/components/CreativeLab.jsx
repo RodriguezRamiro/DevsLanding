@@ -1,50 +1,70 @@
-//src/components/Carousel.jsx
+/* //devslanding/src/components/CreativeLab.jsx */
 
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  useCallback
+} from 'react';
+
 import '../styles/CreativeLab.css';
 import experiments from '../data/collaborations';
 
-const Carousel = () => {
+const CreativeLab = () => {
+
   const length = experiments.length;
   const visibleCount = 3;
 
-  // Create clones for infinite looping
+  /* Infinite Loop Clone */
   const extendedExperiments = [
     ...experiments.slice(length - visibleCount),
     ...experiments,
     ...experiments.slice(0, visibleCount),
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(visibleCount);
-  const [isTransitioning, setIsTransitioning] = useState(true);
-  const [isPaused, setIsPaused] = useState(false);
+  /* States */
+  const [currentIndex, setCurrentIndex] =
+    useState(visibleCount);
 
+  const [isTransitioning, setIsTransitioning] =
+    useState(true);
+
+  const [isPaused, setIsPaused] =
+    useState(false);
+
+  /* Touch Controls */
   const touchStartX = useRef(null);
   const touchEndX = useRef(null);
+
+  /* Autoplay Ref */
   const nextSlideRef = useRef(null);
 
-  // Move to next slide
+  /* Next Slide */
   const nextSlide = useCallback(() => {
+
     if (currentIndex < length + visibleCount) {
-      setCurrentIndex(prev => prev + 1);
+      setCurrentIndex((prev) => prev + 1);
     }
+
   }, [currentIndex, length, visibleCount]);
 
-
-  // Move to previous slide
+  /* Previous Slide */
   const prevSlide = useCallback(() => {
+
     if (currentIndex > 0) {
-      setCurrentIndex(prev => prev - 1);
+      setCurrentIndex((prev) => prev - 1);
     }
+
   }, [currentIndex]);
 
-  // Update ref to always point to latest nextSlide function
+  /* Keep Latest nextSlide */
   useEffect(() => {
     nextSlideRef.current = nextSlide;
   }, [nextSlide]);
 
-  // Autoplay
+  /* Autoplay */
   useEffect(() => {
+
     if (isPaused) return;
 
     const interval = setInterval(() => {
@@ -52,103 +72,262 @@ const Carousel = () => {
     }, 3500);
 
     return () => clearInterval(interval);
+
   }, [isPaused]);
 
-  // Pause autoplay when switching tabs
+  /* Pause On Tab Change */
   useEffect(() => {
+
     const handleVisibilityChange = () => {
       setIsPaused(document.hidden);
     };
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    document.addEventListener(
+      'visibilitychange',
+      handleVisibilityChange
+    );
+
     return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener(
+        'visibilitychange',
+        handleVisibilityChange
+      );
     };
+
   }, []);
 
-  // Swipe handlers
-  const handleTouchStart = (e) => { touchStartX.current = e.touches[0].clientX; };
-  const handleTouchMove = (e) => { touchEndX.current = e.touches[0].clientX; };
+  /* Swipe Handlers */
+  const handleTouchStart = (e) => {
+    touchStartX.current =
+      e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current =
+      e.touches[0].clientX;
+  };
+
   const handleTouchEnd = () => {
+
     const minSwipeDistance = 50;
-    if (touchStartX.current !== null && touchEndX.current !== null) {
-      const distance = touchStartX.current - touchEndX.current;
-      if (distance > minSwipeDistance) nextSlide();
-      else if (distance < -minSwipeDistance) prevSlide();
+
+    if (
+      touchStartX.current !== null &&
+      touchEndX.current !== null
+    ) {
+
+      const distance =
+        touchStartX.current -
+        touchEndX.current;
+
+      if (distance > minSwipeDistance) {
+        nextSlide();
+      }
+
+      else if (distance < -minSwipeDistance) {
+        prevSlide();
+      }
     }
+
     touchStartX.current = null;
     touchEndX.current = null;
   };
 
-
-  // Handle transition end for infinite loop reset
+  /* Infinite Loop Reset */
   const handleTransitionEnd = () => {
+
     if (currentIndex === 0) {
+
       setIsTransitioning(false);
       setCurrentIndex(length);
-    } else if (currentIndex === length + visibleCount) {
+
+    }
+
+    else if (
+      currentIndex ===
+      length + visibleCount
+    ) {
+
       setIsTransitioning(false);
       setCurrentIndex(visibleCount);
+
     }
   };
 
-  // Re-enable transition after jump
+  /* Re-enable Transition */
   useEffect(() => {
+
     if (!isTransitioning) {
-      const timer = setTimeout(() => setIsTransitioning(true), 20);
+
+      const timer = setTimeout(() => {
+        setIsTransitioning(true);
+      }, 20);
+
       return () => clearTimeout(timer);
     }
+
   }, [isTransitioning]);
 
-  // Slide width and transform
-  const slideWidthPercent = 100 / visibleCount;
-  const translateX = -currentIndex * slideWidthPercent;
+  /* Slide Width */
+  const slideWidthPercent =
+    100 / visibleCount;
+
+  const translateX =
+    -currentIndex * slideWidthPercent;
 
   return (
-    <section id="experiments" className="carousel-root">
-      <h2 className="carousel-title">Designs</h2>
-      <p className="carousel-subtitle">Creative UI & Mini-Projects</p>
 
-      <div className="carousel-viewport"
+    <section
+      id="experiments"
+      className="creative-lab-root"
+    >
+
+      {/* Section Header */}
+      <div className="creative-lab-header">
+
+        <h2 className="creative-lab-title">
+          Creative Lab
+        </h2>
+
+        <p className="creative-lab-subtitle">
+          Experimental Interfaces,
+          Motion Concepts,
+          Interactive Systems,
+          and Visual Explorations
+        </p>
+
+      </div>
+
+      {/* Main Slider */}
+      <div
+        className="creative-lab-viewport"
+
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
+
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
+
         <div
-          className="carousel-track"
+          className="creative-lab-track"
+
           style={{
-            transform: `translateX(${translateX}%)`,
-            transition: isTransitioning ? 'transform 0.4s ease-in-out' : 'none',
+            transform:
+              `translateX(${translateX}%)`,
+
+            transition:
+              isTransitioning
+                ? 'transform 0.45s ease-in-out'
+                : 'none',
           }}
-          onTransitionEnd={handleTransitionEnd}
+
+          onTransitionEnd={
+            handleTransitionEnd
+          }
         >
-          {extendedExperiments.map((exp, i) => (
-            <div className="carousel-card" key={i}>
-              <h3>{exp.title}</h3>
-              <p>{exp.description}</p>
-              <div className="carousel-tags">
-                {exp.tags.map((tag, j) => <span className="tag" key={j}>{tag}</span>)}
+
+          {extendedExperiments.map(
+            (exp, i) => (
+
+              <div
+                className="creative-lab-card"
+                key={i}
+              >
+
+                <div className="creative-card-content">
+
+                  <h3>
+                    {exp.title}
+                  </h3>
+
+                  <p>
+                    {exp.description}
+                  </p>
+
+                </div>
+
+                <div className="creative-card-footer">
+
+                  <div className="creative-lab-tags">
+
+                    {exp.tags.map(
+                      (tag, j) => (
+
+                        <span
+                          className="tag"
+                          key={j}
+                        >
+                          {tag}
+                        </span>
+
+                      )
+                    )}
+
+                  </div>
+
+                  {exp.link && (
+
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="creative-lab-button"
+                    >
+                      Explore
+                    </a>
+
+                  )}
+
+                </div>
+
               </div>
-              {exp.link && (
-                <a href={exp.link} target="_blank" rel="noopener noreferrer">View</a>
-              )}
-            </div>
-          ))}
+
+            )
+          )}
+
         </div>
       </div>
 
-      <div className="carousel-dots">
+      {/* Navigation Dots */}
+      <div className="creative-lab-dots">
+
         {experiments.map((_, i) => (
+
           <span
             key={i}
-            className={`dot ${(i === (currentIndex - visibleCount + length) % length) ? 'active' : ''}`}
-            onClick={() => { setIsTransitioning(true); setCurrentIndex(i + visibleCount); }}
+
+            className={`creative-dot ${
+              (
+                i ===
+                (
+                  currentIndex -
+                  visibleCount +
+                  length
+                ) % length
+              )
+                ? 'active'
+                : ''
+            }`}
+
+            onClick={() => {
+
+              setIsTransitioning(true);
+
+              setCurrentIndex(
+                i + visibleCount
+              );
+
+            }}
           />
+
         ))}
+
       </div>
+
     </section>
   );
 };
 
-export default Carousel;
+export default CreativeLab;
