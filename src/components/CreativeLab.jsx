@@ -1,7 +1,7 @@
 //src/components/Carousel.jsx
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import '../styles/Carousel.css';
+import '../styles/CreativeLab.css';
 import experiments from '../data/collaborations';
 
 const Carousel = () => {
