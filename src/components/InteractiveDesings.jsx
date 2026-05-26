@@ -5,53 +5,135 @@ import experiments from "../data/collaborations";
 import "../styles/InteractiveDesigns.css";
 
 const ExperimentsShowcase = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const active = experiments[activeIndex];
+
+  const [activeIndex, setActiveIndex] =
+    useState(0);
+
+  const active =
+    experiments[activeIndex];
 
   return (
-    <section id="experiments" className="showcase-root">
+
+    <section
+      id="interactive-showcase"
+      className="showcase-root"
+    >
+
+      {/* Section Header */}
       <header className="showcase-header">
-        <h2 className="showcase-title">Interactive Designs</h2>
-        <p className="carousel-subtitle">Creative Ui & Mini-Projects Samples</p>
+
+        <h2 className="showcase-title">
+          Interactive Showcase
+        </h2>
+
+        <p className="showcase-subtitle">
+          Concept interfaces,
+          motion experiments,
+          immersive interactions,
+          and creative frontend systems.
+        </p>
+
       </header>
 
+      {/* Main Layout */}
       <div className="showcase-layout">
-        {/* LEFT LIST */}
-        <ul className="showcase-list">
-          {experiments.map((exp, i) => (
-            <li
-              key={i}
-              className={i === activeIndex ? "active" : ""}
-              onMouseEnter={() => setActiveIndex(i)}
-            >
-              {exp.title}
-            </li>
-          ))}
-        </ul>
 
-        {/* RIGHT PREVIEW */}
-        <div key={active.title} className="showcase-preview">
-          <h3>{active.title}</h3>
-          <p>{active.description}</p>
+        {/* LEFT NAVIGATION */}
+        <aside className="showcase-sidebar">
 
-          <div className="preview-tags">
-            {active.tags.map((tag, i) => (
-              <span key={i}>{tag}</span>
-            ))}
+          <div className="showcase-sidebar-label">
+            Creative Index
           </div>
 
-          {active.link && (
-            <a
-              href={active.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="preview-link"
-            >
-              View Project →
-            </a>
-          )}
+          <ul className="showcase-list">
+
+            {experiments.map((exp, i) => (
+
+              <li
+                key={i}
+
+                className={
+                  i === activeIndex
+                    ? "active"
+                    : ""
+                }
+
+                onMouseEnter={() =>
+                  setActiveIndex(i)
+                }
+              >
+
+                <span className="showcase-number">
+                  0{i + 1}
+                </span>
+
+                <span className="showcase-name">
+                  {exp.title}
+                </span>
+
+              </li>
+
+            ))}
+
+          </ul>
+
+        </aside>
+
+        {/* RIGHT PREVIEW */}
+        <div
+          key={active.title}
+          className="showcase-preview"
+        >
+
+          <div className="showcase-preview-inner">
+
+            <div className="preview-top">
+
+              <div className="preview-label">
+                Featured Exploration
+              </div>
+
+              <h3>
+                {active.title}
+              </h3>
+
+            </div>
+
+            <p className="preview-description">
+              {active.description}
+            </p>
+
+            <div className="preview-tags">
+
+              {active.tags.map((tag, i) => (
+
+                <span key={i}>
+                  {tag}
+                </span>
+
+              ))}
+
+            </div>
+
+            {active.link && (
+
+              <a
+                href={active.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="preview-link"
+              >
+                Launch Experience
+              </a>
+
+            )}
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
   );
 };
