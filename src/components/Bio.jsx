@@ -160,59 +160,7 @@ function Bio() {
 
       </div>
 
-      {/* Footer CTA */}
-      <div className="bio-footer">
-
-        <p className="bio-footer-text">
-          Open to ambitious projects,
-          creative collaborations,
-          and modern software architecturing
-          through any of these platforms.
-        </p>
-
-        <div classNmae="bio-socials">
-
-            <a
-              href="https://github.com/RodriguezRamiro"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              className="bio-social-link"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-              />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/ramiro-rodriguez-3a287a328"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="bio-social-link"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-              />
-            </a>
-
-            <a
-              href="https://www.instagram.com/software.map"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="bio-social-link"
-            >
-              <FontAwesomeIcon
-                icon={faInstagram}
-              />
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
+    </div>
 
     </section>
   );
