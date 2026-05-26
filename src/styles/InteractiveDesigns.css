@@ -3,8 +3,9 @@
 /* devslanding/src/styles/ExperimentsShowcase.css */
 
 /* Interactive Showcase */
+
 .showcase-root {
-  max-width: 1400px;
+  max-width: 1200px;
 
   margin: 0 auto;
   padding: 140px 24px;

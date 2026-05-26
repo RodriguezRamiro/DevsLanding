@@ -4,14 +4,13 @@
 
 .navbar {
   position: sticky;
+
   top: 18px;
-  left: 50%;
-  transform: translateX(-30%);
 
   z-index: 1000;
 
   width: calc(100% - 50px);
-  max-width: 1100px;
+  max-width: 1200px;
 
   margin: 0 auto;
 
@@ -23,17 +22,13 @@
 
   background: var(--navbar-bg);
 
-  border:
-    1px solid var(--border-color);
+  border: 1px solid var(--border-color);
 
   border-radius: 28px;
 
   backdrop-filter: blur(18px);
 
-  box-shadow:
-    var(--navbar-shadow);
-
-  
+  box-shadow: var(--navbar-shadow);
 
   transition:
     background var(--transition-medium),
