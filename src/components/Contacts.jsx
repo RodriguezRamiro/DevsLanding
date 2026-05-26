@@ -134,9 +134,8 @@ const Contacts = () => {
             </div>
 
             <p className="availability">
-              Freelance,
-              business collaborations,
-              and full-stack development work.
+              Full-stack development work.
+              Freelance and business collaborations.
             </p>
 
           </div>

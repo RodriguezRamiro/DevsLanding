@@ -20,7 +20,7 @@ function Bio() {
       {/* Decorative Glow */}
       <div className="bio-glow"></div>
 
-      <div classNmae="bio-wraper glass-card">
+      <div classNmae="bio-wrapper glass-card">
 
         {/* Section Header */}
         <div className="bio-header">

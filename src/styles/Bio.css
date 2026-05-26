@@ -4,10 +4,14 @@
 
 
 .bio-container {
-    position: relative;
-    padding: 40px 20px 120px;
-    overflow: hidden;
-  }
+  position: relative;
+
+  margin: 0 auto;
+
+  padding: 140px 40px;
+
+  overflow: hidden;
+}
 
 
   /* Decorative Glow */
@@ -43,9 +47,7 @@
   .bio-wrapper {
     position: relative;
 
-    max-width: 1300px;
-
-    margin: 0 auto;
+    max-width: 1200px;
 
     padding: 80px;
 
