@@ -2,7 +2,7 @@
 
 import React from 'react';
 import '../styles/Profile.css';
-import profilePic from '../assets/ProfilePhoto.jpg';
+import profilePic from '../assets/profilePhoto05_2026.jpg';
 
 
 function Profile() {
