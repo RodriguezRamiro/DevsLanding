@@ -297,7 +297,7 @@
 
 
 .hero-floating-card {
-  position: absolute;
+  position: relative;
 
   bottom: 40px;
   left: -40px;
