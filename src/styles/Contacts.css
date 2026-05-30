@@ -88,14 +88,6 @@
   box-shadow: 0 0 20px var(--active);
 }
 
-.contacts-subtitle {
-  max-width: 650px;
-  margin: 0 auto;
-  font-size: 20px;
-  line-height: 1.7;
-  color: var(--subtext-color);
-}
-
 /* Main Layout */
 
 .contacts-content {
@@ -459,9 +451,6 @@
     font-size: 38px;
   }
 
-  .contacts-subtitle {
-    font-size: 17px;
-  }
 
   .contact-form-wrapper {
     padding: 32px 24px;
