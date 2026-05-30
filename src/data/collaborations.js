@@ -1,9 +1,16 @@
 const experiments = [
+
+  {
+    title: 'Theme Dev Tool',
+    description: 'A dynamic theme generator that creates and previews full UI color systems in real time. Users can generate, toggle light/dark modes, and export CSS variables for direct use in projects.',
+    tags: ['React', 'CSS Variables', 'Vite', 'JavaScript'],
+    link: 'https://themedevstool-hpwi.vercel.app/',
+  },
   {
     title: 'Snes UI Lab',
-    description: 'Ultra realistic SNES shell 3-zone layout(dpad / display / buttons) Cable + lighting Effects Console-grade depth & shading',
+    description: 'A browser-based retro console framework that can load and run cartridge like game desings using a consistent architecture. Ultra realistic SNES shell 3-zone layout(dpad / display / buttons) Cable + lighting Effects Console-grade depth & shading.',
     tags: ['JavaScript', 'CSS', 'HTML'],
-    link: 'https://codepen.io/RodriguezRamiro/pen/yyJdVQG',
+    link: 'https://sness-ui-lab.vercel.app/',
   },
     {
     title: 'MouseTrails',
@@ -29,6 +36,12 @@ const experiments = [
     tags: ['JavaScript', 'CSS', 'HTML'],
     link: 'https://codepen.io/RodriguezRamiro/pen/Jodzboa',
   },
+  {
+    title: 'Weather Dashboard',
+    description: 'Real-time weather dashboard fetching live data from an external API and displaying dynamic updates.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'API'],
+    link: 'https://weatherapp-ashy-five.vercel.app/',
+  },
   // Do not include Yet Project not finished..
   /*
   {
@@ -38,12 +51,6 @@ const experiments = [
     link: '#',
   },
   */
-  {
-    title: 'Weather Dashboard',
-    description: 'Real-time weather dashboard fetching live data from an external API and displaying dynamic updates.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'API'],
-    link: 'https://weatherapp-ashy-five.vercel.app/',
-  },
   // Do not include Yet Project not finished..
   /*
   {

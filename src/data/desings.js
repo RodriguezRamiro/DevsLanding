@@ -3,6 +3,15 @@
 const projects = [
   {
     id: 1,
+    title: "Bombshell Luxe",
+    description: "A luxury website concept tailored specifically around the business brand. Solving visibility, branding, trust, and conversion rate, all in one. ",
+    image: "/images/BombshellLuxeCleaning",
+    github: "https://github.com/RodriguezRamiro/BombshellLuxeCleaning",
+    demo: "https://bombshell-luxe-cleaning.vercel.app/",
+    tags: ['React Framework', 'Javascript', 'CSS3'],
+  },
+  {
+    id: 2,
     title: "Nexora Consulting",
     description: "A modern operational framework, helping organizations connect, improve efficiency, visibility, and long-term growth.",
     image: "/images/Nexora Consulting",
@@ -11,7 +20,7 @@ const projects = [
     tags: ['React Framework', 'Javascript', 'CSS3'],
   },
   {
-    id: 2,
+    id: 3,
     title: "Clips Grooming",
     description: "A barber Shop inspired landing page for a real Small Bussiness Owner built with React and NodeJS.",
     image: "/images/ClipsGrooming.png",
@@ -20,22 +29,13 @@ const projects = [
     tags: ['React', 'NodeJS', 'CSS'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'E-Commerce',
     description: 'Eshop desinged to browse products, manage a shopping cart, and complete secure checkout with flask backend and scalability of database and payment API integration.',
     image: '/images/pic.png',
     github: 'https://github.com/RodriguezRamiro/ecommerce_app',
     demo: 'https://ecommerce-app-seven-lilac.vercel.app/',
     tags: ['React', 'Flask', 'CSS','JSON data', 'User Authentication' ],
-  },
-  {
-    id: 4,
-    title: 'Snes Ui Lab',
-    description: 'A browser-based retro console framework that can load and run cartridge like game desings using a consistent architecture.',
-    image: '/images/snessUILab.png',
-    github: 'https://github.com/RodriguezRamiro/snessUILab',
-    demo: 'https://sness-ui-lab.vercel.app/',
-    tags: ['HTML', 'CSS', 'Javascript ES6'],
   },
   {
     id: 5,
@@ -46,20 +46,20 @@ const projects = [
     demo: "https://apitester-fawn.vercel.app/",
     tags: ['React.js', 'Flask', 'Railway.app'],
   },
-  {
-    id: 6,
-    title: 'Theme Dev Tool',
-    description: 'A dynamic theme generator that creates and previews full UI color systems in real time. Users can generate, toggle light/dark modes, and export CSS variables for direct use in projects.',
-    image: '/images/themedevtool.png',
-    github: 'https://github.com/RodriguezRamiro/themedevstool',
-    demo: 'https://themedevstool-hpwi.vercel.app/',
-    tags: ['React', 'CSS Variables', 'Vite', 'JavaScript'],
-  },
 
 
 
-  // Do not include Yet Project not finished..
+  // Do not include Yet Project not finished or not needed..
   /*
+  {
+    id: 5,
+    title: 'Snes Ui Lab',
+    description: 'A browser-based retro console framework that can load and run cartridge like game desings using a consistent architecture.',
+    image: '/images/snessUILab.png',
+    github: 'https://github.com/RodriguezRamiro/snessUILab',
+    demo: 'https://sness-ui-lab.vercel.app/',
+    tags: ['HTML', 'CSS', 'Javascript ES6'],
+  },
 }
       id: null,
       title: 'Fullstack Blackjack',
