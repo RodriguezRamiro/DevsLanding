@@ -6,6 +6,7 @@ import Bio from './components/Bio.jsx';
 import Projects from './components/Projects';
 import ExperimentsShowcase from './components/InteractiveDesings.jsx';
 import Contacts from './components/Contacts';
+import Recommendations from "./components/Recommendations";
 import Footer from './components/Footer';
 import ThemeProvider from './components/ThemeProvider';
 
@@ -34,6 +35,10 @@ function App() {
 
       <section id="contact">
         <Contacts />
+      </section>
+
+      <section id="recommendations">
+        <Recommendations />
       </section>
 
       <Footer />

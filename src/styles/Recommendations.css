@@ -1,0 +1,81 @@
+/* //devslanding/src/styles/Recomendations.css */
+
+
+.recommendations-section {
+    padding: 120px 40px;
+    background: var(--bg);
+  }
+
+  .recommendations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .recommendations-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .recommendations-title {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    color: var(--heading-color);
+  }
+
+  .recommendations-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: var(--subtext-color);
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .recommendations-grid {
+    display: grid;
+
+    grid-template-columns:
+      repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 24px;
+
+    margin-bottom: 50px;
+  }
+
+  .recommendation-card {
+    padding: 32px;
+  }
+
+  .recommendation-text {
+    font-size: 1rem;
+    line-height: 1.9;
+
+    margin-bottom: 24px;
+  }
+
+  .recommendation-author h4 {
+    margin-bottom: 4px;
+
+    color: var(--heading-color);
+  }
+
+  .recommendation-author span {
+    color: var(--subtext-color);
+    font-size: 0.95rem;
+  }
+
+  .recommendations-action {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .recommendations-section {
+      padding: 80px 20px;
+    }
+
+    .recommendations-title {
+      font-size: 2.2rem;
+    }
+  }
