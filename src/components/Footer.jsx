@@ -37,7 +37,7 @@ const Footer = () => {
 
           <p className="footer-copy">
             © {currentYear} RamTech LLC ·
-            Crafted with Creative Engineering
+            IVI Creative Engineering
           </p>
 
         </div>
@@ -62,9 +62,9 @@ const Footer = () => {
           >
             <FaLinkedin size={18} />
           </a>
-          
+
           <a
-            href="https://www.instagram.com/software.map"
+            href="https://www.instagram.com/rodrigueztechstudios"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

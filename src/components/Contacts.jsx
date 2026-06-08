@@ -59,8 +59,7 @@ const Contacts = () => {
         </h2>
 
         <p className="contacts-subtitle">
-          Let’s build something thoughtful,
-          modern, and memorable together.
+          {/* Maybe later */}
         </p>
 
       </div>
@@ -130,7 +129,7 @@ const Contacts = () => {
             </p>
 
             <div className="availability-badge">
-              Available For Hire
+               813-492-0639
             </div>
 
             <p className="availability">

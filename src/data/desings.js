@@ -21,6 +21,15 @@ const projects = [
   },
   {
     id: 3,
+    title: 'SME Business Lead Template',
+    description: "Modern professional Lead generation operational framework, allowng organizations to connect, improve efficiency, visibility, and long-term growth.",
+    image:"./images/smeTemplate_Tester.png",
+    github: "https://github.com/RodriguezRamiro/smeTemplate",
+    demo: "https://vercel.com/rodriguezramiros-projects/sme-template",
+    tags: ['HTML5', 'ES6', 'CSS3', 'JS'],
+  },
+  {
+    id: 4,
     title: "Clips Grooming",
     description: "A barber Shop inspired landing page for a real Small Bussiness Owner built with React and NodeJS.",
     image: "/images/ClipsGrooming.png",
@@ -29,7 +38,7 @@ const projects = [
     tags: ['React', 'NodeJS', 'CSS'],
   },
   {
-    id: 4,
+    id: 5,
     title: 'E-Commerce',
     description: 'Eshop desinged to browse products, manage a shopping cart, and complete secure checkout with flask backend and scalability of database and payment API integration.',
     image: '/images/pic.png',
@@ -38,7 +47,7 @@ const projects = [
     tags: ['React', 'Flask', 'CSS','JSON data', 'User Authentication' ],
   },
   {
-    id: 5,
+    id: 6,
     title: 'API_Tester & Todo Dashboard',
     description: "Interactive API testing and Todo dashboard. Full-stack capabilities with a Flask backend, React frontend and live WebSocket",
     image:"./images/API_Tester.png",
