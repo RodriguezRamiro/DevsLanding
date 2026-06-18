@@ -129,7 +129,7 @@ const Contacts = () => {
             </p>
 
             <div className="availability-badge">
-               813-492-0639
+               {/* 813-492-0639 pending */}
             </div>
 
             <p className="availability">
