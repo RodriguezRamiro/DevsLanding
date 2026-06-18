@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.3ba0bfbd.css",
-    "main.js": "/static/js/main.7c713d21.js",
+    "main.js": "/static/js/main.30d3f1a5.js",
     "static/js/488.7fc67678.chunk.js": "/static/js/488.7fc67678.chunk.js",
     "static/media/profilePhoto05_2026.jpg": "/static/media/profilePhoto05_2026.d90021f53660411cf4cd.jpg",
     "static/media/programmer-software-engineer-coder-software-developer-svgrepo-com.svg": "/static/media/programmer-software-engineer-coder-software-developer-svgrepo-com.0b662c3169cf95ec9574d5ecd9af6b49.svg",
     "index.html": "/index.html",
     "main.3ba0bfbd.css.map": "/static/css/main.3ba0bfbd.css.map",
-    "main.7c713d21.js.map": "/static/js/main.7c713d21.js.map",
+    "main.30d3f1a5.js.map": "/static/js/main.30d3f1a5.js.map",
     "488.7fc67678.chunk.js.map": "/static/js/488.7fc67678.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ba0bfbd.css",
-    "static/js/main.7c713d21.js"
+    "static/js/main.30d3f1a5.js"
   ]
 }
