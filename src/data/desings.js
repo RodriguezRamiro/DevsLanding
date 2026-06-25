@@ -72,8 +72,6 @@ const projects = [
     image:"./images/API_Tester.png",
     github: "https://github.com/RodriguezRamiro/apitester",
     demo: "https://apitester-fawn.vercel.app/",
-    forSale: true,
-    gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['React.js', 'Flask', 'Railway.app'],
   },
 
