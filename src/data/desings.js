@@ -8,8 +8,12 @@ const projects = [
     image: "/images/BombshellLuxeCleaning",
     github: "https://github.com/RodriguezRamiro/BombshellLuxeCleaning",
     demo: "https://bombshell-luxe-cleaning.vercel.app/",
+    forSale: true,
+    gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['React Framework', 'Javascript', 'CSS3'],
+
   },
+
   {
     id: 2,
     title: "Nexora Consulting",
@@ -17,8 +21,11 @@ const projects = [
     image: "/images/Nexora Consulting",
     github: "https://github.com/RodriguezRamiro/MidMarketTemplate",
     demo: "https://mid-market-template.vercel.app/index.html",
+    forSale: true,
+    gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['React Framework', 'Javascript', 'CSS3'],
   },
+
   {
     id: 3,
     title: 'SME Business Lead Template',
@@ -26,8 +33,12 @@ const projects = [
     image:"./images/smeTemplate_Tester.png",
     github: "https://github.com/RodriguezRamiro/smeTemplate",
     demo: "https://vercel.com/rodriguezramiros-projects/sme-template",
+    forSale: true,
+    gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['HTML5', 'ES6', 'CSS3', 'JS'],
+
   },
+
   {
     id: 4,
     title: "Clips Grooming",
@@ -35,8 +46,12 @@ const projects = [
     image: "/images/ClipsGrooming.png",
     github: "https://github.com/RodriguezRamiro/clipsgrooming",
     demo: "https://clipsgrooming.vercel.app/",
+    forSale: true,
+    gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['React', 'NodeJS', 'CSS'],
+
   },
+
   {
     id: 5,
     title: 'E-Commerce',
@@ -44,8 +59,12 @@ const projects = [
     image: '/images/pic.png',
     github: 'https://github.com/RodriguezRamiro/ecommerce_app',
     demo: 'https://ecommerce-app-seven-lilac.vercel.app/',
+    forSale: true,
+    gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['React', 'Flask', 'CSS','JSON data', 'User Authentication' ],
+
   },
+
   {
     id: 6,
     title: 'API_Tester & Todo Dashboard',
@@ -53,6 +72,8 @@ const projects = [
     image:"./images/API_Tester.png",
     github: "https://github.com/RodriguezRamiro/apitester",
     demo: "https://apitester-fawn.vercel.app/",
+    forSale: true,
+    gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['React.js', 'Flask', 'Railway.app'],
   },
 
