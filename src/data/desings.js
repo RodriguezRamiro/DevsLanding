@@ -1,9 +1,9 @@
-// src/data/projects.js
+// src/data/desings.js
 
 const projects = [
   {
     id: 1,
-    title: "Bombshell Luxe",
+    title: "Luxe Cleaning",
     description: "A luxury website concept tailored specifically around the business brand. Solving visibility, branding, trust, and conversion rate, all in one. ",
     image: "/images/BombshellLuxeCleaning",
     github: "https://github.com/RodriguezRamiro/BombshellLuxeCleaning",
