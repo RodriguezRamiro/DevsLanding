@@ -266,41 +266,46 @@
 
 .project-footer {
   display: flex;
-
   flex-direction: column;
-
-  gap: 28px;
+  gap: 24px;
 }
 
-
-.project-actions{
-  display:flex;
-  flex-direction:column;
-  align-items:flex-end;
-  gap:0.35rem;
+.project-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
 }
 
-.project-buy-link{
-  font-size:0.75rem;
-  letter-spacing:0.12em;
-  text-transform:uppercase;
-    text-decoration: none;
+.project-buy-link {
+  display: inline-flex;
+  align-items: center;
 
-    color: var(--subtext-color);
+  font-size: 0.72rem;
+  font-weight: 600;
 
-  opacity:0.75;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: var(--subtext-color);
+
+  opacity: 0.7;
 
   transition:
-    opacity .25s ease,
-    transform .25s ease,
-    color .25s ease;
+    opacity var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
-.project-buy-link:hover{
-  opacity:1;
+.project-buy-link:hover {
+  opacity: 1;
   color: var(--link-color);
-  transform:translateX(4px);
+  transform: translateX(4px);
 }
+
+.project-tile:hover .project-buy-link {
+  opacity: 0.9;
+} 
 
 
 
@@ -355,6 +360,11 @@
 
 
 /* Project Link */
+
+.project-link,
+.project-buy-link {
+  text-decoration: none;
+}
 
 
 .project-link {
