@@ -37,9 +37,13 @@ function Projects() {
 
         {projects.map((project) => (
 
-          <div className="project-tile glass-card"
+          <a
+            className="project-tile glass-card"
+            href={project.demo || project.github}
+            target="_blank"
+            rel="noopener noreferrer"
             key={project.id}
-            >
+          >
 
 
             {/* Decorative Glow */}
@@ -85,23 +89,23 @@ function Projects() {
 
               <div className="project-actions">
                 {project.forSale && (
-                  <a
+                  <button
                   href={project.gumroad}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="project-buy-link"
                   >
                     Available for Licensing ↗
-                  </a>
+                  </button>
                 )}
-              <a
+              <button
                 href={project.demo || project.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link"
               >
                 View System →
-              </a>
+              </button>
 
 
 
@@ -110,7 +114,7 @@ function Projects() {
 
             </div>
 
-          </div>
+          </a>
 
         ))}
 
