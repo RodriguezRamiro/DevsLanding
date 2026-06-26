@@ -39,6 +39,9 @@ const Footer = () => {
             © {currentYear} RamTech LLC ·
             IVI Creative Engineering
           </p>
+          <p className="footer-license">
+          Selected systems available for licensing and deployment.
+          </p>
 
         </div>
 
