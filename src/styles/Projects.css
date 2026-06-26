@@ -278,8 +278,14 @@
 }
 
 .project-buy-link {
+  padding: 0;
+
+  cursor: pointer;
+
   display: inline-flex;
   align-items: center;
+
+  font: inherit;
 
   font-size: 0.72rem;
   font-weight: 600;
@@ -305,7 +311,7 @@
 
 .project-tile:hover .project-buy-link {
   opacity: 0.9;
-} 
+}
 
 
 
@@ -364,6 +370,8 @@
 .project-link,
 .project-buy-link {
   text-decoration: none;
+  background: none;
+  border: none;
 }
 
 
