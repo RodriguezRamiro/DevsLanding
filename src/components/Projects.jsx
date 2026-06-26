@@ -37,13 +37,13 @@ function Projects() {
 
         {projects.map((project) => (
 
-          <a
+          <div className="project-tile glass-card"
             key={project.id}
             href={project.demo || project.github || '#'}
-            className="project-tile glass-card"
             target="_blank"
             rel="noopener noreferrer"
-          >
+            >
+
 
             {/* Decorative Glow */}
             <div className="project-glow"></div>
@@ -90,7 +90,7 @@ function Projects() {
               <span className="project-link">
                 View System →
               </span>
-              
+
                 {project.forSale && (
                   <a
                   href={project.gumroad}
@@ -109,7 +109,7 @@ function Projects() {
 
             </div>
 
-          </a>
+          </div>
 
         ))}
 
