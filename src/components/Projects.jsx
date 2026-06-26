@@ -39,9 +39,6 @@ function Projects() {
 
           <div className="project-tile glass-card"
             key={project.id}
-            href={project.demo || project.github || '#'}
-            target="_blank"
-            rel="noopener noreferrer"
             >
 
 
@@ -87,21 +84,25 @@ function Projects() {
               </div>
 
               <div className="project-actions">
-              <span className="project-link">
-                View System →
-              </span>
-
                 {project.forSale && (
                   <a
                   href={project.gumroad}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="project-buy-link"
-                  onClick={(e) => e.stopPropagation()}
                   >
                     Available for Licensing ↗
                   </a>
                 )}
+              <a
+                href={project.demo || project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                View System →
+              </a>
+
 
 
               </div>
