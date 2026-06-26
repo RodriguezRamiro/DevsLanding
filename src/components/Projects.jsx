@@ -104,16 +104,12 @@ function Projects() {
                 >
                   Available for Licensing ↗
                 </button>
-                
+
                 )}
-              <button
-                href={project.demo || project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
+
+              <span className="project-link">
                 View System →
-              </button>
+              </span>
 
 
 
