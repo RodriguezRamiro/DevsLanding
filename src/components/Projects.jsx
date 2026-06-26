@@ -90,13 +90,21 @@ function Projects() {
               <div className="project-actions">
                 {project.forSale && (
                   <button
-                  href={project.gumroad}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="project-buy-link"
-                  >
-                    Available for Licensing ↗
-                  </button>
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    window.open(
+                      project.gumroad,
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
+                  }}
+                >
+                  Available for Licensing ↗
+                </button>
+                
                 )}
               <button
                 href={project.demo || project.github}
