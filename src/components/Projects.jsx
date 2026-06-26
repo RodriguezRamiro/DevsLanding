@@ -86,9 +86,26 @@ function Projects() {
 
               </div>
 
+              <div className="project-actions">
               <span className="project-link">
                 View System →
               </span>
+              
+                {project.forSale && (
+                  <a
+                  href={project.gumroad}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-buy-link"
+                  onClick={(e) => e.stopPropagation()}
+                  >
+                    Available for Licensing ↗
+                  </a>
+                )}
+
+
+              </div>
+
 
             </div>
 
