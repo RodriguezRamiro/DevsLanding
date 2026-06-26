@@ -10,7 +10,11 @@ const projects = [
     demo: "https://bombshell-luxe-cleaning.vercel.app/",
     forSale: true,
     gumroad: "https://rodrigueztechstudios.gumroad.com/",
-    tags: ['React Framework', 'Javascript', 'CSS3'],
+    tags: ["React",
+    "CMS Ready",
+    "Lead Generation",
+    "Mobile First",
+    "SEO Optimized"],
 
   },
 
