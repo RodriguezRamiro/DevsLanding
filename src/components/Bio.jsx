@@ -129,7 +129,7 @@ function Bio() {
       <div className="bio-credentials">
 
         <a
-        href="/Resume2026.pdf"
+        href="/Resume_v0.6.26.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="credential-card"
