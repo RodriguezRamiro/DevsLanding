@@ -108,7 +108,7 @@ function Projects() {
                 )}
 
               <span className="project-link">
-                View System →
+                Launch Preview →
               </span>
 
 
