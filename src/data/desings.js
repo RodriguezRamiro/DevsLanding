@@ -1,8 +1,30 @@
 // src/data/desings.js
 
 const projects = [
+
   {
     id: 1,
+  title: "Clipse Grooming",
+  description:
+    "A premium barber shop template designed for modern grooming brands, featuring appointment booking, service showcases, team profiles, gallery sections, testimonials, and lead generation integration.",
+  image: "/images/ClipseGrooming.png",
+  github: "https://github.com/RodriguezRamiro/ClipseGrooming",
+  demo: "https://barber-template-woad.vercel.app/",
+  forSale: true,
+  gumroad: "https://rodrigueztechstudios.gumroad.com/",
+  tags: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Responsive Design",
+    "Formspree",
+    "Dark Mode",
+    "Small Business"
+  ],
+},
+
+  {
+    id: 2,
     title: "Luxe Cleaning",
     description: "A luxury website concept tailored specifically around the business brand. Solving visibility, branding, trust, and conversion rate, all in one. ",
     image: "/images/BombshellLuxeCleaning",
@@ -19,7 +41,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Nexora Consulting",
     description: "A modern operational framework, helping organizations connect, improve efficiency, visibility, and long-term growth.",
     image: "/images/Nexora Consulting",
@@ -31,7 +53,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: 'SME Business Lead Template',
     description: "Modern professional Lead generation operational framework, allowng organizations to connect, improve efficiency, visibility, and long-term growth.",
     image:"./images/smeTemplate_Tester.png",
@@ -44,7 +66,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Clips Grooming",
     description: "A barber Shop inspired landing page for a real Small Bussiness Owner built with React and NodeJS.",
     image: "/images/ClipsGrooming.png",
@@ -57,7 +79,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: 'E-Commerce',
     description: 'Eshop desinged to browse products, manage a shopping cart, and complete secure checkout with flask backend and scalability of database and payment API integration.',
     image: '/images/pic.png',
@@ -70,7 +92,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: 'API_Tester & Todo Dashboard',
     description: "Interactive API testing and Todo dashboard. Full-stack capabilities with a Flask backend, React frontend and live WebSocket",
     image:"./images/API_Tester.png",
