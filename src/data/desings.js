@@ -58,7 +58,7 @@ const projects = [
     description: "Modern professional Lead generation operational framework, allowng organizations to connect, improve efficiency, visibility, and long-term growth.",
     image:"./images/smeTemplate_Tester.png",
     github: "https://github.com/RodriguezRamiro/smeTemplate",
-    demo: "https://vercel.com/rodriguezramiros-projects/sme-template",
+    demo: "https://vercel.com/rodriguezramiros-projec",
     forSale: true,
     gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['HTML5', 'ES6', 'CSS3', 'JS'],
@@ -67,7 +67,7 @@ const projects = [
 
   {
     id: 5,
-    title: "Clips Grooming",
+    title: "Clips Barber",
     description: "A barber Shop inspired landing page for a real Small Bussiness Owner built with React and NodeJS.",
     image: "/images/ClipsGrooming.png",
     github: "https://github.com/RodriguezRamiro/clipsgrooming",
