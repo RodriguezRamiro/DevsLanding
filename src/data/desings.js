@@ -58,7 +58,7 @@ const projects = [
     description: "Modern professional Lead generation operational framework, allowng organizations to connect, improve efficiency, visibility, and long-term growth.",
     image:"./images/smeTemplate_Tester.png",
     github: "https://github.com/RodriguezRamiro/smeTemplate",
-    demo: "https://https://sme-template.vercel.app/",
+    demo: "https://sme-template.vercel.app/",
     forSale: true,
     gumroad: "https://rodrigueztechstudios.gumroad.com/",
     tags: ['HTML5', 'ES6', 'CSS3', 'JS'],
