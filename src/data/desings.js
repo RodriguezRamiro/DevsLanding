@@ -4,7 +4,7 @@ const projects = [
 
   {
     id: 1,
-  title: "Clipse Grooming",
+  title: "Clipse Grooming Premium",
   description:
     "A premium barber shop template designed for modern grooming brands, featuring appointment booking, service showcases, team profiles, gallery sections, testimonials, and lead generation integration.",
   image: "/images/ClipseGrooming.png",
@@ -67,7 +67,7 @@ const projects = [
 
   {
     id: 5,
-    title: "Clips Grooming",
+    title: " Clips Grooming",
     description: "A barber Shop inspired landing page for a real Small Bussiness Owner built with React and NodeJS.",
     image: "/images/ClipsGrooming.png",
     github: "https://github.com/RodriguezRamiro/clipsgrooming",
